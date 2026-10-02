@@ -1,0 +1,54 @@
+name: Sync GitHub activity and deploy
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "17 */6 * * *"   # every 6 hours
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Pull public repo activity
+        continue-on-error: true   # keep the last good data if the API is down
+        run: node scripts/sync-github.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USER: ${{ github.repository_owner }}
+          SITE_REPO: ${{ github.event.repository.name }}
+      - name: Commit data if it changed
+        run: |
+          if git diff --quiet -- data/github.json; then echo "No activity changes"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/github.json
+          git commit -m "data: sync GitHub activity"
+          git push
+      - uses: actions/configure-pages@v5
+      - name: Assemble site
+        run: |
+          mkdir _site
+          cp -r index.html style.css script.js .nojekyll assets resume data _site/
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4
