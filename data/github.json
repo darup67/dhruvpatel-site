@@ -1,7 +1,16 @@
 {
   "user": "darup67",
-  "generated_at": "2026-10-02T16:10:58.582Z",
+  "generated_at": "2026-10-02T22:13:28.004Z",
   "repos": [
+    {
+      "name": "market-lab",
+      "description": "Durable capture of expiring market data - Kalshi 15m contracts and CME futures - and tests over it",
+      "url": "https://github.com/darup67/market-lab",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-10-02T22:10:11Z",
+      "last_commit": null
+    },
     {
       "name": "demand-forecast-performance",
       "description": "Databricks notebook comparing an internal demand forecast against a vendor forecast: WMAPE, bias and win rates by scope, customer, brand and demand class",
@@ -21,7 +30,7 @@
       "url": "https://github.com/darup67/kalshi-commodity-agent",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-02T15:52:08Z",
+      "pushed_at": "2026-10-02T21:55:07Z",
       "last_commit": {
         "message": "Kalshi gold and WTI 15-minute cushion caller: Hyperliquid live proxy, Pyth-aligned model, per-asset backtest and gates, weekly recal",
         "date": "2026-10-02T13:49:52Z",
@@ -34,24 +43,11 @@
       "url": "https://github.com/darup67/kalshi-btc-agent",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-02T15:30:09Z",
+      "pushed_at": "2026-10-02T21:31:09Z",
       "last_commit": {
         "message": "scorecard: per-minute table of live calls (hit, ask, EV, bootstrap range, days covered)",
         "date": "2026-10-02T13:39:31Z",
         "url": "https://github.com/darup67/kalshi-btc-agent/commit/4d672e35ef4e4b112aed4862cc769500cd426e61"
-      }
-    },
-    {
-      "name": "market-lab",
-      "description": "Durable capture of expiring market data - Kalshi 15m contracts and CME futures - and tests over it",
-      "url": "https://github.com/darup67/market-lab",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-10-02T16:10:09Z",
-      "last_commit": {
-        "message": "results: Chronos/AutoGluon vs Kalshi opening print, BTC 1,209 test windows (no model beats print)",
-        "date": "2026-10-02T13:24:01Z",
-        "url": "https://github.com/darup67/market-lab/commit/e0db662c7e229106c624440f9e5378726b81c9fa"
       }
     },
     {
