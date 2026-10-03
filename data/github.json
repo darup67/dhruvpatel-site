@@ -1,6 +1,6 @@
 {
   "user": "darup67",
-  "generated_at": "2026-10-03T05:17:41.971Z",
+  "generated_at": "2026-10-03T11:38:29.903Z",
   "repos": [
     {
       "name": "market-lab",
@@ -8,7 +8,7 @@
       "url": "https://github.com/darup67/market-lab",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-03T05:10:08Z",
+      "pushed_at": "2026-10-03T11:20:11Z",
       "last_commit": null
     },
     {
@@ -43,7 +43,7 @@
       "url": "https://github.com/darup67/kalshi-btc-agent",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-03T04:34:09Z",
+      "pushed_at": "2026-10-03T11:36:12Z",
       "last_commit": {
         "message": "scorecard: per-minute table of live calls (hit, ask, EV, bootstrap range, days covered)",
         "date": "2026-10-02T13:39:31Z",
@@ -95,7 +95,7 @@
       "url": "https://github.com/darup67/coin-launch-agent",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-02T07:07:06Z",
+      "pushed_at": "2026-10-03T07:07:07Z",
       "last_commit": {
         "message": "Social sentiment + FOMO heat for the coin detector: StockTwits/News/Reddit/CoinGecko/Telegram (+X with key and cost cap), relative labels, evidence logging",
         "date": "2026-09-30T01:17:47Z",
