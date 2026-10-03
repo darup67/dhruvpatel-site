@@ -1,6 +1,6 @@
 {
   "user": "darup67",
-  "generated_at": "2026-10-03T11:38:29.903Z",
+  "generated_at": "2026-10-03T14:21:17.039Z",
   "repos": [
     {
       "name": "market-lab",
@@ -8,8 +8,25 @@
       "url": "https://github.com/darup67/market-lab",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-03T11:20:11Z",
-      "last_commit": null
+      "pushed_at": "2026-10-03T14:20:56Z",
+      "last_commit": {
+        "message": "watchdog: monitor the Kalshi gold/WTI and 1-hour BTC callers",
+        "date": "2026-10-03T14:20:55Z",
+        "url": "https://github.com/darup67/market-lab/commit/0d6d486c7e1cd3387a51ae85e83249473aa80691"
+      }
+    },
+    {
+      "name": "kalshi-btc-1h-agent",
+      "description": "Read-only Kalshi 1-hour BTC caller (KXBTCD above/below ladder): accuracy by minute, model comparison, volatility study",
+      "url": "https://github.com/darup67/kalshi-btc-1h-agent",
+      "language": "Python",
+      "stars": 0,
+      "pushed_at": "2026-10-03T14:21:08Z",
+      "last_commit": {
+        "message": "Kalshi 1-hour BTC caller: hourly ladder dataset, study (accuracy by minute, Chronos/AutoGluon vs market, volatility), gate and live agent",
+        "date": "2026-10-03T14:20:13Z",
+        "url": "https://github.com/darup67/kalshi-btc-1h-agent/commit/e459de3ba2f8755fa895ba7fce938cdebfa3f5ad"
+      }
     },
     {
       "name": "demand-forecast-performance",
@@ -43,7 +60,7 @@
       "url": "https://github.com/darup67/kalshi-btc-agent",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-03T11:36:12Z",
+      "pushed_at": "2026-10-03T13:38:09Z",
       "last_commit": {
         "message": "scorecard: per-minute table of live calls (hit, ask, EV, bootstrap range, days covered)",
         "date": "2026-10-02T13:39:31Z",
