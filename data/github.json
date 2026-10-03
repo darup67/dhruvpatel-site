@@ -1,6 +1,6 @@
 {
   "user": "darup67",
-  "generated_at": "2026-10-03T16:17:05.399Z",
+  "generated_at": "2026-10-03T21:13:26.645Z",
   "repos": [
     {
       "name": "market-lab",
@@ -8,12 +8,17 @@
       "url": "https://github.com/darup67/market-lab",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-03T16:10:12Z",
-      "last_commit": {
-        "message": "watchdog: monitor the Kalshi gold/WTI and 1-hour BTC callers",
-        "date": "2026-10-03T14:20:55Z",
-        "url": "https://github.com/darup67/market-lab/commit/0d6d486c7e1cd3387a51ae85e83249473aa80691"
-      }
+      "pushed_at": "2026-10-03T21:10:11Z",
+      "last_commit": null
+    },
+    {
+      "name": "kalshi-btc-agent",
+      "description": "Read-only Kalshi BTC 15m caller: shows a call only when the cushion clears a backtest-calibrated gate",
+      "url": "https://github.com/darup67/kalshi-btc-agent",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-10-03T20:39:09Z",
+      "last_commit": null
     },
     {
       "name": "kalshi-btc-1h-agent",
@@ -21,7 +26,7 @@
       "url": "https://github.com/darup67/kalshi-btc-1h-agent",
       "language": "Python",
       "stars": 0,
-      "pushed_at": "2026-10-03T15:21:08Z",
+      "pushed_at": "2026-10-03T20:23:13Z",
       "last_commit": {
         "message": "Kalshi 1-hour BTC caller: hourly ladder dataset, study (accuracy by minute, Chronos/AutoGluon vs market, volatility), gate and live agent",
         "date": "2026-10-03T14:20:13Z",
@@ -52,19 +57,6 @@
         "message": "Kalshi gold and WTI 15-minute cushion caller: Hyperliquid live proxy, Pyth-aligned model, per-asset backtest and gates, weekly recal",
         "date": "2026-10-02T13:49:52Z",
         "url": "https://github.com/darup67/kalshi-commodity-agent/commit/4c929f67a19ff0f0e7363a6c954da82d27c8ffac"
-      }
-    },
-    {
-      "name": "kalshi-btc-agent",
-      "description": "Read-only Kalshi BTC 15m caller: shows a call only when the cushion clears a backtest-calibrated gate",
-      "url": "https://github.com/darup67/kalshi-btc-agent",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-10-03T15:39:09Z",
-      "last_commit": {
-        "message": "scorecard: per-minute table of live calls (hit, ask, EV, bootstrap range, days covered)",
-        "date": "2026-10-02T13:39:31Z",
-        "url": "https://github.com/darup67/kalshi-btc-agent/commit/4d672e35ef4e4b112aed4862cc769500cd426e61"
       }
     },
     {
