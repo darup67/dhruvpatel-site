@@ -253,13 +253,13 @@
         <div class="proj-foot"><div class="tags"><span class="tag">Node.js</span><span class="tag">Python</span><span class="tag">SQLite</span></div><div class="repo-links"><a href="https://github.com/darup67/trade-core">trade-core <svg class="i go"><use href="#i-arrow"/></svg></a><a href="https://github.com/darup67/market-lab">market-lab <svg class="i go"><use href="#i-arrow"/></svg></a></div></div>
       </article>
 
-      <article class="proj feature reveal" data-cat="eval ml" data-repo="kalshi-btc-agent kalshi-commodity-agent">
+      <article class="proj feature reveal" data-cat="eval ml" data-repo="kalshi-btc-agent kalshi-commodity-agent kalshi-btc-1h-agent">
         <div class="proj-kicker">Featured · Calibration <span class="updated" data-updated></span></div>
-        <h3><a href="https://github.com/darup67/kalshi-btc-agent">Kalshi 15-minute callers: BTC, gold &amp; WTI</a></h3>
+        <h3><a href="https://github.com/darup67/kalshi-btc-agent">Kalshi callers: BTC (15-min and 1-hour), gold &amp; WTI</a></h3>
         <p>Read-only agents that call Kalshi&rsquo;s 15-minute up/down contracts only when the price cushion is large against the volatility still to come. The gate is set by a backtest rule fixed in advance and checked by a live scorecard. The gold and WTI version adapts the model to a single Pyth settlement candle and a proxy feed whose error is measured.</p>
-        <div class="finding"><b>Found</b><span>Accurate calls, but Kalshi&rsquo;s price already reflects them, so the edge is about zero after fees. Chronos and AutoGluon did not beat the market&rsquo;s opening price on 1,209 held-out windows.</span></div>
+        <div class="finding"><b>Found</b><span>Accurate calls, but Kalshi&rsquo;s price already reflects them, so the edge is about zero after fees. Chronos and AutoGluon did not beat the market price at any minute of the 15-minute window or of the 1-hour (1,531 hours, 69 days).</span></div>
         <p class="latest" data-latest hidden></p>
-        <div class="proj-foot"><div class="tags"><span class="tag">Python</span><span class="tag">Chronos-2</span><span class="tag">AutoGluon</span></div><div class="repo-links"><a href="https://github.com/darup67/kalshi-btc-agent">BTC <svg class="i go"><use href="#i-arrow"/></svg></a><a href="https://github.com/darup67/kalshi-commodity-agent">Gold &amp; WTI <svg class="i go"><use href="#i-arrow"/></svg></a></div></div>
+        <div class="proj-foot"><div class="tags"><span class="tag">Python</span><span class="tag">Chronos-2</span><span class="tag">AutoGluon</span></div><div class="repo-links"><a href="https://github.com/darup67/kalshi-btc-agent">BTC <svg class="i go"><use href="#i-arrow"/></svg></a><a href="https://github.com/darup67/kalshi-btc-1h-agent">1-hour BTC <svg class="i go"><use href="#i-arrow"/></svg></a><a href="https://github.com/darup67/kalshi-commodity-agent">Gold &amp; WTI <svg class="i go"><use href="#i-arrow"/></svg></a></div></div>
       </article>
 
       <article class="proj reveal" data-cat="ml data" data-repo="demand-forecast-performance">
