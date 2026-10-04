@@ -1,24 +1,28 @@
 {
   "user": "darup67",
-  "generated_at": "2026-10-03T21:13:26.645Z",
+  "generated_at": "2026-10-04T05:51:36.186Z",
   "repos": [
-    {
-      "name": "market-lab",
-      "description": "Durable capture of expiring market data - Kalshi 15m contracts and CME futures - and tests over it",
-      "url": "https://github.com/darup67/market-lab",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-10-03T21:10:11Z",
-      "last_commit": null
-    },
     {
       "name": "kalshi-btc-agent",
       "description": "Read-only Kalshi BTC 15m caller: shows a call only when the cushion clears a backtest-calibrated gate",
       "url": "https://github.com/darup67/kalshi-btc-agent",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-03T20:39:09Z",
+      "pushed_at": "2026-10-04T05:44:09Z",
       "last_commit": null
+    },
+    {
+      "name": "market-lab",
+      "description": "Durable capture of expiring market data - Kalshi 15m contracts and CME futures - and tests over it",
+      "url": "https://github.com/darup67/market-lab",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-10-04T05:50:12Z",
+      "last_commit": {
+        "message": "research: live Chronos/AutoGluon reading for the current BTC 15-minute and 1-hour windows",
+        "date": "2026-10-04T04:09:37Z",
+        "url": "https://github.com/darup67/market-lab/commit/2988a9ca75b6ae904390161162e606f5dbe96ea5"
+      }
     },
     {
       "name": "kalshi-btc-1h-agent",
@@ -26,7 +30,7 @@
       "url": "https://github.com/darup67/kalshi-btc-1h-agent",
       "language": "Python",
       "stars": 0,
-      "pushed_at": "2026-10-03T20:23:13Z",
+      "pushed_at": "2026-10-04T05:27:08Z",
       "last_commit": {
         "message": "Kalshi 1-hour BTC caller: hourly ladder dataset, study (accuracy by minute, Chronos/AutoGluon vs market, volatility), gate and live agent",
         "date": "2026-10-03T14:20:13Z",
