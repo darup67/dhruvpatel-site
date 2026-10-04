@@ -1,6 +1,6 @@
 {
   "user": "darup67",
-  "generated_at": "2026-10-04T12:20:22.192Z",
+  "generated_at": "2026-10-04T21:23:40.515Z",
   "repos": [
     {
       "name": "market-lab",
@@ -8,7 +8,7 @@
       "url": "https://github.com/darup67/market-lab",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-04T12:20:11Z",
+      "pushed_at": "2026-10-04T21:20:10Z",
       "last_commit": null
     },
     {
@@ -17,7 +17,7 @@
       "url": "https://github.com/darup67/kalshi-btc-agent",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-04T12:09:09Z",
+      "pushed_at": "2026-10-04T21:13:09Z",
       "last_commit": null
     },
     {
@@ -26,12 +26,8 @@
       "url": "https://github.com/darup67/kalshi-btc-1h-agent",
       "language": "Python",
       "stars": 0,
-      "pushed_at": "2026-10-04T11:52:08Z",
-      "last_commit": {
-        "message": "Kalshi 1-hour BTC caller: hourly ladder dataset, study (accuracy by minute, Chronos/AutoGluon vs market, volatility), gate and live agent",
-        "date": "2026-10-03T14:20:13Z",
-        "url": "https://github.com/darup67/kalshi-btc-1h-agent/commit/e459de3ba2f8755fa895ba7fce938cdebfa3f5ad"
-      }
+      "pushed_at": "2026-10-04T20:57:13Z",
+      "last_commit": null
     },
     {
       "name": "demand-forecast-performance",
