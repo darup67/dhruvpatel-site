@@ -1,15 +1,19 @@
 {
   "user": "darup67",
-  "generated_at": "2026-10-05T14:36:06.822Z",
+  "generated_at": "2026-10-05T18:22:21.438Z",
   "repos": [
     {
-      "name": "market-lab",
-      "description": "Durable capture of expiring market data - Kalshi 15m contracts and CME futures - and tests over it",
-      "url": "https://github.com/darup67/market-lab",
-      "language": "Python",
+      "name": "trade-core",
+      "description": "Shared market-data store, signal ledger and cost/regime models for the trading tools",
+      "url": "https://github.com/darup67/trade-core",
+      "language": "JavaScript",
       "stars": 1,
-      "pushed_at": "2026-10-05T14:32:57Z",
-      "last_commit": null
+      "pushed_at": "2026-10-05T18:21:47Z",
+      "last_commit": {
+        "message": "Reword docs and comments to neutral terms",
+        "date": "2026-10-05T18:21:44Z",
+        "url": "https://github.com/darup67/trade-core/commit/c0838386239f1ecb512b50e2943ebbf2dee6789f"
+      }
     },
     {
       "name": "flip_watcher_v1",
@@ -17,12 +21,47 @@
       "url": "https://github.com/darup67/flip_watcher_v1",
       "language": "JavaScript",
       "stars": 1,
-      "pushed_at": "2026-10-05T14:22:26Z",
+      "pushed_at": "2026-10-05T18:21:40Z",
       "last_commit": {
-        "message": "Monthly Robinhood crypto list refresh (90 coins)",
-        "date": "2026-10-05T14:22:25Z",
-        "url": "https://github.com/darup67/flip_watcher_v1/commit/9b82ca181c27a6538eaea94e5c106943087df402"
+        "message": "Reword docs and comments to neutral terms",
+        "date": "2026-10-05T18:21:39Z",
+        "url": "https://github.com/darup67/flip_watcher_v1/commit/8d407c8ba7e17dc276005d67b4c73b9913c6beb3"
       }
+    },
+    {
+      "name": "coin-launch-agent",
+      "description": "Read-only watcher: new/graduated Solana+Base coins reaching a market-cap threshold within 4h, plus Coinbase listings",
+      "url": "https://github.com/darup67/coin-launch-agent",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-10-05T18:21:38Z",
+      "last_commit": {
+        "message": "Reword docs and comments to neutral terms",
+        "date": "2026-10-05T18:21:37Z",
+        "url": "https://github.com/darup67/coin-launch-agent/commit/bcc8c8f844508d8347b841052252c360da1f105c"
+      }
+    },
+    {
+      "name": "asset-agents",
+      "description": "Cross-agent dashboard over four pinned agent sessions",
+      "url": "https://github.com/darup67/asset-agents",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-10-05T18:21:36Z",
+      "last_commit": {
+        "message": "Reword docs and comments to neutral terms",
+        "date": "2026-10-05T18:21:35Z",
+        "url": "https://github.com/darup67/asset-agents/commit/44e7a54cd5fe51feaf7fe8aaf7c7799a752623c7"
+      }
+    },
+    {
+      "name": "market-lab",
+      "description": "Durable capture of expiring market data - Kalshi 15m contracts and CME futures - and tests over it",
+      "url": "https://github.com/darup67/market-lab",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-10-05T18:20:13Z",
+      "last_commit": null
     },
     {
       "name": "kalshi-btc-agent",
@@ -30,7 +69,7 @@
       "url": "https://github.com/darup67/kalshi-btc-agent",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-05T14:21:17Z",
+      "pushed_at": "2026-10-05T17:23:10Z",
       "last_commit": null
     },
     {
@@ -39,7 +78,7 @@
       "url": "https://github.com/darup67/kalshi-btc-1h-agent",
       "language": "Python",
       "stars": 0,
-      "pushed_at": "2026-10-05T14:21:14Z",
+      "pushed_at": "2026-10-05T17:23:08Z",
       "last_commit": null
     },
     {
@@ -61,24 +100,11 @@
       "url": "https://github.com/darup67/kalshi-commodity-agent",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-05T14:21:14Z",
+      "pushed_at": "2026-10-05T17:23:10Z",
       "last_commit": {
         "message": "Kalshi gold and WTI 15-minute cushion caller: Hyperliquid live proxy, Pyth-aligned model, per-asset backtest and gates, weekly recal",
         "date": "2026-10-02T13:49:52Z",
         "url": "https://github.com/darup67/kalshi-commodity-agent/commit/4c929f67a19ff0f0e7363a6c954da82d27c8ffac"
-      }
-    },
-    {
-      "name": "trade-core",
-      "description": "Shared market-data store, signal ledger and cost/regime models for the trading tools",
-      "url": "https://github.com/darup67/trade-core",
-      "language": "JavaScript",
-      "stars": 1,
-      "pushed_at": "2026-10-01T00:15:14Z",
-      "last_commit": {
-        "message": "research: chart flip watcher vs headless (agreement, timing, outcomes net of costs)",
-        "date": "2026-09-30T21:29:36Z",
-        "url": "https://github.com/darup67/trade-core/commit/30cc07159aedf06d29e6847483dd57b9bbc44ec6"
       }
     },
     {
@@ -95,19 +121,6 @@
       }
     },
     {
-      "name": "coin-launch-agent",
-      "description": "Read-only watcher: new/graduated Solana+Base coins reaching a market-cap threshold within 4h, plus Coinbase listings",
-      "url": "https://github.com/darup67/coin-launch-agent",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-10-04T07:07:07Z",
-      "last_commit": {
-        "message": "Social sentiment + FOMO heat for the coin detector: StockTwits/News/Reddit/CoinGecko/Telegram (+X with key and cost cap), relative labels, evidence logging",
-        "date": "2026-09-30T01:17:47Z",
-        "url": "https://github.com/darup67/coin-launch-agent/commit/5af900f1f121e02d9aa06f33cc364efc7f2849de"
-      }
-    },
-    {
       "name": "zillow_agent_v1",
       "description": "Daily ZIP-level Georgia real-estate digest by email — Atlanta intown plus Gwinnett, Hall and Jackson counties. Zero-dependency Node.",
       "url": "https://github.com/darup67/zillow_agent_v1",
@@ -118,19 +131,6 @@
         "message": "Atlanta digest uses the shared email layout (exact title, plain-text alternative)",
         "date": "2026-09-30T00:29:24Z",
         "url": "https://github.com/darup67/zillow_agent_v1/commit/c1d103ef588011891d57d8b1e709639d7c6ad180"
-      }
-    },
-    {
-      "name": "asset-agents",
-      "description": "Cross-agent dashboard over four pinned Claude Code sessions",
-      "url": "https://github.com/darup67/asset-agents",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-09-29T14:11:29Z",
-      "last_commit": {
-        "message": "Flip card: detect headless watcher by its state file (pause marker was deleted at retirement)",
-        "date": "2026-09-29T14:11:28Z",
-        "url": "https://github.com/darup67/asset-agents/commit/fcb9b431213f23acbc7ea5ccf0d80db40e5c7c8e"
       }
     },
     {
