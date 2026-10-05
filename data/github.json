@@ -1,6 +1,6 @@
 {
   "user": "darup67",
-  "generated_at": "2026-10-04T21:23:40.515Z",
+  "generated_at": "2026-10-05T14:36:06.822Z",
   "repos": [
     {
       "name": "market-lab",
@@ -8,8 +8,21 @@
       "url": "https://github.com/darup67/market-lab",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-04T21:20:10Z",
+      "pushed_at": "2026-10-05T14:32:57Z",
       "last_commit": null
+    },
+    {
+      "name": "flip_watcher_v1",
+      "description": "Flip Watcher App - v1 - Buy/Sell Signals",
+      "url": "https://github.com/darup67/flip_watcher_v1",
+      "language": "JavaScript",
+      "stars": 1,
+      "pushed_at": "2026-10-05T14:22:26Z",
+      "last_commit": {
+        "message": "Monthly Robinhood crypto list refresh (90 coins)",
+        "date": "2026-10-05T14:22:25Z",
+        "url": "https://github.com/darup67/flip_watcher_v1/commit/9b82ca181c27a6538eaea94e5c106943087df402"
+      }
     },
     {
       "name": "kalshi-btc-agent",
@@ -17,7 +30,7 @@
       "url": "https://github.com/darup67/kalshi-btc-agent",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-04T21:13:09Z",
+      "pushed_at": "2026-10-05T14:21:17Z",
       "last_commit": null
     },
     {
@@ -26,7 +39,7 @@
       "url": "https://github.com/darup67/kalshi-btc-1h-agent",
       "language": "Python",
       "stars": 0,
-      "pushed_at": "2026-10-04T20:57:13Z",
+      "pushed_at": "2026-10-05T14:21:14Z",
       "last_commit": null
     },
     {
@@ -48,7 +61,7 @@
       "url": "https://github.com/darup67/kalshi-commodity-agent",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-04T10:20:32Z",
+      "pushed_at": "2026-10-05T14:21:14Z",
       "last_commit": {
         "message": "Kalshi gold and WTI 15-minute cushion caller: Hyperliquid live proxy, Pyth-aligned model, per-asset backtest and gates, weekly recal",
         "date": "2026-10-02T13:49:52Z",
@@ -79,19 +92,6 @@
         "message": "Add long/short stop-and-target test on MNQ 5m RTH bars",
         "date": "2026-09-30T18:27:07Z",
         "url": "https://github.com/darup67/ml-side/commit/8a22b75906b41f38210e03260c94f99f856c9b70"
-      }
-    },
-    {
-      "name": "flip_watcher_v1",
-      "description": "Flip Watcher App - v1 - Buy/Sell Signals",
-      "url": "https://github.com/darup67/flip_watcher_v1",
-      "language": "JavaScript",
-      "stars": 1,
-      "pushed_at": "2026-10-01T00:15:11Z",
-      "last_commit": {
-        "message": "Crypto alert email and briefs show social sentiment and FOMO heat",
-        "date": "2026-09-30T01:17:49Z",
-        "url": "https://github.com/darup67/flip_watcher_v1/commit/77986c2d81c3de6e2337fd63a90f681783a30827"
       }
     },
     {
