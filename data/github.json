@@ -1,7 +1,25 @@
 {
   "user": "darup67",
-  "generated_at": "2026-10-05T18:22:21.438Z",
+  "generated_at": "2026-10-05T18:23:23.117Z",
   "repos": [
+    {
+      "name": "kalshi-btc-agent",
+      "description": "Read-only Kalshi BTC 15m caller: shows a call only when the cushion clears a backtest-calibrated gate",
+      "url": "https://github.com/darup67/kalshi-btc-agent",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-10-05T18:23:09Z",
+      "last_commit": null
+    },
+    {
+      "name": "kalshi-btc-1h-agent",
+      "description": "Read-only Kalshi 1-hour BTC caller (KXBTCD above/below ladder): accuracy by minute, model comparison, volatility study",
+      "url": "https://github.com/darup67/kalshi-btc-1h-agent",
+      "language": "Python",
+      "stars": 0,
+      "pushed_at": "2026-10-05T18:23:08Z",
+      "last_commit": null
+    },
     {
       "name": "trade-core",
       "description": "Shared market-data store, signal ledger and cost/regime models for the trading tools",
@@ -64,34 +82,16 @@
       "last_commit": null
     },
     {
-      "name": "kalshi-btc-agent",
-      "description": "Read-only Kalshi BTC 15m caller: shows a call only when the cushion clears a backtest-calibrated gate",
-      "url": "https://github.com/darup67/kalshi-btc-agent",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-10-05T17:23:10Z",
-      "last_commit": null
-    },
-    {
-      "name": "kalshi-btc-1h-agent",
-      "description": "Read-only Kalshi 1-hour BTC caller (KXBTCD above/below ladder): accuracy by minute, model comparison, volatility study",
-      "url": "https://github.com/darup67/kalshi-btc-1h-agent",
-      "language": "Python",
-      "stars": 0,
-      "pushed_at": "2026-10-05T17:23:08Z",
-      "last_commit": null
-    },
-    {
       "name": "demand-forecast-performance",
       "description": "Databricks notebook comparing an internal demand forecast against a vendor forecast: WMAPE, bias and win rates by scope, customer, brand and demand class",
       "url": "https://github.com/darup67/demand-forecast-performance",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-02T15:03:33Z",
+      "pushed_at": "2026-10-05T18:23:07Z",
       "last_commit": {
         "message": "Add demand forecast performance analysis notebook (generic, sanitized)",
         "date": "2026-10-02T15:02:53Z",
-        "url": "https://github.com/darup67/demand-forecast-performance/commit/7e5566961801573ffb856fa00807d18aba2db26b"
+        "url": "https://github.com/darup67/demand-forecast-performance/commit/02727b94381f051ca806d375dfac08612a2e6f8b"
       }
     },
     {
@@ -100,7 +100,7 @@
       "url": "https://github.com/darup67/kalshi-commodity-agent",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-05T17:23:10Z",
+      "pushed_at": "2026-10-05T18:23:08Z",
       "last_commit": {
         "message": "Kalshi gold and WTI 15-minute cushion caller: Hyperliquid live proxy, Pyth-aligned model, per-asset backtest and gates, weekly recal",
         "date": "2026-10-02T13:49:52Z",
@@ -113,11 +113,11 @@
       "url": "https://github.com/darup67/ml-side",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-09-30T18:27:09Z",
+      "pushed_at": "2026-10-05T18:23:10Z",
       "last_commit": {
         "message": "Add long/short stop-and-target test on MNQ 5m RTH bars",
         "date": "2026-09-30T18:27:07Z",
-        "url": "https://github.com/darup67/ml-side/commit/8a22b75906b41f38210e03260c94f99f856c9b70"
+        "url": "https://github.com/darup67/ml-side/commit/abebba297a5636fe1ad5ac19122b5057b68f8944"
       }
     },
     {
@@ -152,11 +152,11 @@
       "url": "https://github.com/darup67/flux-lab",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-09-28T16:13:10Z",
+      "pushed_at": "2026-10-05T18:23:15Z",
       "last_commit": {
         "message": "Flux Lab: SMC Pine indicator, Python engine, scanner agent",
         "date": "2026-09-28T16:11:39Z",
-        "url": "https://github.com/darup67/flux-lab/commit/b1a469426dedb2c66786f22ac429bec7cc70f29a"
+        "url": "https://github.com/darup67/flux-lab/commit/5c8667845e2b00ca7d12aa4f9b24388dfe30a7d0"
       }
     },
     {
@@ -165,11 +165,11 @@
       "url": "https://github.com/darup67/jev-client",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-09-24T23:44:01Z",
+      "pushed_at": "2026-10-05T18:22:52Z",
       "last_commit": {
         "message": "Add --set-key: hidden-prompt Keychain intake for the TypeSafe key",
         "date": "2026-09-24T23:44:00Z",
-        "url": "https://github.com/darup67/jev-client/commit/4f07823494183d85c99590516c15d120c55f6b98"
+        "url": "https://github.com/darup67/jev-client/commit/d77d405d205a7996cc8c911047afa1b190f63fc5"
       }
     }
   ]
