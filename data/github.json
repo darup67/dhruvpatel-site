@@ -1,14 +1,32 @@
 {
   "user": "darup67",
-  "generated_at": "2026-10-06T00:02:55.894Z",
+  "generated_at": "2026-10-06T06:19:52.182Z",
   "repos": [
+    {
+      "name": "market-lab",
+      "description": "Durable capture of expiring market data - Kalshi 15m contracts and CME futures - and tests over it",
+      "url": "https://github.com/darup67/market-lab",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-10-06T06:10:12Z",
+      "last_commit": null
+    },
     {
       "name": "kalshi-btc-1h-agent",
       "description": "Read-only Kalshi 1-hour BTC caller (KXBTCD above/below ladder): accuracy by minute, model comparison, volatility study",
       "url": "https://github.com/darup67/kalshi-btc-1h-agent",
       "language": "Python",
       "stars": 0,
-      "pushed_at": "2026-10-05T23:25:08Z",
+      "pushed_at": "2026-10-06T05:27:09Z",
+      "last_commit": null
+    },
+    {
+      "name": "kalshi-commodity-agent",
+      "description": "",
+      "url": "https://github.com/darup67/kalshi-commodity-agent",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-10-06T05:27:09Z",
       "last_commit": null
     },
     {
@@ -17,21 +35,8 @@
       "url": "https://github.com/darup67/kalshi-btc-agent",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-05T23:24:09Z",
+      "pushed_at": "2026-10-06T05:25:09Z",
       "last_commit": null
-    },
-    {
-      "name": "market-lab",
-      "description": "Durable capture of expiring market data - Kalshi 15m contracts and CME futures - and tests over it",
-      "url": "https://github.com/darup67/market-lab",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-10-06T00:02:12Z",
-      "last_commit": {
-        "message": "perp-lab: plain price formatting in scanner and email",
-        "date": "2026-10-05T22:05:28Z",
-        "url": "https://github.com/darup67/market-lab/commit/74a2d8f24176ac46aa0446572aee16295f51264c"
-      }
     },
     {
       "name": "trade-core",
@@ -96,19 +101,6 @@
         "message": "Add demand forecast performance analysis notebook (generic, sanitized)",
         "date": "2026-10-02T15:02:53Z",
         "url": "https://github.com/darup67/demand-forecast-performance/commit/02727b94381f051ca806d375dfac08612a2e6f8b"
-      }
-    },
-    {
-      "name": "kalshi-commodity-agent",
-      "description": "",
-      "url": "https://github.com/darup67/kalshi-commodity-agent",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-10-05T23:25:08Z",
-      "last_commit": {
-        "message": "Kalshi gold and WTI 15-minute cushion caller: Hyperliquid live proxy, Pyth-aligned model, per-asset backtest and gates, weekly recal",
-        "date": "2026-10-02T13:49:52Z",
-        "url": "https://github.com/darup67/kalshi-commodity-agent/commit/1c8323429fe5b723083ae0114bb870b00eba38b7"
       }
     },
     {
