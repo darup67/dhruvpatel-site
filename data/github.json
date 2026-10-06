@@ -1,32 +1,14 @@
 {
   "user": "darup67",
-  "generated_at": "2026-10-06T06:19:52.182Z",
+  "generated_at": "2026-10-06T18:34:21.122Z",
   "repos": [
-    {
-      "name": "market-lab",
-      "description": "Durable capture of expiring market data - Kalshi 15m contracts and CME futures - and tests over it",
-      "url": "https://github.com/darup67/market-lab",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-10-06T06:10:12Z",
-      "last_commit": null
-    },
-    {
-      "name": "kalshi-btc-1h-agent",
-      "description": "Read-only Kalshi 1-hour BTC caller (KXBTCD above/below ladder): accuracy by minute, model comparison, volatility study",
-      "url": "https://github.com/darup67/kalshi-btc-1h-agent",
-      "language": "Python",
-      "stars": 0,
-      "pushed_at": "2026-10-06T05:27:09Z",
-      "last_commit": null
-    },
     {
       "name": "kalshi-commodity-agent",
       "description": "",
       "url": "https://github.com/darup67/kalshi-commodity-agent",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-06T05:27:09Z",
+      "pushed_at": "2026-10-06T18:29:09Z",
       "last_commit": null
     },
     {
@@ -35,8 +17,30 @@
       "url": "https://github.com/darup67/kalshi-btc-agent",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-06T05:25:09Z",
+      "pushed_at": "2026-10-06T18:28:09Z",
       "last_commit": null
+    },
+    {
+      "name": "kalshi-btc-1h-agent",
+      "description": "Read-only Kalshi 1-hour BTC caller (KXBTCD above/below ladder): accuracy by minute, model comparison, volatility study",
+      "url": "https://github.com/darup67/kalshi-btc-1h-agent",
+      "language": "Python",
+      "stars": 0,
+      "pushed_at": "2026-10-06T18:28:08Z",
+      "last_commit": null
+    },
+    {
+      "name": "market-lab",
+      "description": "Durable capture of expiring market data - Kalshi 15m contracts and CME futures - and tests over it",
+      "url": "https://github.com/darup67/market-lab",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-10-06T18:30:09Z",
+      "last_commit": {
+        "message": "Event Desk: risk controls for ACT spreads (no selection change)",
+        "date": "2026-10-06T17:15:57Z",
+        "url": "https://github.com/darup67/market-lab/commit/df8ed1c9b4f78ab3b242295dc7ad9130a641f8d7"
+      }
     },
     {
       "name": "trade-core",
@@ -44,7 +48,7 @@
       "url": "https://github.com/darup67/trade-core",
       "language": "JavaScript",
       "stars": 1,
-      "pushed_at": "2026-10-05T18:23:50Z",
+      "pushed_at": "2026-10-06T15:37:46Z",
       "last_commit": {
         "message": "Reword docs and comments to neutral terms",
         "date": "2026-10-05T18:21:44Z",
@@ -57,7 +61,7 @@
       "url": "https://github.com/darup67/flip_watcher_v1",
       "language": "JavaScript",
       "stars": 1,
-      "pushed_at": "2026-10-05T18:24:51Z",
+      "pushed_at": "2026-10-06T15:38:39Z",
       "last_commit": {
         "message": "Reword docs and comments to neutral terms",
         "date": "2026-10-05T18:21:39Z",
@@ -70,7 +74,7 @@
       "url": "https://github.com/darup67/coin-launch-agent",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-05T18:23:59Z",
+      "pushed_at": "2026-10-06T07:07:07Z",
       "last_commit": {
         "message": "Reword docs and comments to neutral terms",
         "date": "2026-10-05T18:21:37Z",
