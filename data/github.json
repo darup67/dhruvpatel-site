@@ -1,14 +1,27 @@
 {
   "user": "darup67",
-  "generated_at": "2026-10-07T05:58:06.767Z",
+  "generated_at": "2026-10-07T13:21:23.522Z",
   "repos": [
+    {
+      "name": "market-lab",
+      "description": "Durable capture of expiring market data - Kalshi 15m contracts and CME futures - and tests over it",
+      "url": "https://github.com/darup67/market-lab",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-10-07T13:20:13Z",
+      "last_commit": {
+        "message": "Pause perp-lab (protocol now in Jev Majors); watchdog skips while PAUSED.md exists",
+        "date": "2026-10-07T12:44:24Z",
+        "url": "https://github.com/darup67/market-lab/commit/fc8ba2c4176f1f84b90f92a0a1ca96c99207ddc2"
+      }
+    },
     {
       "name": "kalshi-btc-agent",
       "description": "Read-only Kalshi BTC 15m caller: shows a call only when the cushion clears a backtest-calibrated gate",
       "url": "https://github.com/darup67/kalshi-btc-agent",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-07T05:35:09Z",
+      "pushed_at": "2026-10-07T12:37:10Z",
       "last_commit": null
     },
     {
@@ -17,7 +30,7 @@
       "url": "https://github.com/darup67/kalshi-commodity-agent",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-07T05:33:09Z",
+      "pushed_at": "2026-10-07T12:33:09Z",
       "last_commit": null
     },
     {
@@ -26,21 +39,8 @@
       "url": "https://github.com/darup67/kalshi-btc-1h-agent",
       "language": "Python",
       "stars": 0,
-      "pushed_at": "2026-10-07T05:32:08Z",
+      "pushed_at": "2026-10-07T12:32:08Z",
       "last_commit": null
-    },
-    {
-      "name": "market-lab",
-      "description": "Durable capture of expiring market data - Kalshi 15m contracts and CME futures - and tests over it",
-      "url": "https://github.com/darup67/market-lab",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-10-07T05:50:14Z",
-      "last_commit": {
-        "message": "ops: jev_readiness.py, one review of both Jev paper records against fixed live-funding gates",
-        "date": "2026-10-07T02:46:34Z",
-        "url": "https://github.com/darup67/market-lab/commit/9df4e747277fbd930a3172f61246203d9b4566e9"
-      }
     },
     {
       "name": "flip_watcher_v1",
@@ -74,7 +74,7 @@
       "url": "https://github.com/darup67/coin-launch-agent",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-06T20:11:01Z",
+      "pushed_at": "2026-10-07T07:07:07Z",
       "last_commit": {
         "message": "Pause coin detector (watcher + listed board); sentiment keeps running",
         "date": "2026-10-06T20:11:00Z",
@@ -87,7 +87,7 @@
       "url": "https://github.com/darup67/trade-core",
       "language": "JavaScript",
       "stars": 1,
-      "pushed_at": "2026-10-07T04:06:50Z",
+      "pushed_at": "2026-10-07T10:06:51Z",
       "last_commit": {
         "message": "Reword docs and comments to neutral terms",
         "date": "2026-10-05T18:21:44Z",
