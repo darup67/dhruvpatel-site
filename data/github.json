@@ -1,6 +1,6 @@
 {
   "user": "darup67",
-  "generated_at": "2026-10-07T13:21:23.522Z",
+  "generated_at": "2026-10-07T23:04:39.335Z",
   "repos": [
     {
       "name": "market-lab",
@@ -8,90 +8,20 @@
       "url": "https://github.com/darup67/market-lab",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-07T13:20:13Z",
-      "last_commit": {
-        "message": "Pause perp-lab (protocol now in Jev Majors); watchdog skips while PAUSED.md exists",
-        "date": "2026-10-07T12:44:24Z",
-        "url": "https://github.com/darup67/market-lab/commit/fc8ba2c4176f1f84b90f92a0a1ca96c99207ddc2"
-      }
-    },
-    {
-      "name": "kalshi-btc-agent",
-      "description": "Read-only Kalshi BTC 15m caller: shows a call only when the cushion clears a backtest-calibrated gate",
-      "url": "https://github.com/darup67/kalshi-btc-agent",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-10-07T12:37:10Z",
+      "pushed_at": "2026-10-07T23:02:13Z",
       "last_commit": null
     },
     {
-      "name": "kalshi-commodity-agent",
-      "description": "",
-      "url": "https://github.com/darup67/kalshi-commodity-agent",
+      "name": "flux-lab",
+      "description": "FluxCharts-style SMC toolkit: TradingView Pine indicator + Python scanner agent",
+      "url": "https://github.com/darup67/flux-lab",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-07T12:33:09Z",
-      "last_commit": null
-    },
-    {
-      "name": "kalshi-btc-1h-agent",
-      "description": "Read-only Kalshi 1-hour BTC caller (KXBTCD above/below ladder): accuracy by minute, model comparison, volatility study",
-      "url": "https://github.com/darup67/kalshi-btc-1h-agent",
-      "language": "Python",
-      "stars": 0,
-      "pushed_at": "2026-10-07T12:32:08Z",
-      "last_commit": null
-    },
-    {
-      "name": "flip_watcher_v1",
-      "description": "Flip Watcher App - v1 - Buy/Sell Signals",
-      "url": "https://github.com/darup67/flip_watcher_v1",
-      "language": "JavaScript",
-      "stars": 1,
-      "pushed_at": "2026-10-06T23:19:42Z",
+      "pushed_at": "2026-10-07T16:33:34Z",
       "last_commit": {
-        "message": "Brief: Jev desk return %, win rate, avg trade/win/loss %, max drawdown",
-        "date": "2026-10-06T23:19:41Z",
-        "url": "https://github.com/darup67/flip_watcher_v1/commit/18c1bee82e8082c84cf078357b46fae607d69a02"
-      }
-    },
-    {
-      "name": "jev-client",
-      "description": "Shared Typesafe judgement client used by zillow-agent and coin-launch-agent",
-      "url": "https://github.com/darup67/jev-client",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-10-06T20:56:28Z",
-      "last_commit": {
-        "message": "Monthly budget across all agents (budget.json, $25): clients refuse calls past the cap",
-        "date": "2026-10-06T20:56:27Z",
-        "url": "https://github.com/darup67/jev-client/commit/b2a69a19c50e91aecba6d676ebfb6fcc5c34877f"
-      }
-    },
-    {
-      "name": "coin-launch-agent",
-      "description": "Read-only watcher: new/graduated Solana+Base coins reaching a market-cap threshold within 4h, plus Coinbase listings",
-      "url": "https://github.com/darup67/coin-launch-agent",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-10-07T07:07:07Z",
-      "last_commit": {
-        "message": "Pause coin detector (watcher + listed board); sentiment keeps running",
-        "date": "2026-10-06T20:11:00Z",
-        "url": "https://github.com/darup67/coin-launch-agent/commit/83fb5b26bbada00ed9eed0af60e8996b8545a176"
-      }
-    },
-    {
-      "name": "trade-core",
-      "description": "Shared market-data store, signal ledger and cost/regime models for the trading tools",
-      "url": "https://github.com/darup67/trade-core",
-      "language": "JavaScript",
-      "stars": 1,
-      "pushed_at": "2026-10-07T10:06:51Z",
-      "last_commit": {
-        "message": "Reword docs and comments to neutral terms",
-        "date": "2026-10-05T18:21:44Z",
-        "url": "https://github.com/darup67/trade-core/commit/83ae0073f64682cc7f9d7e4ab1ed3d5bb89ef011"
+        "message": "Add LICENSE (MIT License)",
+        "date": "2026-10-07T16:33:07Z",
+        "url": "https://github.com/darup67/flux-lab/commit/3d5689cca5e7cc7f41e4d244650bdbe6f193c850"
       }
     },
     {
@@ -100,11 +30,141 @@
       "url": "https://github.com/darup67/asset-agents",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-05T18:24:04Z",
+      "pushed_at": "2026-10-07T16:33:33Z",
       "last_commit": {
-        "message": "Reword docs and comments to neutral terms",
-        "date": "2026-10-05T18:21:35Z",
-        "url": "https://github.com/darup67/asset-agents/commit/4efffbecef63bacde0c05c1d257a150b5d7c1848"
+        "message": "Add LICENSE (MIT License)",
+        "date": "2026-10-07T16:33:07Z",
+        "url": "https://github.com/darup67/asset-agents/commit/5ed854f269220a2b8ec3069e8460a2fa0afde378"
+      }
+    },
+    {
+      "name": "trade-core",
+      "description": "Shared market-data store, signal ledger and cost/regime models for the trading tools",
+      "url": "https://github.com/darup67/trade-core",
+      "language": "JavaScript",
+      "stars": 1,
+      "pushed_at": "2026-10-07T16:33:31Z",
+      "last_commit": {
+        "message": "Add LICENSE (MIT License)",
+        "date": "2026-10-07T16:33:07Z",
+        "url": "https://github.com/darup67/trade-core/commit/8590795b6443562e263783bb2026aea5d2f1b7a6"
+      }
+    },
+    {
+      "name": "ml-side",
+      "description": "Side project: Chronos + AutoGluon forecasts of MNQ/MES daily excursions",
+      "url": "https://github.com/darup67/ml-side",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-10-07T16:33:29Z",
+      "last_commit": {
+        "message": "Add LICENSE (Copyright (c) 2026 Dhruv)",
+        "date": "2026-10-07T16:33:07Z",
+        "url": "https://github.com/darup67/ml-side/commit/67be942c9e1430e3314cecb54a8ebab7e7d286ee"
+      }
+    },
+    {
+      "name": "flip_watcher_v1",
+      "description": "Flip Watcher App - v1 - Buy/Sell Signals",
+      "url": "https://github.com/darup67/flip_watcher_v1",
+      "language": "JavaScript",
+      "stars": 1,
+      "pushed_at": "2026-10-07T16:33:28Z",
+      "last_commit": {
+        "message": "Add LICENSE (Copyright (c) 2026 Dhruv)",
+        "date": "2026-10-07T16:33:07Z",
+        "url": "https://github.com/darup67/flip_watcher_v1/commit/c404e87881599dde080139b608324277498c663c"
+      }
+    },
+    {
+      "name": "zillow_agent_v1",
+      "description": "Daily ZIP-level Georgia real-estate digest by email — Atlanta intown plus Gwinnett, Hall and Jackson counties. Zero-dependency Node.",
+      "url": "https://github.com/darup67/zillow_agent_v1",
+      "language": "JavaScript",
+      "stars": 1,
+      "pushed_at": "2026-10-07T16:33:26Z",
+      "last_commit": {
+        "message": "Add LICENSE (Copyright (c) 2026 Dhruv)",
+        "date": "2026-10-07T16:33:07Z",
+        "url": "https://github.com/darup67/zillow_agent_v1/commit/abb27ce42e060cec8af22ba400171e327ee7bc2b"
+      }
+    },
+    {
+      "name": "kalshi-btc-agent",
+      "description": "Read-only Kalshi BTC 15m caller: shows a call only when the cushion clears a backtest-calibrated gate",
+      "url": "https://github.com/darup67/kalshi-btc-agent",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-10-07T22:41:11Z",
+      "last_commit": {
+        "message": "Add LICENSE (Copyright (c) 2026 Dhruv)",
+        "date": "2026-10-07T16:33:06Z",
+        "url": "https://github.com/darup67/kalshi-btc-agent/commit/66b24b7108309989ef51e9f79e69a48b56872f6b"
+      }
+    },
+    {
+      "name": "kalshi-commodity-agent",
+      "description": "",
+      "url": "https://github.com/darup67/kalshi-commodity-agent",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-10-07T22:36:09Z",
+      "last_commit": {
+        "message": "Add LICENSE (Copyright (c) 2026 Dhruv)",
+        "date": "2026-10-07T16:33:06Z",
+        "url": "https://github.com/darup67/kalshi-commodity-agent/commit/02353288824afbd8be7442099e00c22667b2a39e"
+      }
+    },
+    {
+      "name": "kalshi-btc-1h-agent",
+      "description": "Read-only Kalshi 1-hour BTC caller (KXBTCD above/below ladder): accuracy by minute, model comparison, volatility study",
+      "url": "https://github.com/darup67/kalshi-btc-1h-agent",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-10-07T22:35:09Z",
+      "last_commit": {
+        "message": "Add LICENSE (Copyright (c) 2026 Dhruv)",
+        "date": "2026-10-07T16:33:06Z",
+        "url": "https://github.com/darup67/kalshi-btc-1h-agent/commit/ee670ffe243f05fd75073f262602ed1311bb66b8"
+      }
+    },
+    {
+      "name": "coin-launch-agent",
+      "description": "Read-only watcher: new/graduated Solana+Base coins reaching a market-cap threshold within 4h, plus Coinbase listings",
+      "url": "https://github.com/darup67/coin-launch-agent",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-10-07T16:33:25Z",
+      "last_commit": {
+        "message": "Add LICENSE (Copyright (c) 2026 Dhruv)",
+        "date": "2026-10-07T16:33:06Z",
+        "url": "https://github.com/darup67/coin-launch-agent/commit/4c6db76abdadbeed3ddde2a7b360c502a414a89f"
+      }
+    },
+    {
+      "name": "market-iv-agent",
+      "description": "Read-only options-IV scanner for the whole US market (S&P 500, Nasdaq-100, Dow) by sector, plus health care; feeds event-desk emails",
+      "url": "https://github.com/darup67/market-iv-agent",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-10-07T16:33:21Z",
+      "last_commit": {
+        "message": "Add LICENSE (Copyright (c) 2026 Dhruv)",
+        "date": "2026-10-07T16:33:06Z",
+        "url": "https://github.com/darup67/market-iv-agent/commit/f4da46138cd6f3e22f3d14cd8e7347447bceb5f0"
+      }
+    },
+    {
+      "name": "jev-client",
+      "description": "Shared Typesafe judgement client used by zillow-agent and coin-launch-agent",
+      "url": "https://github.com/darup67/jev-client",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-10-07T16:33:15Z",
+      "last_commit": {
+        "message": "Add LICENSE (Copyright (c) 2026 Dhruv)",
+        "date": "2026-10-07T16:33:06Z",
+        "url": "https://github.com/darup67/jev-client/commit/78b54d1613722dbfb8ea4a53310fc9302317f02d"
       }
     },
     {
@@ -118,58 +178,6 @@
         "message": "Add demand forecast performance analysis notebook (generic, sanitized)",
         "date": "2026-10-02T15:02:53Z",
         "url": "https://github.com/darup67/demand-forecast-performance/commit/02727b94381f051ca806d375dfac08612a2e6f8b"
-      }
-    },
-    {
-      "name": "ml-side",
-      "description": "Side project: Chronos + AutoGluon forecasts of MNQ/MES daily excursions",
-      "url": "https://github.com/darup67/ml-side",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-10-05T18:23:10Z",
-      "last_commit": {
-        "message": "Add long/short stop-and-target test on MNQ 5m RTH bars",
-        "date": "2026-09-30T18:27:07Z",
-        "url": "https://github.com/darup67/ml-side/commit/abebba297a5636fe1ad5ac19122b5057b68f8944"
-      }
-    },
-    {
-      "name": "zillow_agent_v1",
-      "description": "Daily ZIP-level Georgia real-estate digest by email — Atlanta intown plus Gwinnett, Hall and Jackson counties. Zero-dependency Node.",
-      "url": "https://github.com/darup67/zillow_agent_v1",
-      "language": "JavaScript",
-      "stars": 1,
-      "pushed_at": "2026-10-05T18:23:42Z",
-      "last_commit": {
-        "message": "Atlanta digest uses the shared email layout (exact title, plain-text alternative)",
-        "date": "2026-09-30T00:29:24Z",
-        "url": "https://github.com/darup67/zillow_agent_v1/commit/788b4ba45f02aacd7d5ff097a435f061a4888899"
-      }
-    },
-    {
-      "name": "market-iv-agent",
-      "description": "Read-only options-IV scanner for the whole US market (S&P 500, Nasdaq-100, Dow) by sector, plus health care; feeds event-desk emails",
-      "url": "https://github.com/darup67/market-iv-agent",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-10-05T18:23:36Z",
-      "last_commit": {
-        "message": "Run on the shared market-ml environment (one Python env to pin and patch)",
-        "date": "2026-09-28T23:20:27Z",
-        "url": "https://github.com/darup67/market-iv-agent/commit/0b0fb7ba341e689547486e31a2438b280434b8d3"
-      }
-    },
-    {
-      "name": "flux-lab",
-      "description": "FluxCharts-style SMC toolkit: TradingView Pine indicator + Python scanner agent",
-      "url": "https://github.com/darup67/flux-lab",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-10-05T18:23:15Z",
-      "last_commit": {
-        "message": "Flux Lab: SMC Pine indicator, Python engine, scanner agent",
-        "date": "2026-09-28T16:11:39Z",
-        "url": "https://github.com/darup67/flux-lab/commit/5c8667845e2b00ca7d12aa4f9b24388dfe30a7d0"
       }
     }
   ]
