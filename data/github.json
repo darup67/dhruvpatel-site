@@ -1,23 +1,23 @@
 {
   "user": "darup67",
-  "generated_at": "2026-10-06T18:34:21.122Z",
+  "generated_at": "2026-10-07T05:58:06.767Z",
   "repos": [
-    {
-      "name": "kalshi-commodity-agent",
-      "description": "",
-      "url": "https://github.com/darup67/kalshi-commodity-agent",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-10-06T18:29:09Z",
-      "last_commit": null
-    },
     {
       "name": "kalshi-btc-agent",
       "description": "Read-only Kalshi BTC 15m caller: shows a call only when the cushion clears a backtest-calibrated gate",
       "url": "https://github.com/darup67/kalshi-btc-agent",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-06T18:28:09Z",
+      "pushed_at": "2026-10-07T05:35:09Z",
+      "last_commit": null
+    },
+    {
+      "name": "kalshi-commodity-agent",
+      "description": "",
+      "url": "https://github.com/darup67/kalshi-commodity-agent",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-10-07T05:33:09Z",
       "last_commit": null
     },
     {
@@ -26,7 +26,7 @@
       "url": "https://github.com/darup67/kalshi-btc-1h-agent",
       "language": "Python",
       "stars": 0,
-      "pushed_at": "2026-10-06T18:28:08Z",
+      "pushed_at": "2026-10-07T05:32:08Z",
       "last_commit": null
     },
     {
@@ -35,24 +35,11 @@
       "url": "https://github.com/darup67/market-lab",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-06T18:30:09Z",
+      "pushed_at": "2026-10-07T05:50:14Z",
       "last_commit": {
-        "message": "Event Desk: risk controls for ACT spreads (no selection change)",
-        "date": "2026-10-06T17:15:57Z",
-        "url": "https://github.com/darup67/market-lab/commit/df8ed1c9b4f78ab3b242295dc7ad9130a641f8d7"
-      }
-    },
-    {
-      "name": "trade-core",
-      "description": "Shared market-data store, signal ledger and cost/regime models for the trading tools",
-      "url": "https://github.com/darup67/trade-core",
-      "language": "JavaScript",
-      "stars": 1,
-      "pushed_at": "2026-10-06T15:37:46Z",
-      "last_commit": {
-        "message": "Reword docs and comments to neutral terms",
-        "date": "2026-10-05T18:21:44Z",
-        "url": "https://github.com/darup67/trade-core/commit/83ae0073f64682cc7f9d7e4ab1ed3d5bb89ef011"
+        "message": "ops: jev_readiness.py, one review of both Jev paper records against fixed live-funding gates",
+        "date": "2026-10-07T02:46:34Z",
+        "url": "https://github.com/darup67/market-lab/commit/9df4e747277fbd930a3172f61246203d9b4566e9"
       }
     },
     {
@@ -61,11 +48,24 @@
       "url": "https://github.com/darup67/flip_watcher_v1",
       "language": "JavaScript",
       "stars": 1,
-      "pushed_at": "2026-10-06T15:38:39Z",
+      "pushed_at": "2026-10-06T23:19:42Z",
       "last_commit": {
-        "message": "Reword docs and comments to neutral terms",
-        "date": "2026-10-05T18:21:39Z",
-        "url": "https://github.com/darup67/flip_watcher_v1/commit/9f5c0f31b37ad0b9e1aca0ffd514bdb69399d60d"
+        "message": "Brief: Jev desk return %, win rate, avg trade/win/loss %, max drawdown",
+        "date": "2026-10-06T23:19:41Z",
+        "url": "https://github.com/darup67/flip_watcher_v1/commit/18c1bee82e8082c84cf078357b46fae607d69a02"
+      }
+    },
+    {
+      "name": "jev-client",
+      "description": "Shared Typesafe judgement client used by zillow-agent and coin-launch-agent",
+      "url": "https://github.com/darup67/jev-client",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-10-06T20:56:28Z",
+      "last_commit": {
+        "message": "Monthly budget across all agents (budget.json, $25): clients refuse calls past the cap",
+        "date": "2026-10-06T20:56:27Z",
+        "url": "https://github.com/darup67/jev-client/commit/b2a69a19c50e91aecba6d676ebfb6fcc5c34877f"
       }
     },
     {
@@ -74,11 +74,24 @@
       "url": "https://github.com/darup67/coin-launch-agent",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-06T07:07:07Z",
+      "pushed_at": "2026-10-06T20:11:01Z",
+      "last_commit": {
+        "message": "Pause coin detector (watcher + listed board); sentiment keeps running",
+        "date": "2026-10-06T20:11:00Z",
+        "url": "https://github.com/darup67/coin-launch-agent/commit/83fb5b26bbada00ed9eed0af60e8996b8545a176"
+      }
+    },
+    {
+      "name": "trade-core",
+      "description": "Shared market-data store, signal ledger and cost/regime models for the trading tools",
+      "url": "https://github.com/darup67/trade-core",
+      "language": "JavaScript",
+      "stars": 1,
+      "pushed_at": "2026-10-07T04:06:50Z",
       "last_commit": {
         "message": "Reword docs and comments to neutral terms",
-        "date": "2026-10-05T18:21:37Z",
-        "url": "https://github.com/darup67/coin-launch-agent/commit/b74c5339c81fcbbd7aab9d6668c34b01440e48b9"
+        "date": "2026-10-05T18:21:44Z",
+        "url": "https://github.com/darup67/trade-core/commit/83ae0073f64682cc7f9d7e4ab1ed3d5bb89ef011"
       }
     },
     {
@@ -157,19 +170,6 @@
         "message": "Flux Lab: SMC Pine indicator, Python engine, scanner agent",
         "date": "2026-09-28T16:11:39Z",
         "url": "https://github.com/darup67/flux-lab/commit/5c8667845e2b00ca7d12aa4f9b24388dfe30a7d0"
-      }
-    },
-    {
-      "name": "jev-client",
-      "description": "Shared Typesafe judgement client used by zillow-agent and coin-launch-agent",
-      "url": "https://github.com/darup67/jev-client",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-10-05T18:22:52Z",
-      "last_commit": {
-        "message": "Add --set-key: hidden-prompt Keychain intake for the TypeSafe key",
-        "date": "2026-09-24T23:44:00Z",
-        "url": "https://github.com/darup67/jev-client/commit/d77d405d205a7996cc8c911047afa1b190f63fc5"
       }
     }
   ]
