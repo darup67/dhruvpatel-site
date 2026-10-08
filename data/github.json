@@ -1,15 +1,71 @@
 {
   "user": "darup67",
-  "generated_at": "2026-10-08T13:27:53.712Z",
+  "generated_at": "2026-10-08T23:20:28.114Z",
   "repos": [
+    {
+      "name": "jev-client",
+      "description": "Shared Typesafe judgement client used by zillow-agent and coin-launch-agent",
+      "url": "https://github.com/darup67/jev-client",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-10-08T21:02:04Z",
+      "last_commit": {
+        "message": "jev --usage: show reused (cached) calls",
+        "date": "2026-10-08T21:02:03Z",
+        "url": "https://github.com/darup67/jev-client/commit/9c63974a3ee4c0a55b4c45e9a235673308a0e904"
+      }
+    },
     {
       "name": "market-lab",
       "description": "Durable capture of expiring market data - Kalshi 15m contracts and CME futures - and tests over it",
       "url": "https://github.com/darup67/market-lab",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-08T13:20:12Z",
-      "last_commit": null
+      "pushed_at": "2026-10-08T23:02:13Z",
+      "last_commit": {
+        "message": "Jev spend: reuse answers for an unchanged state (2 s.f. match, per-agent TTL), budget 50% alert + per-agent daily guard",
+        "date": "2026-10-08T20:58:32Z",
+        "url": "https://github.com/darup67/market-lab/commit/0f61bb1a701c58d90d507768157655824b646e11"
+      }
+    },
+    {
+      "name": "kalshi-commodity-agent",
+      "description": "",
+      "url": "https://github.com/darup67/kalshi-commodity-agent",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-10-08T14:28:15Z",
+      "last_commit": {
+        "message": "Pause: Kalshi agent and its routines unloaded (user request)",
+        "date": "2026-10-08T14:06:39Z",
+        "url": "https://github.com/darup67/kalshi-commodity-agent/commit/5de5a329160d5700e9f98f67b4a6f93cad23f5ea"
+      }
+    },
+    {
+      "name": "kalshi-btc-1h-agent",
+      "description": "Read-only Kalshi 1-hour BTC caller (KXBTCD above/below ladder): accuracy by minute, model comparison, volatility study",
+      "url": "https://github.com/darup67/kalshi-btc-1h-agent",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-10-08T14:28:10Z",
+      "last_commit": {
+        "message": "Pause: Kalshi agent and its routines unloaded (user request)",
+        "date": "2026-10-08T14:06:37Z",
+        "url": "https://github.com/darup67/kalshi-btc-1h-agent/commit/abab54b76d3d2302505a1db6af031ca584cdf966"
+      }
+    },
+    {
+      "name": "kalshi-btc-agent",
+      "description": "Read-only Kalshi BTC 15m caller: shows a call only when the cushion clears a backtest-calibrated gate",
+      "url": "https://github.com/darup67/kalshi-btc-agent",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-10-08T14:28:13Z",
+      "last_commit": {
+        "message": "Pause: Kalshi agent and its routines unloaded (user request)",
+        "date": "2026-10-08T14:06:35Z",
+        "url": "https://github.com/darup67/kalshi-btc-agent/commit/a18e3443ea298e33a2857ed60e52bed69b50fc9c"
+      }
     },
     {
       "name": "trade-core",
@@ -17,11 +73,24 @@
       "url": "https://github.com/darup67/trade-core",
       "language": "JavaScript",
       "stars": 1,
-      "pushed_at": "2026-10-08T12:07:14Z",
+      "pushed_at": "2026-10-08T21:07:21Z",
       "last_commit": {
         "message": "Add LICENSE (MIT License)",
         "date": "2026-10-07T16:33:07Z",
         "url": "https://github.com/darup67/trade-core/commit/8590795b6443562e263783bb2026aea5d2f1b7a6"
+      }
+    },
+    {
+      "name": "flip_watcher_v1",
+      "description": "Flip Watcher App - v1 - Buy/Sell Signals",
+      "url": "https://github.com/darup67/flip_watcher_v1",
+      "language": "JavaScript",
+      "stars": 1,
+      "pushed_at": "2026-10-08T14:28:07Z",
+      "last_commit": {
+        "message": "Add LICENSE (Copyright (c) 2026 Dhruv)",
+        "date": "2026-10-07T16:33:07Z",
+        "url": "https://github.com/darup67/flip_watcher_v1/commit/c404e87881599dde080139b608324277498c663c"
       }
     },
     {
@@ -64,19 +133,6 @@
       }
     },
     {
-      "name": "flip_watcher_v1",
-      "description": "Flip Watcher App - v1 - Buy/Sell Signals",
-      "url": "https://github.com/darup67/flip_watcher_v1",
-      "language": "JavaScript",
-      "stars": 1,
-      "pushed_at": "2026-10-07T16:33:28Z",
-      "last_commit": {
-        "message": "Add LICENSE (Copyright (c) 2026 Dhruv)",
-        "date": "2026-10-07T16:33:07Z",
-        "url": "https://github.com/darup67/flip_watcher_v1/commit/c404e87881599dde080139b608324277498c663c"
-      }
-    },
-    {
       "name": "zillow_agent_v1",
       "description": "Daily ZIP-level Georgia real-estate digest by email — Atlanta intown plus Gwinnett, Hall and Jackson counties. Zero-dependency Node.",
       "url": "https://github.com/darup67/zillow_agent_v1",
@@ -87,45 +143,6 @@
         "message": "Add LICENSE (Copyright (c) 2026 Dhruv)",
         "date": "2026-10-07T16:33:07Z",
         "url": "https://github.com/darup67/zillow_agent_v1/commit/abb27ce42e060cec8af22ba400171e327ee7bc2b"
-      }
-    },
-    {
-      "name": "kalshi-btc-agent",
-      "description": "Read-only Kalshi BTC 15m caller: shows a call only when the cushion clears a backtest-calibrated gate",
-      "url": "https://github.com/darup67/kalshi-btc-agent",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-10-08T12:44:10Z",
-      "last_commit": {
-        "message": "Add LICENSE (Copyright (c) 2026 Dhruv)",
-        "date": "2026-10-07T16:33:06Z",
-        "url": "https://github.com/darup67/kalshi-btc-agent/commit/66b24b7108309989ef51e9f79e69a48b56872f6b"
-      }
-    },
-    {
-      "name": "kalshi-commodity-agent",
-      "description": "",
-      "url": "https://github.com/darup67/kalshi-commodity-agent",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-10-08T12:38:09Z",
-      "last_commit": {
-        "message": "Add LICENSE (Copyright (c) 2026 Dhruv)",
-        "date": "2026-10-07T16:33:06Z",
-        "url": "https://github.com/darup67/kalshi-commodity-agent/commit/02353288824afbd8be7442099e00c22667b2a39e"
-      }
-    },
-    {
-      "name": "kalshi-btc-1h-agent",
-      "description": "Read-only Kalshi 1-hour BTC caller (KXBTCD above/below ladder): accuracy by minute, model comparison, volatility study",
-      "url": "https://github.com/darup67/kalshi-btc-1h-agent",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-10-08T12:37:08Z",
-      "last_commit": {
-        "message": "Add LICENSE (Copyright (c) 2026 Dhruv)",
-        "date": "2026-10-07T16:33:06Z",
-        "url": "https://github.com/darup67/kalshi-btc-1h-agent/commit/ee670ffe243f05fd75073f262602ed1311bb66b8"
       }
     },
     {
@@ -152,19 +169,6 @@
         "message": "Add LICENSE (Copyright (c) 2026 Dhruv)",
         "date": "2026-10-07T16:33:06Z",
         "url": "https://github.com/darup67/market-iv-agent/commit/f4da46138cd6f3e22f3d14cd8e7347447bceb5f0"
-      }
-    },
-    {
-      "name": "jev-client",
-      "description": "Shared Typesafe judgement client used by zillow-agent and coin-launch-agent",
-      "url": "https://github.com/darup67/jev-client",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-10-07T16:33:15Z",
-      "last_commit": {
-        "message": "Add LICENSE (Copyright (c) 2026 Dhruv)",
-        "date": "2026-10-07T16:33:06Z",
-        "url": "https://github.com/darup67/jev-client/commit/78b54d1613722dbfb8ea4a53310fc9302317f02d"
       }
     },
     {
