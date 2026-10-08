@@ -1,6 +1,6 @@
 {
   "user": "darup67",
-  "generated_at": "2026-10-08T06:02:33.483Z",
+  "generated_at": "2026-10-08T13:27:53.712Z",
   "repos": [
     {
       "name": "market-lab",
@@ -8,12 +8,8 @@
       "url": "https://github.com/darup67/market-lab",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-08T06:02:12Z",
-      "last_commit": {
-        "message": "watchdog: Jev Markets futures pattern freshness",
-        "date": "2026-10-08T01:51:17Z",
-        "url": "https://github.com/darup67/market-lab/commit/6a63ea22782fd978feffac622da61001ceea5159"
-      }
+      "pushed_at": "2026-10-08T13:20:12Z",
+      "last_commit": null
     },
     {
       "name": "trade-core",
@@ -21,7 +17,7 @@
       "url": "https://github.com/darup67/trade-core",
       "language": "JavaScript",
       "stars": 1,
-      "pushed_at": "2026-10-08T05:06:55Z",
+      "pushed_at": "2026-10-08T12:07:14Z",
       "last_commit": {
         "message": "Add LICENSE (MIT License)",
         "date": "2026-10-07T16:33:07Z",
@@ -94,12 +90,25 @@
       }
     },
     {
+      "name": "kalshi-btc-agent",
+      "description": "Read-only Kalshi BTC 15m caller: shows a call only when the cushion clears a backtest-calibrated gate",
+      "url": "https://github.com/darup67/kalshi-btc-agent",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-10-08T12:44:10Z",
+      "last_commit": {
+        "message": "Add LICENSE (Copyright (c) 2026 Dhruv)",
+        "date": "2026-10-07T16:33:06Z",
+        "url": "https://github.com/darup67/kalshi-btc-agent/commit/66b24b7108309989ef51e9f79e69a48b56872f6b"
+      }
+    },
+    {
       "name": "kalshi-commodity-agent",
       "description": "",
       "url": "https://github.com/darup67/kalshi-commodity-agent",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-08T05:37:09Z",
+      "pushed_at": "2026-10-08T12:38:09Z",
       "last_commit": {
         "message": "Add LICENSE (Copyright (c) 2026 Dhruv)",
         "date": "2026-10-07T16:33:06Z",
@@ -112,24 +121,11 @@
       "url": "https://github.com/darup67/kalshi-btc-1h-agent",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-08T05:37:07Z",
+      "pushed_at": "2026-10-08T12:37:08Z",
       "last_commit": {
         "message": "Add LICENSE (Copyright (c) 2026 Dhruv)",
         "date": "2026-10-07T16:33:06Z",
         "url": "https://github.com/darup67/kalshi-btc-1h-agent/commit/ee670ffe243f05fd75073f262602ed1311bb66b8"
-      }
-    },
-    {
-      "name": "kalshi-btc-agent",
-      "description": "Read-only Kalshi BTC 15m caller: shows a call only when the cushion clears a backtest-calibrated gate",
-      "url": "https://github.com/darup67/kalshi-btc-agent",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-10-08T04:43:10Z",
-      "last_commit": {
-        "message": "Add LICENSE (Copyright (c) 2026 Dhruv)",
-        "date": "2026-10-07T16:33:06Z",
-        "url": "https://github.com/darup67/kalshi-btc-agent/commit/66b24b7108309989ef51e9f79e69a48b56872f6b"
       }
     },
     {
@@ -138,7 +134,7 @@
       "url": "https://github.com/darup67/coin-launch-agent",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-07T16:33:25Z",
+      "pushed_at": "2026-10-08T07:07:07Z",
       "last_commit": {
         "message": "Add LICENSE (Copyright (c) 2026 Dhruv)",
         "date": "2026-10-07T16:33:06Z",
