@@ -1,6 +1,6 @@
 {
   "user": "darup67",
-  "generated_at": "2026-10-07T23:04:39.335Z",
+  "generated_at": "2026-10-08T06:02:33.483Z",
   "repos": [
     {
       "name": "market-lab",
@@ -8,8 +8,25 @@
       "url": "https://github.com/darup67/market-lab",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-07T23:02:13Z",
-      "last_commit": null
+      "pushed_at": "2026-10-08T06:02:12Z",
+      "last_commit": {
+        "message": "watchdog: Jev Markets futures pattern freshness",
+        "date": "2026-10-08T01:51:17Z",
+        "url": "https://github.com/darup67/market-lab/commit/6a63ea22782fd978feffac622da61001ceea5159"
+      }
+    },
+    {
+      "name": "trade-core",
+      "description": "Shared market-data store, signal ledger and cost/regime models for the trading tools",
+      "url": "https://github.com/darup67/trade-core",
+      "language": "JavaScript",
+      "stars": 1,
+      "pushed_at": "2026-10-08T05:06:55Z",
+      "last_commit": {
+        "message": "Add LICENSE (MIT License)",
+        "date": "2026-10-07T16:33:07Z",
+        "url": "https://github.com/darup67/trade-core/commit/8590795b6443562e263783bb2026aea5d2f1b7a6"
+      }
     },
     {
       "name": "flux-lab",
@@ -35,19 +52,6 @@
         "message": "Add LICENSE (MIT License)",
         "date": "2026-10-07T16:33:07Z",
         "url": "https://github.com/darup67/asset-agents/commit/5ed854f269220a2b8ec3069e8460a2fa0afde378"
-      }
-    },
-    {
-      "name": "trade-core",
-      "description": "Shared market-data store, signal ledger and cost/regime models for the trading tools",
-      "url": "https://github.com/darup67/trade-core",
-      "language": "JavaScript",
-      "stars": 1,
-      "pushed_at": "2026-10-07T16:33:31Z",
-      "last_commit": {
-        "message": "Add LICENSE (MIT License)",
-        "date": "2026-10-07T16:33:07Z",
-        "url": "https://github.com/darup67/trade-core/commit/8590795b6443562e263783bb2026aea5d2f1b7a6"
       }
     },
     {
@@ -90,25 +94,12 @@
       }
     },
     {
-      "name": "kalshi-btc-agent",
-      "description": "Read-only Kalshi BTC 15m caller: shows a call only when the cushion clears a backtest-calibrated gate",
-      "url": "https://github.com/darup67/kalshi-btc-agent",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-10-07T22:41:11Z",
-      "last_commit": {
-        "message": "Add LICENSE (Copyright (c) 2026 Dhruv)",
-        "date": "2026-10-07T16:33:06Z",
-        "url": "https://github.com/darup67/kalshi-btc-agent/commit/66b24b7108309989ef51e9f79e69a48b56872f6b"
-      }
-    },
-    {
       "name": "kalshi-commodity-agent",
       "description": "",
       "url": "https://github.com/darup67/kalshi-commodity-agent",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-07T22:36:09Z",
+      "pushed_at": "2026-10-08T05:37:09Z",
       "last_commit": {
         "message": "Add LICENSE (Copyright (c) 2026 Dhruv)",
         "date": "2026-10-07T16:33:06Z",
@@ -121,11 +112,24 @@
       "url": "https://github.com/darup67/kalshi-btc-1h-agent",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-07T22:35:09Z",
+      "pushed_at": "2026-10-08T05:37:07Z",
       "last_commit": {
         "message": "Add LICENSE (Copyright (c) 2026 Dhruv)",
         "date": "2026-10-07T16:33:06Z",
         "url": "https://github.com/darup67/kalshi-btc-1h-agent/commit/ee670ffe243f05fd75073f262602ed1311bb66b8"
+      }
+    },
+    {
+      "name": "kalshi-btc-agent",
+      "description": "Read-only Kalshi BTC 15m caller: shows a call only when the cushion clears a backtest-calibrated gate",
+      "url": "https://github.com/darup67/kalshi-btc-agent",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-10-08T04:43:10Z",
+      "last_commit": {
+        "message": "Add LICENSE (Copyright (c) 2026 Dhruv)",
+        "date": "2026-10-07T16:33:06Z",
+        "url": "https://github.com/darup67/kalshi-btc-agent/commit/66b24b7108309989ef51e9f79e69a48b56872f6b"
       }
     },
     {
