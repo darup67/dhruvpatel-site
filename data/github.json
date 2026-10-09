@@ -1,7 +1,20 @@
 {
   "user": "darup67",
-  "generated_at": "2026-10-09T06:07:20.566Z",
+  "generated_at": "2026-10-09T13:15:38.753Z",
   "repos": [
+    {
+      "name": "market-lab",
+      "description": "Durable capture of expiring market data - Kalshi 15m contracts and CME futures - and tests over it",
+      "url": "https://github.com/darup67/market-lab",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-10-09T13:02:12Z",
+      "last_commit": {
+        "message": "guardian: per-contract pauses",
+        "date": "2026-10-09T10:18:34Z",
+        "url": "https://github.com/darup67/market-lab/commit/b76aafa5d7b153d09a4620a753089d93440aea6a"
+      }
+    },
     {
       "name": "jev-client",
       "description": "Shared Typesafe judgement client used by zillow-agent and coin-launch-agent",
@@ -13,19 +26,6 @@
         "message": "jev --usage: show reused (cached) calls",
         "date": "2026-10-08T21:02:03Z",
         "url": "https://github.com/darup67/jev-client/commit/9c63974a3ee4c0a55b4c45e9a235673308a0e904"
-      }
-    },
-    {
-      "name": "market-lab",
-      "description": "Durable capture of expiring market data - Kalshi 15m contracts and CME futures - and tests over it",
-      "url": "https://github.com/darup67/market-lab",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-10-09T06:02:12Z",
-      "last_commit": {
-        "message": "Jev spend: reuse answers for an unchanged state (2 s.f. match, per-agent TTL), budget 50% alert + per-agent daily guard",
-        "date": "2026-10-08T20:58:32Z",
-        "url": "https://github.com/darup67/market-lab/commit/0f61bb1a701c58d90d507768157655824b646e11"
       }
     },
     {
@@ -73,7 +73,7 @@
       "url": "https://github.com/darup67/trade-core",
       "language": "JavaScript",
       "stars": 1,
-      "pushed_at": "2026-10-09T04:06:58Z",
+      "pushed_at": "2026-10-09T10:07:27Z",
       "last_commit": {
         "message": "Add LICENSE (MIT License)",
         "date": "2026-10-07T16:33:07Z",
@@ -151,7 +151,7 @@
       "url": "https://github.com/darup67/coin-launch-agent",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-08T07:07:07Z",
+      "pushed_at": "2026-10-09T07:07:13Z",
       "last_commit": {
         "message": "Add LICENSE (Copyright (c) 2026 Dhruv)",
         "date": "2026-10-07T16:33:06Z",
