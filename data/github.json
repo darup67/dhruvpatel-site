@@ -1,31 +1,70 @@
 {
   "user": "darup67",
-  "generated_at": "2026-10-09T13:15:38.753Z",
+  "generated_at": "2026-10-09T22:37:42.200Z",
   "repos": [
-    {
-      "name": "market-lab",
-      "description": "Durable capture of expiring market data - Kalshi 15m contracts and CME futures - and tests over it",
-      "url": "https://github.com/darup67/market-lab",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-10-09T13:02:12Z",
-      "last_commit": {
-        "message": "guardian: per-contract pauses",
-        "date": "2026-10-09T10:18:34Z",
-        "url": "https://github.com/darup67/market-lab/commit/b76aafa5d7b153d09a4620a753089d93440aea6a"
-      }
-    },
     {
       "name": "jev-client",
       "description": "Shared Typesafe judgement client used by zillow-agent and coin-launch-agent",
       "url": "https://github.com/darup67/jev-client",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-08T21:02:04Z",
+      "pushed_at": "2026-10-09T22:35:09Z",
       "last_commit": {
-        "message": "jev --usage: show reused (cached) calls",
-        "date": "2026-10-08T21:02:03Z",
-        "url": "https://github.com/darup67/jev-client/commit/9c63974a3ee4c0a55b4c45e9a235673308a0e904"
+        "message": "gexlib: monthly hedge pressure + dynamic walls",
+        "date": "2026-10-09T22:35:08Z",
+        "url": "https://github.com/darup67/jev-client/commit/1def06c6036e81c5990a62b677658f849d09f4c2"
+      }
+    },
+    {
+      "name": "market-iv-agent",
+      "description": "Read-only options-IV scanner for the whole US market (S&P 500, Nasdaq-100, Dow) by sector, plus health care; feeds event-desk emails",
+      "url": "https://github.com/darup67/market-iv-agent",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-10-09T22:21:08Z",
+      "last_commit": {
+        "message": "Gamma/flow column + deep-dive row from Cboe chains (context only)",
+        "date": "2026-10-09T22:21:06Z",
+        "url": "https://github.com/darup67/market-iv-agent/commit/050657854d07b326a2daf38494ed03e68229e36f"
+      }
+    },
+    {
+      "name": "zillow_agent_v1",
+      "description": "Daily ZIP-level Georgia real-estate digest by email — Atlanta intown plus Gwinnett, Hall and Jackson counties. Zero-dependency Node.",
+      "url": "https://github.com/darup67/zillow_agent_v1",
+      "language": "JavaScript",
+      "stars": 1,
+      "pushed_at": "2026-10-09T19:41:38Z",
+      "last_commit": {
+        "message": "Digest also goes to two extra recipients (separate send after the owner's)",
+        "date": "2026-10-09T19:41:37Z",
+        "url": "https://github.com/darup67/zillow_agent_v1/commit/e684d845df3f341428e9e42abef5793dcdbd75ce"
+      }
+    },
+    {
+      "name": "flip_watcher_v1",
+      "description": "Flip Watcher App - v1 - Buy/Sell Signals",
+      "url": "https://github.com/darup67/flip_watcher_v1",
+      "language": "JavaScript",
+      "stars": 1,
+      "pushed_at": "2026-10-09T19:41:37Z",
+      "last_commit": {
+        "message": "send-email: optional validated recipient list (default unchanged)",
+        "date": "2026-10-09T19:41:35Z",
+        "url": "https://github.com/darup67/flip_watcher_v1/commit/ce4694bed4ddb1b72318c0dfa82d18c4b8bddd4d"
+      }
+    },
+    {
+      "name": "market-lab",
+      "description": "Durable capture of expiring market data - Kalshi 15m contracts and CME futures - and tests over it",
+      "url": "https://github.com/darup67/market-lab",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-10-09T22:02:13Z",
+      "last_commit": {
+        "message": "Banks reset: Markets $30,000, Majors $5,000 (A/B test restarted)",
+        "date": "2026-10-09T16:29:06Z",
+        "url": "https://github.com/darup67/market-lab/commit/41000dc5e04a5e9218f15d04d7287ac4ed026eb6"
       }
     },
     {
@@ -73,24 +112,11 @@
       "url": "https://github.com/darup67/trade-core",
       "language": "JavaScript",
       "stars": 1,
-      "pushed_at": "2026-10-09T10:07:27Z",
+      "pushed_at": "2026-10-09T17:07:15Z",
       "last_commit": {
         "message": "Add LICENSE (MIT License)",
         "date": "2026-10-07T16:33:07Z",
         "url": "https://github.com/darup67/trade-core/commit/8590795b6443562e263783bb2026aea5d2f1b7a6"
-      }
-    },
-    {
-      "name": "flip_watcher_v1",
-      "description": "Flip Watcher App - v1 - Buy/Sell Signals",
-      "url": "https://github.com/darup67/flip_watcher_v1",
-      "language": "JavaScript",
-      "stars": 1,
-      "pushed_at": "2026-10-08T14:28:07Z",
-      "last_commit": {
-        "message": "Add LICENSE (Copyright (c) 2026 Dhruv)",
-        "date": "2026-10-07T16:33:07Z",
-        "url": "https://github.com/darup67/flip_watcher_v1/commit/c404e87881599dde080139b608324277498c663c"
       }
     },
     {
@@ -133,19 +159,6 @@
       }
     },
     {
-      "name": "zillow_agent_v1",
-      "description": "Daily ZIP-level Georgia real-estate digest by email — Atlanta intown plus Gwinnett, Hall and Jackson counties. Zero-dependency Node.",
-      "url": "https://github.com/darup67/zillow_agent_v1",
-      "language": "JavaScript",
-      "stars": 1,
-      "pushed_at": "2026-10-07T16:33:26Z",
-      "last_commit": {
-        "message": "Add LICENSE (Copyright (c) 2026 Dhruv)",
-        "date": "2026-10-07T16:33:07Z",
-        "url": "https://github.com/darup67/zillow_agent_v1/commit/abb27ce42e060cec8af22ba400171e327ee7bc2b"
-      }
-    },
-    {
       "name": "coin-launch-agent",
       "description": "Read-only watcher: new/graduated Solana+Base coins reaching a market-cap threshold within 4h, plus Coinbase listings",
       "url": "https://github.com/darup67/coin-launch-agent",
@@ -156,19 +169,6 @@
         "message": "Add LICENSE (Copyright (c) 2026 Dhruv)",
         "date": "2026-10-07T16:33:06Z",
         "url": "https://github.com/darup67/coin-launch-agent/commit/4c6db76abdadbeed3ddde2a7b360c502a414a89f"
-      }
-    },
-    {
-      "name": "market-iv-agent",
-      "description": "Read-only options-IV scanner for the whole US market (S&P 500, Nasdaq-100, Dow) by sector, plus health care; feeds event-desk emails",
-      "url": "https://github.com/darup67/market-iv-agent",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-10-07T16:33:21Z",
-      "last_commit": {
-        "message": "Add LICENSE (Copyright (c) 2026 Dhruv)",
-        "date": "2026-10-07T16:33:06Z",
-        "url": "https://github.com/darup67/market-iv-agent/commit/f4da46138cd6f3e22f3d14cd8e7347447bceb5f0"
       }
     },
     {
