@@ -1,18 +1,31 @@
 {
   "user": "darup67",
-  "generated_at": "2026-10-10T12:30:42.559Z",
+  "generated_at": "2026-10-10T21:43:10.373Z",
   "repos": [
+    {
+      "name": "flip_watcher_v1",
+      "description": "Flip Watcher App - v1 - Buy/Sell Signals",
+      "url": "https://github.com/darup67/flip_watcher_v1",
+      "language": "JavaScript",
+      "stars": 1,
+      "pushed_at": "2026-10-10T18:17:32Z",
+      "last_commit": {
+        "message": "crypto universe refresh",
+        "date": "2026-10-10T18:17:31Z",
+        "url": "https://github.com/darup67/flip_watcher_v1/commit/6f2467458c1c19c2ccd99d4e7e34820026e3800c"
+      }
+    },
     {
       "name": "market-lab",
       "description": "Durable capture of expiring market data - Kalshi 15m contracts and CME futures - and tests over it",
       "url": "https://github.com/darup67/market-lab",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-10T12:02:14Z",
+      "pushed_at": "2026-10-10T21:02:08Z",
       "last_commit": {
-        "message": "ab: majors arm mapping swapped",
-        "date": "2026-10-10T02:35:50Z",
-        "url": "https://github.com/darup67/market-lab/commit/b6db8f4f2667a335a51b522b180eb0b317ce67fd"
+        "message": "ab: Majors lane C (opposite of the running desk) recorder + watchdog",
+        "date": "2026-10-10T14:48:26Z",
+        "url": "https://github.com/darup67/market-lab/commit/9e334777e3603f8bfc85749f6978b9b209eee9e9"
       }
     },
     {
@@ -52,19 +65,6 @@
         "message": "Digest also goes to two extra recipients (separate send after the owner's)",
         "date": "2026-10-09T19:41:37Z",
         "url": "https://github.com/darup67/zillow_agent_v1/commit/e684d845df3f341428e9e42abef5793dcdbd75ce"
-      }
-    },
-    {
-      "name": "flip_watcher_v1",
-      "description": "Flip Watcher App - v1 - Buy/Sell Signals",
-      "url": "https://github.com/darup67/flip_watcher_v1",
-      "language": "JavaScript",
-      "stars": 1,
-      "pushed_at": "2026-10-09T19:41:37Z",
-      "last_commit": {
-        "message": "send-email: optional validated recipient list (default unchanged)",
-        "date": "2026-10-09T19:41:35Z",
-        "url": "https://github.com/darup67/flip_watcher_v1/commit/ce4694bed4ddb1b72318c0dfa82d18c4b8bddd4d"
       }
     },
     {
@@ -112,7 +112,7 @@
       "url": "https://github.com/darup67/trade-core",
       "language": "JavaScript",
       "stars": 1,
-      "pushed_at": "2026-10-10T12:07:01Z",
+      "pushed_at": "2026-10-10T18:07:29Z",
       "last_commit": {
         "message": "Add LICENSE (MIT License)",
         "date": "2026-10-07T16:33:07Z",
