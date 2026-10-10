@@ -1,18 +1,31 @@
 {
   "user": "darup67",
-  "generated_at": "2026-10-09T22:37:42.200Z",
+  "generated_at": "2026-10-10T05:51:14.735Z",
   "repos": [
+    {
+      "name": "market-lab",
+      "description": "Durable capture of expiring market data - Kalshi 15m contracts and CME futures - and tests over it",
+      "url": "https://github.com/darup67/market-lab",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-10-10T05:02:12Z",
+      "last_commit": {
+        "message": "ab: majors arm mapping swapped",
+        "date": "2026-10-10T02:35:50Z",
+        "url": "https://github.com/darup67/market-lab/commit/b6db8f4f2667a335a51b522b180eb0b317ce67fd"
+      }
+    },
     {
       "name": "jev-client",
       "description": "Shared Typesafe judgement client used by zillow-agent and coin-launch-agent",
       "url": "https://github.com/darup67/jev-client",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-09T22:35:09Z",
+      "pushed_at": "2026-10-09T22:40:10Z",
       "last_commit": {
-        "message": "gexlib: monthly hedge pressure + dynamic walls",
-        "date": "2026-10-09T22:35:08Z",
-        "url": "https://github.com/darup67/jev-client/commit/1def06c6036e81c5990a62b677658f849d09f4c2"
+        "message": "gexlib: dyn_accel",
+        "date": "2026-10-09T22:40:09Z",
+        "url": "https://github.com/darup67/jev-client/commit/4b9ce13de681323f036f3a1d90582e721036f3a2"
       }
     },
     {
@@ -52,19 +65,6 @@
         "message": "send-email: optional validated recipient list (default unchanged)",
         "date": "2026-10-09T19:41:35Z",
         "url": "https://github.com/darup67/flip_watcher_v1/commit/ce4694bed4ddb1b72318c0dfa82d18c4b8bddd4d"
-      }
-    },
-    {
-      "name": "market-lab",
-      "description": "Durable capture of expiring market data - Kalshi 15m contracts and CME futures - and tests over it",
-      "url": "https://github.com/darup67/market-lab",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-10-09T22:02:13Z",
-      "last_commit": {
-        "message": "Banks reset: Markets $30,000, Majors $5,000 (A/B test restarted)",
-        "date": "2026-10-09T16:29:06Z",
-        "url": "https://github.com/darup67/market-lab/commit/41000dc5e04a5e9218f15d04d7287ac4ed026eb6"
       }
     },
     {
@@ -112,7 +112,7 @@
       "url": "https://github.com/darup67/trade-core",
       "language": "JavaScript",
       "stars": 1,
-      "pushed_at": "2026-10-09T17:07:15Z",
+      "pushed_at": "2026-10-09T23:08:08Z",
       "last_commit": {
         "message": "Add LICENSE (MIT License)",
         "date": "2026-10-07T16:33:07Z",
