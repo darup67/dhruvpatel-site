@@ -1,7 +1,16 @@
 {
   "user": "darup67",
-  "generated_at": "2026-10-11T12:48:17.128Z",
+  "generated_at": "2026-10-11T21:57:22.512Z",
   "repos": [
+    {
+      "name": "market-lab",
+      "description": "Durable capture of expiring market data - Kalshi 15m contracts and CME futures - and tests over it",
+      "url": "https://github.com/darup67/market-lab",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-10-11T21:02:12Z",
+      "last_commit": null
+    },
     {
       "name": "flip_watcher_v1",
       "description": "Flip Watcher App - v1 - Buy/Sell Signals",
@@ -13,19 +22,6 @@
         "message": "crypto universe refresh",
         "date": "2026-10-10T18:17:31Z",
         "url": "https://github.com/darup67/flip_watcher_v1/commit/6f2467458c1c19c2ccd99d4e7e34820026e3800c"
-      }
-    },
-    {
-      "name": "market-lab",
-      "description": "Durable capture of expiring market data - Kalshi 15m contracts and CME futures - and tests over it",
-      "url": "https://github.com/darup67/market-lab",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-10-11T12:02:13Z",
-      "last_commit": {
-        "message": "ab: Majors lane C (opposite of the running desk) recorder + watchdog",
-        "date": "2026-10-10T14:48:26Z",
-        "url": "https://github.com/darup67/market-lab/commit/9e334777e3603f8bfc85749f6978b9b209eee9e9"
       }
     },
     {
@@ -112,7 +108,7 @@
       "url": "https://github.com/darup67/trade-core",
       "language": "JavaScript",
       "stars": 1,
-      "pushed_at": "2026-10-11T06:09:43Z",
+      "pushed_at": "2026-10-11T19:10:49Z",
       "last_commit": {
         "message": "Add LICENSE (MIT License)",
         "date": "2026-10-07T16:33:07Z",
