@@ -1,6 +1,6 @@
 {
   "user": "darup67",
-  "generated_at": "2026-10-12T15:22:30.568Z",
+  "generated_at": "2026-10-13T00:38:45.255Z",
   "repos": [
     {
       "name": "market-lab",
@@ -8,8 +8,34 @@
       "url": "https://github.com/darup67/market-lab",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-12T15:06:40Z",
+      "pushed_at": "2026-10-13T00:30:09Z",
       "last_commit": null
+    },
+    {
+      "name": "trade-core",
+      "description": "Shared market-data store, signal ledger and cost/regime models for the trading tools",
+      "url": "https://github.com/darup67/trade-core",
+      "language": "JavaScript",
+      "stars": 1,
+      "pushed_at": "2026-10-12T18:14:14Z",
+      "last_commit": {
+        "message": "ledger export",
+        "date": "2026-10-12T18:14:12Z",
+        "url": "https://github.com/darup67/trade-core/commit/1eda062a96863d6cd19373fa350a04d5ed0df189"
+      }
+    },
+    {
+      "name": "flip_watcher_v1",
+      "description": "Flip Watcher App - v1 - Buy/Sell Signals",
+      "url": "https://github.com/darup67/flip_watcher_v1",
+      "language": "JavaScript",
+      "stars": 1,
+      "pushed_at": "2026-10-12T18:14:12Z",
+      "last_commit": {
+        "message": "crypto universe refresh",
+        "date": "2026-10-12T18:14:10Z",
+        "url": "https://github.com/darup67/flip_watcher_v1/commit/c5fa8f72101f1a359a56694871e236bb8a142f0e"
+      }
     },
     {
       "name": "zillow_agent_v1",
@@ -22,19 +48,6 @@
         "message": "Duplex/triplex section: remarks-based unit count + heavy-repair screen, email block, dashboard view, hourly remarks prefetch job",
         "date": "2026-10-12T01:06:54Z",
         "url": "https://github.com/darup67/zillow_agent_v1/commit/1de8f128604702e4b7ab08d7a6ad4e777e0a2fd3"
-      }
-    },
-    {
-      "name": "flip_watcher_v1",
-      "description": "Flip Watcher App - v1 - Buy/Sell Signals",
-      "url": "https://github.com/darup67/flip_watcher_v1",
-      "language": "JavaScript",
-      "stars": 1,
-      "pushed_at": "2026-10-10T18:17:32Z",
-      "last_commit": {
-        "message": "crypto universe refresh",
-        "date": "2026-10-10T18:17:31Z",
-        "url": "https://github.com/darup67/flip_watcher_v1/commit/6f2467458c1c19c2ccd99d4e7e34820026e3800c"
       }
     },
     {
@@ -100,19 +113,6 @@
         "message": "Pause: Kalshi agent and its routines unloaded (user request)",
         "date": "2026-10-08T14:06:35Z",
         "url": "https://github.com/darup67/kalshi-btc-agent/commit/a18e3443ea298e33a2857ed60e52bed69b50fc9c"
-      }
-    },
-    {
-      "name": "trade-core",
-      "description": "Shared market-data store, signal ledger and cost/regime models for the trading tools",
-      "url": "https://github.com/darup67/trade-core",
-      "language": "JavaScript",
-      "stars": 1,
-      "pushed_at": "2026-10-12T15:08:15Z",
-      "last_commit": {
-        "message": "Add LICENSE (MIT License)",
-        "date": "2026-10-07T16:33:07Z",
-        "url": "https://github.com/darup67/trade-core/commit/8590795b6443562e263783bb2026aea5d2f1b7a6"
       }
     },
     {
