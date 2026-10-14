@@ -1,6 +1,6 @@
 {
   "user": "darup67",
-  "generated_at": "2026-10-14T11:50:25.076Z",
+  "generated_at": "2026-10-14T17:09:36.413Z",
   "repos": [
     {
       "name": "market-lab",
@@ -8,12 +8,8 @@
       "url": "https://github.com/darup67/market-lab",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-14T11:30:09Z",
-      "last_commit": {
-        "message": "Sync 2026-10-13: Zillow built-2017+ filter",
-        "date": "2026-10-14T02:48:17Z",
-        "url": "https://github.com/darup67/market-lab/commit/b6f64f5be92ab6c9d5677c3e1fcb61ae10954a2a"
-      }
+      "pushed_at": "2026-10-14T17:02:13Z",
+      "last_commit": null
     },
     {
       "name": "zillow_agent_v1",
@@ -47,7 +43,7 @@
       "url": "https://github.com/darup67/trade-core",
       "language": "JavaScript",
       "stars": 1,
-      "pushed_at": "2026-10-14T10:07:23Z",
+      "pushed_at": "2026-10-14T17:07:07Z",
       "last_commit": {
         "message": "ledger export",
         "date": "2026-10-13T02:30:51Z",
