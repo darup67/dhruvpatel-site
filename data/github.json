@@ -1,6 +1,6 @@
 {
   "user": "darup67",
-  "generated_at": "2026-10-14T18:37:00.928Z",
+  "generated_at": "2026-10-14T21:40:30.488Z",
   "repos": [
     {
       "name": "market-lab",
@@ -8,8 +8,21 @@
       "url": "https://github.com/darup67/market-lab",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-14T18:30:09Z",
+      "pushed_at": "2026-10-14T21:02:12Z",
       "last_commit": null
+    },
+    {
+      "name": "jev-client",
+      "description": "Shared Typesafe judgement client used by zillow-agent and coin-launch-agent",
+      "url": "https://github.com/darup67/jev-client",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-10-14T20:44:57Z",
+      "last_commit": {
+        "message": "Optimizer: soft (adjacent-bucket) reuse, miss diagnostics, Majors bucket retune",
+        "date": "2026-10-14T20:44:56Z",
+        "url": "https://github.com/darup67/jev-client/commit/e6441b8f0e088b2858804a89f1511f3661d227c6"
+      }
     },
     {
       "name": "zillow_agent_v1",
@@ -17,11 +30,11 @@
       "url": "https://github.com/darup67/zillow_agent_v1",
       "language": "JavaScript",
       "stars": 1,
-      "pushed_at": "2026-10-14T02:48:12Z",
+      "pushed_at": "2026-10-14T19:54:09Z",
       "last_commit": {
-        "message": "Sync 2026-10-13: Zillow built-2017+ filter",
-        "date": "2026-10-14T02:48:11Z",
-        "url": "https://github.com/darup67/zillow_agent_v1/commit/017c943156fb743e020d8f354575028170ec3aef"
+        "message": "Partial-fetch guard skips when filters/ZIPs changed on purpose (filterSig)",
+        "date": "2026-10-14T19:54:08Z",
+        "url": "https://github.com/darup67/zillow_agent_v1/commit/24e49f5004439fb97ee30ca61beb09452d087f3f"
       }
     },
     {
@@ -48,19 +61,6 @@
         "message": "ledger export",
         "date": "2026-10-13T02:30:51Z",
         "url": "https://github.com/darup67/trade-core/commit/c86e733cf8f15f3c93a30accb98500feb14c962e"
-      }
-    },
-    {
-      "name": "jev-client",
-      "description": "Shared Typesafe judgement client used by zillow-agent and coin-launch-agent",
-      "url": "https://github.com/darup67/jev-client",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-10-09T22:40:10Z",
-      "last_commit": {
-        "message": "gexlib: dyn_accel",
-        "date": "2026-10-09T22:40:09Z",
-        "url": "https://github.com/darup67/jev-client/commit/4b9ce13de681323f036f3a1d90582e721036f3a2"
       }
     },
     {
