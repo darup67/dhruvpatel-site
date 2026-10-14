@@ -1,6 +1,6 @@
 {
   "user": "darup67",
-  "generated_at": "2026-10-13T22:44:19.369Z",
+  "generated_at": "2026-10-14T04:52:04.961Z",
   "repos": [
     {
       "name": "market-lab",
@@ -8,37 +8,11 @@
       "url": "https://github.com/darup67/market-lab",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-13T22:30:09Z",
+      "pushed_at": "2026-10-14T04:30:09Z",
       "last_commit": {
-        "message": "Sync 2026-10-13",
-        "date": "2026-10-13T19:28:58Z",
-        "url": "https://github.com/darup67/market-lab/commit/2729adc6aef8c3824ecaf39a66a2cdbded685130"
-      }
-    },
-    {
-      "name": "flip_watcher_v1",
-      "description": "Flip Watcher App - v1 - Buy/Sell Signals",
-      "url": "https://github.com/darup67/flip_watcher_v1",
-      "language": "JavaScript",
-      "stars": 1,
-      "pushed_at": "2026-10-13T15:38:47Z",
-      "last_commit": {
-        "message": "Sync 2026-10-13",
-        "date": "2026-10-13T15:38:46Z",
-        "url": "https://github.com/darup67/flip_watcher_v1/commit/ad4534bc1644312caca7972e19f6b4ba5d3408f5"
-      }
-    },
-    {
-      "name": "trade-core",
-      "description": "Shared market-data store, signal ledger and cost/regime models for the trading tools",
-      "url": "https://github.com/darup67/trade-core",
-      "language": "JavaScript",
-      "stars": 1,
-      "pushed_at": "2026-10-13T22:07:06Z",
-      "last_commit": {
-        "message": "ledger export",
-        "date": "2026-10-13T02:30:51Z",
-        "url": "https://github.com/darup67/trade-core/commit/c86e733cf8f15f3c93a30accb98500feb14c962e"
+        "message": "Sync 2026-10-13: Zillow built-2017+ filter",
+        "date": "2026-10-14T02:48:17Z",
+        "url": "https://github.com/darup67/market-lab/commit/b6f64f5be92ab6c9d5677c3e1fcb61ae10954a2a"
       }
     },
     {
@@ -47,11 +21,37 @@
       "url": "https://github.com/darup67/zillow_agent_v1",
       "language": "JavaScript",
       "stars": 1,
-      "pushed_at": "2026-10-13T02:12:05Z",
+      "pushed_at": "2026-10-14T02:48:12Z",
       "last_commit": {
-        "message": "Zillow dashboard: 'Email digest' view mirrors the daily email section by section (all searches, STR, duplex/triplex, ZIP medians); digest export now carries sta",
-        "date": "2026-10-13T02:12:03Z",
-        "url": "https://github.com/darup67/zillow_agent_v1/commit/5d843d8fbb952d45caba5eb6ac766632a0a7f5a4"
+        "message": "Sync 2026-10-13: Zillow built-2017+ filter",
+        "date": "2026-10-14T02:48:11Z",
+        "url": "https://github.com/darup67/zillow_agent_v1/commit/017c943156fb743e020d8f354575028170ec3aef"
+      }
+    },
+    {
+      "name": "flip_watcher_v1",
+      "description": "Flip Watcher App - v1 - Buy/Sell Signals",
+      "url": "https://github.com/darup67/flip_watcher_v1",
+      "language": "JavaScript",
+      "stars": 1,
+      "pushed_at": "2026-10-14T02:08:56Z",
+      "last_commit": {
+        "message": "Sync 2026-10-13",
+        "date": "2026-10-14T02:08:55Z",
+        "url": "https://github.com/darup67/flip_watcher_v1/commit/6ba2c6defe3ec3f7c61cb13504988d514d66c372"
+      }
+    },
+    {
+      "name": "trade-core",
+      "description": "Shared market-data store, signal ledger and cost/regime models for the trading tools",
+      "url": "https://github.com/darup67/trade-core",
+      "language": "JavaScript",
+      "stars": 1,
+      "pushed_at": "2026-10-14T04:07:10Z",
+      "last_commit": {
+        "message": "ledger export",
+        "date": "2026-10-13T02:30:51Z",
+        "url": "https://github.com/darup67/trade-core/commit/c86e733cf8f15f3c93a30accb98500feb14c962e"
       }
     },
     {
