@@ -1,6 +1,6 @@
 {
   "user": "darup67",
-  "generated_at": "2026-10-15T11:27:28.748Z",
+  "generated_at": "2026-10-15T17:00:15.765Z",
   "repos": [
     {
       "name": "market-lab",
@@ -8,11 +8,24 @@
       "url": "https://github.com/darup67/market-lab",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-15T11:02:13Z",
+      "pushed_at": "2026-10-15T16:35:22Z",
       "last_commit": {
-        "message": "Event desk: top-5 sections, no repeated full IV scan, quiet sectors as one line, shorter watchlist (digest ~1.6 MB -> small)",
-        "date": "2026-10-15T03:44:53Z",
-        "url": "https://github.com/darup67/market-lab/commit/bd53042ac408edcdb736640212ceb827af9d7c25"
+        "message": "watchdog: check jev-shop phone access",
+        "date": "2026-10-15T16:35:21Z",
+        "url": "https://github.com/darup67/market-lab/commit/a6ac7aaa4eea46c54f373eb5e00ea7308b9aac45"
+      }
+    },
+    {
+      "name": "jev-client",
+      "description": "Shared Typesafe judgement client used by zillow-agent and coin-launch-agent",
+      "url": "https://github.com/darup67/jev-client",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-10-15T16:32:43Z",
+      "last_commit": {
+        "message": "supervisor: jev-shop watcher",
+        "date": "2026-10-15T16:32:42Z",
+        "url": "https://github.com/darup67/jev-client/commit/d0d9e6e4863f66cdf5ebebee0ea20fa575805ea1"
       }
     },
     {
@@ -26,19 +39,6 @@
         "message": "Briefs: tl;dr, proven-signals-only evidence, capped crypto/social/scoreboard tables (140 KB -> ~86 KB)",
         "date": "2026-10-15T03:44:52Z",
         "url": "https://github.com/darup67/flip_watcher_v1/commit/1b93bb0f39bb5cdb2b3b3cb2f38a0c6c53011f86"
-      }
-    },
-    {
-      "name": "jev-client",
-      "description": "Shared Typesafe judgement client used by zillow-agent and coin-launch-agent",
-      "url": "https://github.com/darup67/jev-client",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-10-15T02:51:51Z",
-      "last_commit": {
-        "message": "policy: drop retired jev-desk caller, add fomo-lane",
-        "date": "2026-10-15T02:51:50Z",
-        "url": "https://github.com/darup67/jev-client/commit/02da891c0d61ee76d5b8d2e90a68222e83fbf014"
       }
     },
     {
@@ -60,7 +60,7 @@
       "url": "https://github.com/darup67/trade-core",
       "language": "JavaScript",
       "stars": 1,
-      "pushed_at": "2026-10-15T06:07:15Z",
+      "pushed_at": "2026-10-15T13:07:07Z",
       "last_commit": {
         "message": "ledger export",
         "date": "2026-10-13T02:30:51Z",
