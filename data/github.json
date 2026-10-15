@@ -1,6 +1,6 @@
 {
   "user": "darup67",
-  "generated_at": "2026-10-14T21:40:30.488Z",
+  "generated_at": "2026-10-15T04:37:25.896Z",
   "repos": [
     {
       "name": "market-lab",
@@ -8,8 +8,25 @@
       "url": "https://github.com/darup67/market-lab",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-14T21:02:12Z",
-      "last_commit": null
+      "pushed_at": "2026-10-15T04:30:09Z",
+      "last_commit": {
+        "message": "Event desk: top-5 sections, no repeated full IV scan, quiet sectors as one line, shorter watchlist (digest ~1.6 MB -> small)",
+        "date": "2026-10-15T03:44:53Z",
+        "url": "https://github.com/darup67/market-lab/commit/bd53042ac408edcdb736640212ceb827af9d7c25"
+      }
+    },
+    {
+      "name": "flip_watcher_v1",
+      "description": "Flip Watcher App - v1 - Buy/Sell Signals",
+      "url": "https://github.com/darup67/flip_watcher_v1",
+      "language": "JavaScript",
+      "stars": 1,
+      "pushed_at": "2026-10-15T03:44:53Z",
+      "last_commit": {
+        "message": "Briefs: tl;dr, proven-signals-only evidence, capped crypto/social/scoreboard tables (140 KB -> ~86 KB)",
+        "date": "2026-10-15T03:44:52Z",
+        "url": "https://github.com/darup67/flip_watcher_v1/commit/1b93bb0f39bb5cdb2b3b3cb2f38a0c6c53011f86"
+      }
     },
     {
       "name": "jev-client",
@@ -17,11 +34,11 @@
       "url": "https://github.com/darup67/jev-client",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-14T20:44:57Z",
+      "pushed_at": "2026-10-15T02:51:51Z",
       "last_commit": {
-        "message": "Optimizer: soft (adjacent-bucket) reuse, miss diagnostics, Majors bucket retune",
-        "date": "2026-10-14T20:44:56Z",
-        "url": "https://github.com/darup67/jev-client/commit/e6441b8f0e088b2858804a89f1511f3661d227c6"
+        "message": "policy: drop retired jev-desk caller, add fomo-lane",
+        "date": "2026-10-15T02:51:50Z",
+        "url": "https://github.com/darup67/jev-client/commit/02da891c0d61ee76d5b8d2e90a68222e83fbf014"
       }
     },
     {
@@ -38,25 +55,12 @@
       }
     },
     {
-      "name": "flip_watcher_v1",
-      "description": "Flip Watcher App - v1 - Buy/Sell Signals",
-      "url": "https://github.com/darup67/flip_watcher_v1",
-      "language": "JavaScript",
-      "stars": 1,
-      "pushed_at": "2026-10-14T02:08:56Z",
-      "last_commit": {
-        "message": "Sync 2026-10-13",
-        "date": "2026-10-14T02:08:55Z",
-        "url": "https://github.com/darup67/flip_watcher_v1/commit/6ba2c6defe3ec3f7c61cb13504988d514d66c372"
-      }
-    },
-    {
       "name": "trade-core",
       "description": "Shared market-data store, signal ledger and cost/regime models for the trading tools",
       "url": "https://github.com/darup67/trade-core",
       "language": "JavaScript",
       "stars": 1,
-      "pushed_at": "2026-10-14T17:07:07Z",
+      "pushed_at": "2026-10-14T23:07:17Z",
       "last_commit": {
         "message": "ledger export",
         "date": "2026-10-13T02:30:51Z",
