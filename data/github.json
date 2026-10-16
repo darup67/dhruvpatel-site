@@ -1,6 +1,6 @@
 {
   "user": "darup67",
-  "generated_at": "2026-10-15T21:22:19.404Z",
+  "generated_at": "2026-10-16T04:30:53.439Z",
   "repos": [
     {
       "name": "market-lab",
@@ -8,24 +8,11 @@
       "url": "https://github.com/darup67/market-lab",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-15T21:02:14Z",
+      "pushed_at": "2026-10-16T04:30:08Z",
       "last_commit": {
-        "message": "sync: 10 files (data refresh; jev-majors: Ethereum paper execution path in fomo_exec, FOMO lane v6 early-score floor 1.0, config)",
-        "date": "2026-10-15T17:26:13Z",
-        "url": "https://github.com/darup67/market-lab/commit/83d77b0571103971655f3f0d6fd63fcb6ccd3a8b"
-      }
-    },
-    {
-      "name": "trade-core",
-      "description": "Shared market-data store, signal ledger and cost/regime models for the trading tools",
-      "url": "https://github.com/darup67/trade-core",
-      "language": "JavaScript",
-      "stars": 1,
-      "pushed_at": "2026-10-15T17:26:12Z",
-      "last_commit": {
-        "message": "sync: 1 files (data refresh; jev-majors: Ethereum paper execution path in fomo_exec, FOMO lane v6 early-score floor 1.0, config)",
-        "date": "2026-10-15T17:26:11Z",
-        "url": "https://github.com/darup67/trade-core/commit/7bf2db1472f6a37cf9ba39fafad0e911266196ac"
+        "message": "watchdog: check Jev Markets invert dashboard (8797)",
+        "date": "2026-10-16T02:53:43Z",
+        "url": "https://github.com/darup67/market-lab/commit/feed360af4e93ac0e334920e1666238b7f4b556e"
       }
     },
     {
@@ -34,11 +21,37 @@
       "url": "https://github.com/darup67/jev-client",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-15T17:26:10Z",
+      "pushed_at": "2026-10-16T02:53:42Z",
+      "last_commit": {
+        "message": "Jev Markets invert A/B arm B support: env-configurable data/config/port, HQ desk card + ROI row, supervisor entries",
+        "date": "2026-10-16T02:53:40Z",
+        "url": "https://github.com/darup67/jev-client/commit/834f5569fd9a99cd0fe177a67d95c8377f941e17"
+      }
+    },
+    {
+      "name": "asset-agents",
+      "description": "Cross-agent dashboard over four pinned agent sessions",
+      "url": "https://github.com/darup67/asset-agents",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-10-16T02:34:57Z",
+      "last_commit": {
+        "message": "Jev HQ: Asset Agents tab (live console built from local state, Robinhood left out); build-dashboard.py supports ASSET_NO_RH/ASSET_OUT",
+        "date": "2026-10-16T02:34:56Z",
+        "url": "https://github.com/darup67/asset-agents/commit/1afb5528169ffaac12446a295326e3221154676b"
+      }
+    },
+    {
+      "name": "trade-core",
+      "description": "Shared market-data store, signal ledger and cost/regime models for the trading tools",
+      "url": "https://github.com/darup67/trade-core",
+      "language": "JavaScript",
+      "stars": 1,
+      "pushed_at": "2026-10-16T00:06:45Z",
       "last_commit": {
         "message": "sync: 1 files (data refresh; jev-majors: Ethereum paper execution path in fomo_exec, FOMO lane v6 early-score floor 1.0, config)",
-        "date": "2026-10-15T17:26:08Z",
-        "url": "https://github.com/darup67/jev-client/commit/8cd91eea963767e656217e5865e47cf493732c04"
+        "date": "2026-10-15T17:26:11Z",
+        "url": "https://github.com/darup67/trade-core/commit/7bf2db1472f6a37cf9ba39fafad0e911266196ac"
       }
     },
     {
@@ -130,19 +143,6 @@
         "message": "Add LICENSE (MIT License)",
         "date": "2026-10-07T16:33:07Z",
         "url": "https://github.com/darup67/flux-lab/commit/3d5689cca5e7cc7f41e4d244650bdbe6f193c850"
-      }
-    },
-    {
-      "name": "asset-agents",
-      "description": "Cross-agent dashboard over four pinned agent sessions",
-      "url": "https://github.com/darup67/asset-agents",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-10-07T16:33:33Z",
-      "last_commit": {
-        "message": "Add LICENSE (MIT License)",
-        "date": "2026-10-07T16:33:07Z",
-        "url": "https://github.com/darup67/asset-agents/commit/5ed854f269220a2b8ec3069e8460a2fa0afde378"
       }
     },
     {
