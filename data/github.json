@@ -1,6 +1,6 @@
 {
   "user": "darup67",
-  "generated_at": "2026-10-16T04:30:53.439Z",
+  "generated_at": "2026-10-16T11:22:39.204Z",
   "repos": [
     {
       "name": "market-lab",
@@ -8,7 +8,7 @@
       "url": "https://github.com/darup67/market-lab",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-16T04:30:08Z",
+      "pushed_at": "2026-10-16T11:02:15Z",
       "last_commit": {
         "message": "watchdog: check Jev Markets invert dashboard (8797)",
         "date": "2026-10-16T02:53:43Z",
@@ -47,7 +47,7 @@
       "url": "https://github.com/darup67/trade-core",
       "language": "JavaScript",
       "stars": 1,
-      "pushed_at": "2026-10-16T00:06:45Z",
+      "pushed_at": "2026-10-16T06:06:47Z",
       "last_commit": {
         "message": "sync: 1 files (data refresh; jev-majors: Ethereum paper execution path in fomo_exec, FOMO lane v6 early-score floor 1.0, config)",
         "date": "2026-10-15T17:26:11Z",
@@ -164,7 +164,7 @@
       "url": "https://github.com/darup67/coin-launch-agent",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-15T07:07:19Z",
+      "pushed_at": "2026-10-16T07:07:24Z",
       "last_commit": {
         "message": "Add LICENSE (Copyright (c) 2026 Dhruv)",
         "date": "2026-10-07T16:33:06Z",
