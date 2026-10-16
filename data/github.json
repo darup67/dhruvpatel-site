@@ -1,7 +1,20 @@
 {
   "user": "darup67",
-  "generated_at": "2026-10-16T19:25:28.613Z",
+  "generated_at": "2026-10-16T21:07:06.326Z",
   "repos": [
+    {
+      "name": "jev-client",
+      "description": "Shared Typesafe judgement client used by zillow-agent and coin-launch-agent",
+      "url": "https://github.com/darup67/jev-client",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-10-16T20:46:24Z",
+      "last_commit": {
+        "message": "Supervise Jev Career dashboard",
+        "date": "2026-10-16T20:46:23Z",
+        "url": "https://github.com/darup67/jev-client/commit/d9b6f394be86ef7813629f01995cb2ae1b5ae3ff"
+      }
+    },
     {
       "name": "asset-agents",
       "description": "Cross-agent dashboard over four pinned agent sessions",
@@ -13,19 +26,6 @@
         "message": "Rename Resume tab to Artifact Details",
         "date": "2026-10-16T19:25:08Z",
         "url": "https://github.com/darup67/asset-agents/commit/f8ce749603f02483312f76dac3a78e93d9c298d2"
-      }
-    },
-    {
-      "name": "jev-client",
-      "description": "Shared Typesafe judgement client used by zillow-agent and coin-launch-agent",
-      "url": "https://github.com/darup67/jev-client",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-10-16T19:22:56Z",
-      "last_commit": {
-        "message": "guard: runaway needs 15 min of sustained high CPU (was: any old process with a momentary spike)",
-        "date": "2026-10-16T19:07:32Z",
-        "url": "https://github.com/darup67/jev-client/commit/18a12636c877bdd353ef7f8c656c2ae5f1023ef2"
       }
     },
     {
@@ -47,7 +47,7 @@
       "url": "https://github.com/darup67/market-lab",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-16T19:22:59Z",
+      "pushed_at": "2026-10-16T21:02:12Z",
       "last_commit": {
         "message": "Jev Agents integration: HQ desk card, ROI row, supervisor + watchdog entries",
         "date": "2026-10-16T18:13:20Z",
