@@ -1,6 +1,6 @@
 {
   "user": "darup67",
-  "generated_at": "2026-10-16T11:22:39.204Z",
+  "generated_at": "2026-10-16T16:38:30.757Z",
   "repos": [
     {
       "name": "market-lab",
@@ -8,12 +8,8 @@
       "url": "https://github.com/darup67/market-lab",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-16T11:02:15Z",
-      "last_commit": {
-        "message": "watchdog: check Jev Markets invert dashboard (8797)",
-        "date": "2026-10-16T02:53:43Z",
-        "url": "https://github.com/darup67/market-lab/commit/feed360af4e93ac0e334920e1666238b7f4b556e"
-      }
+      "pushed_at": "2026-10-16T16:30:08Z",
+      "last_commit": null
     },
     {
       "name": "jev-client",
@@ -47,7 +43,7 @@
       "url": "https://github.com/darup67/trade-core",
       "language": "JavaScript",
       "stars": 1,
-      "pushed_at": "2026-10-16T06:06:47Z",
+      "pushed_at": "2026-10-16T13:06:48Z",
       "last_commit": {
         "message": "sync: 1 files (data refresh; jev-majors: Ethereum paper execution path in fomo_exec, FOMO lane v6 early-score floor 1.0, config)",
         "date": "2026-10-15T17:26:11Z",
