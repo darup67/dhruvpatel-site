@@ -47,7 +47,7 @@ jobs:
       - name: Assemble site
         run: |
           mkdir _site
-          cp -r index.html style.css script.js .nojekyll assets resume data _site/
+          cp -r index.html style.css script.js .nojekyll assets resume data systems _site/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
