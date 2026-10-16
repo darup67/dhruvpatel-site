@@ -1,6 +1,6 @@
 {
   "user": "darup67",
-  "generated_at": "2026-10-16T19:17:41.068Z",
+  "generated_at": "2026-10-16T19:25:28.613Z",
   "repos": [
     {
       "name": "asset-agents",
@@ -8,11 +8,11 @@
       "url": "https://github.com/darup67/asset-agents",
       "language": "HTML",
       "stars": 1,
-      "pushed_at": "2026-10-16T19:13:28Z",
+      "pushed_at": "2026-10-16T19:25:09Z",
       "last_commit": {
-        "message": "Console shell with Jev desks in map + resume; generator splices dashboard into it",
-        "date": "2026-10-16T19:13:27Z",
-        "url": "https://github.com/darup67/asset-agents/commit/03b7cf3c95b54ae3a498576c4dab40c94eeed0f7"
+        "message": "Rename Resume tab to Artifact Details",
+        "date": "2026-10-16T19:25:08Z",
+        "url": "https://github.com/darup67/asset-agents/commit/f8ce749603f02483312f76dac3a78e93d9c298d2"
       }
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://github.com/darup67/jev-client",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-16T19:07:34Z",
+      "pushed_at": "2026-10-16T19:22:56Z",
       "last_commit": {
         "message": "guard: runaway needs 15 min of sustained high CPU (was: any old process with a momentary spike)",
         "date": "2026-10-16T19:07:32Z",
@@ -34,7 +34,7 @@
       "url": "https://github.com/darup67/trade-core",
       "language": "JavaScript",
       "stars": 1,
-      "pushed_at": "2026-10-16T19:02:56Z",
+      "pushed_at": "2026-10-16T19:23:02Z",
       "last_commit": {
         "message": "sync: working tree updates",
         "date": "2026-10-16T19:02:53Z",
@@ -47,7 +47,7 @@
       "url": "https://github.com/darup67/market-lab",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-16T19:02:13Z",
+      "pushed_at": "2026-10-16T19:22:59Z",
       "last_commit": {
         "message": "Jev Agents integration: HQ desk card, ROI row, supervisor + watchdog entries",
         "date": "2026-10-16T18:13:20Z",
