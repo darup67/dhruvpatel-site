@@ -1,0 +1,923 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Systems · Dhruv Patel</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.9/standalone/umd/vis-network.min.js"></script>
+<style>
+:root {
+  --bg:#f5f6fa; --surface:#ffffff; --sunk:#eef0f5; --line:#e2e5ee; --line2:#d0d5e3;
+  --text:#111827; --sub:#4b5563; --faint:#9ca3af;
+  --accent:#4f46e5; --accent-soft:#eef2ff;
+  --pos:#15803d; --pos-soft:#dcfce7;
+  --neg:#b91c1c; --neg-soft:#fee2e2;
+  --warn:#92400e; --warn-soft:#fef3c7;
+  --radius:10px; --tab-h:48px;
+  --shadow:0 1px 3px rgba(0,0,0,.06),0 4px 12px rgba(0,0,0,.05);
+  color-scheme:light;
+}
+@media(prefers-color-scheme:dark){
+  :root:not([data-theme=light]){
+    --bg:#0d1117; --surface:#161b22; --sunk:#1c232e; --line:#21282f; --line2:#2a323c;
+    --text:#e6edf3; --sub:#8b949e; --faint:#484f58;
+    --accent:#818cf8; --accent-soft:#1e1b4b;
+    --pos:#4ade80; --pos-soft:#052e16;
+    --neg:#f87171; --neg-soft:#3f0000;
+    --warn:#fbbf24; --warn-soft:#1c1100;
+    --shadow:0 1px 3px rgba(0,0,0,.4),0 4px 12px rgba(0,0,0,.3);
+    color-scheme:dark;
+  }
+}
+:root[data-theme=dark]{
+  --bg:#0d1117; --surface:#161b22; --sunk:#1c232e; --line:#21282f; --line2:#2a323c;
+  --text:#e6edf3; --sub:#8b949e; --faint:#484f58;
+  --accent:#818cf8; --accent-soft:#1e1b4b;
+  --pos:#4ade80; --pos-soft:#052e16;
+  --neg:#f87171; --neg-soft:#3f0000;
+  --warn:#fbbf24; --warn-soft:#1c1100;
+  --shadow:0 1px 3px rgba(0,0,0,.4),0 4px 12px rgba(0,0,0,.3);
+  color-scheme:dark;
+}
+*{box-sizing:border-box;}
+body{margin:0;background:var(--bg);color:var(--text);
+  font-family:"Inter",-apple-system,BlinkMacSystemFont,sans-serif;
+  font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased;}
+
+/* ── Tab bar ───────────────────────────────── */
+.tab-bar{
+  display:flex;align-items:center;height:var(--tab-h);
+  background:var(--surface);border-bottom:1px solid var(--line);
+  padding:0 20px;gap:0;position:fixed;top:0;left:0;right:0;z-index:300;
+}
+.tab-brand{
+  font-family:Archivo,sans-serif;font-weight:700;font-size:15px;
+  letter-spacing:-.02em;color:var(--text);margin-right:24px;flex-shrink:0;
+}
+.tab-btn{
+  background:none;border:none;cursor:pointer;padding:0 14px;height:100%;
+  font-family:"Inter",sans-serif;font-size:12.5px;font-weight:500;
+  color:var(--sub);letter-spacing:.01em;border-bottom:2px solid transparent;
+  margin-bottom:-1px;transition:color .12s,border-color .12s;white-space:nowrap;
+}
+.tab-btn:hover{color:var(--text);}
+.tab-btn.active{color:var(--accent);border-bottom-color:var(--accent);}
+
+/* ── Panes ─────────────────────────────────── */
+.pane{
+  display:none;position:fixed;
+  top:var(--tab-h);left:0;right:0;bottom:0;overflow:hidden;
+}
+.pane.active{display:flex;flex-direction:column;}
+
+
+/* ══════════════ DASHBOARD CSS ══════════════ */
+.wrap{max-width:960px;margin:0 auto;padding:24px 18px 60px;}
+.mast{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 12px;margin-bottom:4px;}
+h1{font-family:Archivo,sans-serif;font-weight:700;font-size:clamp(20px,4vw,28px);
+   letter-spacing:-.025em;margin:0;text-wrap:balance;}
+.stamp{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--faint);}
+.lede{color:var(--sub);margin:0 0 20px;max-width:64ch;font-size:13.5px;}
+.strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px;margin-bottom:20px;}
+.st{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:12px;display:flex;flex-direction:column;gap:3px;}
+.st .k{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--faint);font-weight:600;}
+.st .v{font-family:"JetBrains Mono",monospace;font-weight:700;font-size:17px;font-variant-numeric:tabular-nums;}
+.st .sub2{font-size:11px;color:var(--sub);}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);margin-bottom:14px;overflow:hidden;}
+.card>.stripe{height:3px;background:var(--accent);}
+.stripe.ok{background:var(--pos);}.stripe.warn{background:var(--warn);}.stripe.bad{background:var(--neg);}
+.head{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;padding:13px 16px 11px;border-bottom:1px solid var(--line);}
+.head h2{font-family:Archivo,sans-serif;font-size:15.5px;font-weight:600;margin:0;letter-spacing:-.01em;}
+.head .sid{font-family:"JetBrains Mono",monospace;font-size:10.5px;color:var(--faint);margin-left:auto;}
+.body{padding:13px 16px 16px;display:flex;flex-direction:column;gap:12px;}
+.chip{display:inline-flex;align-items:center;gap:3px;font-size:10.5px;font-weight:600;
+  padding:2px 7px;border-radius:999px;letter-spacing:.02em;background:var(--sunk);color:var(--sub);white-space:nowrap;}
+.chip.ok{background:var(--pos-soft);color:var(--pos);}
+.chip.warn{background:var(--warn-soft);color:var(--warn);}
+.chip.bad{background:var(--neg-soft);color:var(--neg);}
+.chip.acc{background:var(--accent-soft);color:var(--accent);}
+.kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(118px,1fr));gap:10px;}
+.kv>div{display:flex;flex-direction:column;gap:1px;}
+.kv .k{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--faint);font-weight:600;}
+.kv .v{font-family:"JetBrains Mono",monospace;font-weight:500;font-size:14px;font-variant-numeric:tabular-nums;}
+.split{display:flex;height:6px;border-radius:4px;overflow:hidden;background:var(--sunk);}
+.split .b{background:var(--pos);}.split .s{background:var(--neg);}
+ul.tks{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:4px;}
+.tk{font-family:"JetBrains Mono",monospace;font-size:11px;padding:2px 5px;border-radius:4px;background:var(--sunk);color:var(--sub);}
+.tk.pos{background:var(--pos-soft);color:var(--pos);}
+.tk.neg{background:var(--neg-soft);color:var(--neg);}
+.agrid{display:grid;grid-template-columns:1fr auto auto;gap:5px 10px;align-items:center;}
+.agrid .n{font-size:13px;}.agrid .w{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--sub);text-align:right;}
+.volrow{display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+.volnum{font-family:"JetBrains Mono",monospace;font-weight:700;font-size:24px;font-variant-numeric:tabular-nums;line-height:1;}
+.volnum small{font-size:13px;font-weight:500;color:var(--sub);}
+.vbars{position:relative;display:flex;align-items:flex-end;gap:6px;height:60px;padding:0 22px 0 4px;}
+.vb{display:flex;flex-direction:column;align-items:center;gap:3px;width:28px;}
+.vbt{width:100%;height:44px;display:flex;align-items:flex-end;background:var(--sunk);border-radius:3px;overflow:hidden;}
+.vbt i{display:block;width:100%;border-radius:3px 3px 0 0;}
+.vbt i.lo{background:var(--pos);}.vbt i.mid{background:var(--accent);}.vbt i.hi{background:var(--neg);}
+.vb span{font-family:"JetBrains Mono",monospace;font-size:9.5px;color:var(--faint);font-variant-numeric:tabular-nums;}
+.vbrule{position:absolute;left:4px;right:22px;height:1px;background:var(--line);pointer-events:none;}
+.vbrule span{position:absolute;right:-20px;top:-7px;font-family:"JetBrains Mono",monospace;font-size:9px;color:var(--faint);}
+.lbl{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--faint);font-weight:600;margin-bottom:5px;}
+.note{display:flex;gap:8px;padding:9px 11px;border-radius:7px;font-size:13px;
+  background:var(--warn-soft);color:var(--text);border-left:3px solid var(--warn);}
+.note.bad{background:var(--neg-soft);border-left-color:var(--neg);}
+.note b{font-weight:600;}
+.tblwrap{overflow-x:auto;margin:0 -2px;}
+table{width:100%;border-collapse:collapse;font-size:12.5px;}
+th{text-align:right;font-size:9.5px;text-transform:uppercase;letter-spacing:.08em;
+  color:var(--faint);font-weight:600;padding:0 0 6px;border-bottom:1px solid var(--line);}
+th:first-child{text-align:left;}
+td{padding:4px 0;border-bottom:1px solid var(--line);}
+td.sym{font-family:"JetBrains Mono",monospace;font-weight:700;font-size:12px;}
+td.num{text-align:right;font-family:"JetBrains Mono",monospace;font-variant-numeric:tabular-nums;padding-left:12px;}
+tr:last-child td{border-bottom:0;}
+tfoot td{border-top:2px solid var(--line);border-bottom:0;padding-top:7px;font-weight:700;}
+.pos{color:var(--pos);}.neg{color:var(--neg);}
+footer{margin-top:24px;padding-top:12px;border-top:1px solid var(--line);color:var(--faint);font-size:12px;}
+footer code{font-family:"JetBrains Mono",monospace;font-size:11px;background:var(--sunk);padding:1px 4px;border-radius:3px;color:var(--sub);}
+
+/* ══════════════ ECOSYSTEM MAP CSS ══════════════ */
+#pane-map{flex-direction:row !important;}
+
+/* Canvas */
+#map-canvas-wrap{
+  flex:1;position:relative;min-width:0;
+  background:var(--bg);
+  background-image:radial-gradient(circle,var(--line2) 1px,transparent 1px);
+  background-size:28px 28px;
+}
+#network-container{width:100%;height:100%;}
+
+/* Sidebar */
+#map-sidebar{
+  width:200px;flex-shrink:0;overflow-y:auto;height:100%;
+  background:var(--surface);border-right:1px solid var(--line);
+  display:flex;flex-direction:column;
+}
+.sb-section{padding:14px 14px 10px;}
+.sb-title{font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;
+  color:var(--faint);margin-bottom:9px;}
+.sb-input{
+  width:100%;background:var(--sunk);border:1px solid var(--line);
+  border-radius:6px;padding:5px 9px;font-size:12px;color:var(--text);
+  outline:none;font-family:inherit;
+}
+.sb-input:focus{border-color:var(--accent);}
+.sb-input::placeholder{color:var(--faint);}
+.leg-row{
+  display:flex;align-items:center;gap:8px;font-size:12px;
+  color:var(--text);padding:4px 6px;border-radius:6px;
+  cursor:pointer;transition:background .1s;user-select:none;
+}
+.leg-row:hover{background:var(--sunk);}
+.leg-row.off{opacity:.3;}
+.leg-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;}
+.leg-count{font-family:"JetBrains Mono",monospace;font-size:10px;
+  color:var(--faint);margin-left:auto;}
+.sb-divider{height:1px;background:var(--line);margin:4px 14px;}
+.sb-btn{
+  width:100%;background:none;border:1px solid var(--line);border-radius:6px;
+  padding:5px 10px;font-size:11.5px;font-weight:500;color:var(--sub);
+  cursor:pointer;font-family:inherit;transition:all .12s;text-align:left;
+  margin-bottom:4px;
+}
+.sb-btn:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent);}
+.sb-hint{font-size:10.5px;color:var(--faint);line-height:1.5;padding:0 14px 12px;}
+
+/* Detail panel */
+#detail-panel{
+  width:0;overflow:hidden;background:var(--surface);
+  border-left:1px solid var(--line);transition:width .18s ease;
+  flex-shrink:0;display:flex;flex-direction:column;position:relative;
+}
+#detail-panel.open{width:256px;}
+#dp-scroll{padding:16px;overflow-y:auto;height:100%;}
+#dp-close{
+  position:absolute;top:10px;right:10px;width:24px;height:24px;
+  background:var(--sunk);border:none;border-radius:5px;cursor:pointer;
+  color:var(--sub);font-size:14px;display:flex;align-items:center;
+  justify-content:center;transition:background .1s,color .1s;
+}
+#dp-close:hover{background:var(--line);color:var(--text);}
+.dp-badge{
+  display:inline-flex;align-items:center;gap:5px;
+  border-radius:5px;padding:2px 8px;font-size:10px;font-weight:700;
+  letter-spacing:.05em;text-transform:uppercase;margin-bottom:10px;
+}
+.dp-name{font-family:Archivo,sans-serif;font-weight:700;font-size:16px;
+  letter-spacing:-.01em;margin-bottom:3px;padding-right:28px;line-height:1.2;}
+.dp-path{font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--faint);
+  margin-bottom:10px;word-break:break-all;}
+.dp-desc{font-size:12.5px;color:var(--sub);line-height:1.6;margin-bottom:14px;}
+.dp-conn-title{font-size:9.5px;font-weight:700;text-transform:uppercase;
+  letter-spacing:.09em;color:var(--faint);margin-bottom:7px;}
+.dp-conn{
+  display:flex;gap:7px;font-size:11.5px;padding:5px 0;
+  border-bottom:1px solid var(--line);align-items:flex-start;
+}
+.dp-conn:last-child{border-bottom:0;}
+.dp-dir{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;
+  color:var(--faint);min-width:22px;margin-top:2px;}
+.dp-dir.in{color:var(--pos);}
+.dp-dir.out{color:var(--accent);}
+.dp-conn-name{font-weight:500;color:var(--text);line-height:1.3;}
+.dp-conn-lbl{font-size:10.5px;color:var(--faint);margin-top:1px;}
+
+@media(max-width:600px){#map-sidebar{width:0;display:none;}#detail-panel.open{width:200px;}}
+</style>
+
+<!-- Tab bar -->
+<div class="tab-bar">
+  <a class="tab-brand" href="../" style="text-decoration:none">&larr; Dhruv Patel</a>
+  <button class="tab-btn active" data-tab="map">Ecosystem Map</button>
+  <button class="tab-btn" data-tab="resume">Resume Section</button>
+</div>
+
+<!-- ══════════ ECOSYSTEM MAP PANE ══════════ -->
+<div id="pane-map" class="pane active">
+  <div id="map-sidebar">
+    <div class="sb-section">
+      <div class="sb-title">Search</div>
+      <input class="sb-input" id="map-search" type="search" placeholder="Filter nodes&hellip;">
+    </div>
+    <div class="sb-divider"></div>
+    <div class="sb-section">
+      <div class="sb-title">Groups <span style="color:var(--faint);font-weight:400">(click to hide)</span></div>
+      <div id="legend"></div>
+    </div>
+    <div class="sb-divider"></div>
+    <div class="sb-section">
+      <button class="sb-btn" id="btn-fit">⊞ Fit to screen</button>
+      <button class="sb-btn" id="btn-physics">⟳ Re-settle layout</button>
+      <button class="sb-btn" id="btn-reset">✕ Clear filters</button>
+    </div>
+    <div class="sb-hint">Click a node to inspect it.<br>Drag to rearrange. Scroll to zoom.</div>
+  </div>
+
+  <div id="map-canvas-wrap">
+    <div id="network-container"></div>
+  </div>
+
+  <div id="detail-panel">
+    <div id="dp-scroll">
+      <button id="dp-close">&#215;</button>
+      <div id="dp-content"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════ RESUME PANE ══════════ -->
+<div id="pane-resume" class="pane">
+<style>
+#pane-resume{overflow-y:auto;}
+.resume-wrap{max-width:760px;margin:0 auto;padding:28px 20px 60px;}
+.res-header{margin-bottom:28px;border-bottom:2px solid var(--accent);padding-bottom:18px;}
+.res-header h1{font-family:Archivo,sans-serif;font-weight:700;font-size:clamp(18px,3.5vw,26px);letter-spacing:-.02em;margin:0 0 4px;}
+.res-header p{color:var(--sub);font-size:13.5px;margin:0;}
+.res-section{margin-bottom:26px;}
+.res-section-title{font-family:Archivo,sans-serif;font-weight:700;font-size:13.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);margin:0 0 12px;display:flex;align-items:center;gap:8px;}
+.res-section-title::after{content:'';flex:1;height:1px;background:var(--line);}
+.res-bullets{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;}
+.res-bullets li{display:flex;gap:10px;font-size:13.5px;line-height:1.6;color:var(--text);}
+.res-bullets li::before{content:'▸';color:var(--accent);font-size:11px;margin-top:4px;flex-shrink:0;}
+.res-bullets b{color:var(--text);font-weight:600;}
+.res-sub{margin:6px 0 0 20px;list-style:none;padding:0;display:flex;flex-direction:column;gap:4px;}
+.res-sub li{display:flex;gap:8px;font-size:12.5px;color:var(--sub);line-height:1.5;}
+.res-sub li::before{content:'–';color:var(--faint);flex-shrink:0;}
+.res-note{margin-top:18px;padding:10px 14px;border-radius:8px;background:var(--sunk);border-left:3px solid var(--accent);font-size:12.5px;color:var(--sub);}
+.res-note b{color:var(--text);}
+.res-copy{
+  display:inline-flex;align-items:center;gap:5px;margin-top:20px;
+  background:var(--accent);color:#fff;border:none;border-radius:7px;
+  padding:7px 14px;font-size:12.5px;font-weight:600;cursor:pointer;
+  font-family:inherit;transition:opacity .12s;
+}
+.res-copy:hover{opacity:.88;}
+</style>
+<div class="resume-wrap">
+  <div class="res-header">
+    <h1>Proprietary Algorithmic Trading &amp; AI Agent Infrastructure</h1>
+    <p>Personal project &mdash; built, maintained, and operated solo &middot; 2024&ndash;present &middot; macOS, Python, Node.js, SQLite, launchd</p>
+  </div>
+
+  <div class="res-section">
+    <div class="res-section-title">Core Infrastructure</div>
+    <ul class="res-bullets">
+      <li><span>Engineered <b>trade-core</b>, a shared 15-minute bar store and signal ledger backed by SQLite, ingesting equity bars from Alpaca IEX (RTH) with Yahoo Finance as an extended-hours and crypto fallback; all 10+ downstream agents read from a single authoritative store.</span></li>
+      <li><span>Built a statistical evidence-gating system using <b>Wilson lower-bound confidence intervals</b> (≥30 signals, ≥10 days minimum) to determine which signal kinds are PROVEN before they generate live email alerts &mdash; false-positive rate reduced to near zero from naïve thresholds.</span></li>
+      <li><span>Implemented regime detection and grading pipelines that evaluate every signal outcome net of estimated transaction costs, feeding results back into the ledger automatically after each trade settles.</span></li>
+    </ul>
+  </div>
+
+  <div class="res-section">
+    <div class="res-section-title">Signal Agents</div>
+    <ul class="res-bullets">
+      <li><span><b>Headless Flip Watcher</b> &mdash; 75-symbol (equities + CME micros futures) signal agent running without TradingView; SuperTrend 3/10 on 15m bars, early rally detection (bull FVG + ≥2.5× volume confirmation), and 1h futures FVG alerts; polls every 2 minutes, live since Sep 2026.</span></li>
+      <li><span><b>Market IV Agent</b> &mdash; scans 11 healthcare and S&amp;P sector profiles at 09:45 and 16:30 each trading day for 2–5 bull call spread candidates; grades each spread at expiry through trade-core; consolidates into a single mid-day email digest.</span></li>
+      <li><span><b>Crypto Scanner</b> &mdash; monitors 102 coins (Robinhood + Coinbase + Wallet) with stock-like signal logic and a daily bias board; only PROVEN flip kinds email live.</span></li>
+      <li><span><b>Coin Launch Agent</b> &mdash; detects newly listed Coinbase/Robinhood coins; applies a plus50 filter (+50% in 1h with ≥40% held-out confirmation gate) and a kill switch; graded in trade-core.</span></li>
+      <li><span><b>Kalshi BTC Caller</b> &mdash; read-only agent that calls KXBTC15M prediction market contracts when the gap to strike is large relative to remaining volatility; independently accurate but priced-in at market (break-even after fees &mdash; documented as such).</span></li>
+    </ul>
+  </div>
+
+  <div class="res-section">
+    <div class="res-section-title">Research &amp; Simulation</div>
+    <ul class="res-bullets">
+      <li><span><b>Paper Lab</b> &mdash; isolated, broker-free rules engine for BTC/ETH and 4 CME micro-futures (MNQ/MES/MGC/MCL) with 4 rule archetypes (hold, trend, breakout, reversion); versioned rule sets with paper_start timestamps; generates weekly P&amp;L reports per instrument and rule.</span></li>
+      <li><span><b>Market Lab</b> &mdash; irreplaceable research database capturing Kalshi 15m prediction market quotes and CME futures bars; hosts Paper Lab, Event Desk, Sector Research, and the Agent Watchdog under one repository.</span></li>
+      <li><span><b>Sector Breadth Research</b> &mdash; weekly Saturday email analyzing 11 sector ETFs + 16 industry groups vs. SPY: green/red day share, average moves, p-value vs. 50% null, and rank vs. prior week &mdash; stateless, runs fully in memory.</span></li>
+      <li><span><b>Flux Lab</b> &mdash; proprietary FluxCharts-style Smart Money Concepts Pine Script indicator for TradingView; occupies the live chart scanner slot.</span></li>
+    </ul>
+  </div>
+
+  <div class="res-section">
+    <div class="res-section-title">Orchestration &amp; Delivery</div>
+    <ul class="res-bullets">
+      <li><span><b>Event Desk</b> &mdash; consolidates all agent output into a single 08:55 morning brief (watchlist + BUY/SELL regime grid + evidence) and a ~11:10 market digest (IV scan results for 10 sectors + any ACT signals); drives Robinhood spread ticket execution decisions.</span></li>
+      <li><span><b>Agent Watchdog</b> &mdash; runs every 15 minutes via launchd; detects missed scans (compares actual vs. expected run times against NYSE calendar), retries failed email sends from the Gmail outbox, runs flip healthcheck --repair, and verifies Zillow freshness.</span></li>
+      <li><span><b>Zillow/Redfin Scanner</b> &mdash; daily Atlanta real estate digest across 51 ZIP codes and 7 markets; uses Redfin polygon/CSV search (Zillow blocked by PerimeterX) with an adaptive quadtree for dense bounding boxes.</span></li>
+      <li><span><b>Email UI</b> &mdash; shared multipart HTML/text email renderer (<code>email-ui.js</code> + <code>email_ui.py</code>) used by all 10+ agents; consistent subject-line convention, section hierarchy, and SMTP delivery via Gmail OAuth.</span></li>
+      <li><span><b>Asset Agents Dashboard</b> &mdash; phone-accessible private web artifact aggregating all agent states (flip regime, positions, IV scans, paper P&amp;L, scheduled tasks) rebuilt weekday mornings; the only surface reachable on mobile when the Mac is unattended.</span></li>
+    </ul>
+  </div>
+
+  <div class="res-section">
+    <div class="res-section-title">Jev Paper-Trading Desks</div>
+    <ul class="res-bullets">
+      <li><span><b>Jev platform</b> &mdash; shared AI-judgement client (<b>jev-client</b>) used by every desk: audited quantized cache and daily spend governor, pause/flatten controls with an audit log, a unified ROI scoreboard measured against a 50&ndash;70%/yr minimum benchmark, and password-gated phone dashboards over Tailscale. Paper trading only; real money is gated behind written, measurable rules.</span></li>
+      <li><span><b>Supervisor &amp; Guard</b> &mdash; 30-second launchd supervisor restarts any dead agent and runs nightly backups; a stray-process guard kills runaway loops and alerts only on sustained CPU load or duplicate agents.</span></li>
+      <li><span><b>Jev HQ</b> &mdash; control center for all desks: KPI strip, ROI table, system health, options flow and gamma panel, git-sync status for every repo, pause/resume/flatten/mute controls and a control log; includes this Asset Agents console as a tab.</span></li>
+      <li><span><b>Jev Options IV</b> &mdash; paper options desk across 111 stocks in 11 GICS sectors plus 46 ETFs with six lanes (iron condor, condor max, put credit, call credit, bull call debit, earnings). Rules chosen profit-first from backtests with in-sample 2011&ndash;20 and out-of-sample 2021&ndash;26 splits on modelled option prices; each lane runs a $10k bank.</span>
+        <ul class="res-sub">
+          <li>IV scorecard built from mid-price implied vol and verified against live Robinhood quotes, with an A/B gate comparing the code rule against a frozen Jev v1 read.</li>
+          <li>Free flow stack: unusual-volume sweep, 5-minute Cboe volume-diff flow tape with side inference, and gamma-level / 0DTE history with alerts.</li>
+        </ul></li>
+      <li><span><b>Jev Markets</b> &mdash; paper scalper and terminal for MNQ/MES with price-action entries and context from the options flow and 0DTE gamma regime; a mirrored <b>invert arm</b> runs the same logic on opposite trades in its own book as an A/B test.</span></li>
+      <li><span><b>Jev Majors &amp; FOMO lane</b> &mdash; paper perps desk over 26 coins priced on the Kalshi demo book with 1:1 fill parity, plus guarded and invert A/B lanes and a lane fed by sampled on-chain FOMO-app buys.</span></li>
+      <li><span><b>Jev Predict</b> &mdash; paper desk on hourly BTC prediction-market contracts mirrored on the Kalshi demo book; GBM, stacked and pooled models were tested offline and rejected, and the results are documented. Live trading is gated on 80% win rate over at least 75 paper bets with positive net.</span></li>
+      <li><span><b>Jev Agents</b> &mdash; plain-English prediction-market rule agents: a deterministic parser turns a sentence into a rule (odds, price, index move, gamma, flow triggers), a paper executor runs it, and a phone-installable app manages them.</span></li>
+      <li><span><b>Jev Shop, Shadow &amp; AskJev</b> &mdash; deal-finder UI with a designer-store lane; Chronos-Bolt and FinBERT shadow forecasts scored against a baseline with a written promotion rule; chat UI for questions to Jev.</span></li>
+    </ul>
+  </div>
+
+  <div class="res-note">
+    <b>Source:</b> github.com/darup67 (trade-core, market-lab, kalshi-btc-agent, kalshi-commodity-agent, jev-hq, jev-options-iv, jev-agents, jev-shop, jev-markets-invert; Jev Majors lanes private).<br>
+    <b>Stack:</b> Python 3.12 &middot; Node.js 20 &middot; SQLite &middot; vis.js &middot; launchd &middot; Gmail OAuth &middot; Alpaca IEX &middot; Robinhood Agentic MCP &middot; Kalshi API &middot; Cboe delayed chains &middot; Tailscale &middot; Redfin GIS-CSV &middot; TradingView MCP &middot; macOS Keychain (credential storage)
+  </div>
+
+  <button class="res-copy" onclick="copyResume()">Copy plain text for resume</button>
+</div>
+</div>
+
+<script>
+function copyResume(){
+  const text = `PROPRIETARY ALGORITHMIC TRADING & AI AGENT INFRASTRUCTURE
+Personal project — built, maintained, and operated solo · 2024–present · macOS, Python, Node.js, SQLite, launchd
+
+Core Infrastructure
+• Engineered trade-core, a shared 15-minute bar store and signal ledger backed by SQLite, ingesting equity bars from Alpaca IEX (RTH) with Yahoo Finance as an extended-hours and crypto fallback; all 10+ downstream agents read from a single authoritative store.
+• Built a statistical evidence-gating system using Wilson lower-bound confidence intervals (≥30 signals, ≥10 days minimum) to determine which signal kinds are PROVEN before generating live email alerts — false-positive rate reduced to near zero from naïve thresholds.
+• Implemented regime detection and grading pipelines that evaluate every signal outcome net of estimated transaction costs, feeding results back into the ledger automatically after each trade settles.
+
+Signal Agents
+• Headless Flip Watcher — 75-symbol (equities + CME micros futures) signal agent running without TradingView; SuperTrend 3/10 on 15m bars, early rally detection (bull FVG + ≥2.5× volume confirmation), and 1h futures FVG alerts; polls every 2 minutes.
+• Market IV Agent — scans 11 healthcare and S&P sector profiles at 09:45 and 16:30 each trading day for 2–5 bull call spread candidates; grades each spread at expiry through trade-core.
+• Crypto Scanner — monitors 102 coins (Robinhood + Coinbase + Wallet) with stock-like signal logic and a daily bias board; only PROVEN flip kinds email live.
+• Coin Launch Agent — detects newly listed Coinbase/Robinhood coins; applies a plus50 filter (+50% in 1h with ≥40% held-out confirmation gate); graded in trade-core.
+• Kalshi BTC Caller — read-only agent calling KXBTC15M prediction market contracts when the gap to strike is large relative to remaining volatility.
+
+Research & Simulation
+• Paper Lab — isolated, broker-free rules engine for BTC/ETH and 4 CME micro-futures (MNQ/MES/MGC/MCL) with 4 rule archetypes; versioned rule sets; generates weekly P&L reports per instrument and rule.
+• Market Lab — research database capturing Kalshi 15m prediction market quotes and CME futures bars; hosts Paper Lab, Event Desk, Sector Research, and the Agent Watchdog.
+• Sector Breadth Research — weekly email analyzing 11 sector ETFs + 16 industry groups vs. SPY: green/red day share, average moves, p-value vs. 50% null, and rank vs. prior week.
+• Flux Lab — proprietary FluxCharts-style Smart Money Concepts Pine Script indicator for TradingView.
+
+Orchestration & Delivery
+• Event Desk — consolidates all agent output into a single 08:55 morning brief and ~11:10 market digest; drives Robinhood spread ticket execution decisions.
+• Agent Watchdog — runs every 15 minutes; detects missed scans, retries failed email sends, runs flip healthcheck --repair, and verifies Zillow freshness.
+• Zillow/Redfin Scanner — daily Atlanta real estate digest across 51 ZIP codes and 7 markets using Redfin polygon/CSV search.
+• Asset Agents Dashboard — phone-accessible private web artifact aggregating all agent states, rebuilt weekday mornings.
+
+Jev Paper-Trading Desks
+• Jev platform — shared AI-judgement client used by every desk: audited quantized cache and daily spend governor, pause/flatten controls with an audit log, a unified ROI scoreboard against a 50–70%/yr minimum benchmark, and password-gated phone dashboards over Tailscale. Paper trading only; real money is gated behind written, measurable rules.
+• Supervisor & Guard — 30-second launchd supervisor restarts dead agents and runs nightly backups; a stray-process guard kills runaway loops and alerts on sustained CPU load or duplicates.
+• Jev HQ — control center for all desks: ROI table, system health, options flow and gamma panel, git-sync status, pause/resume/flatten controls and a control log.
+• Jev Options IV — paper options desk across 111 stocks in 11 GICS sectors plus 46 ETFs with six lanes (iron condor, condor max, put credit, call credit, bull call debit, earnings); profit-first rules from in-sample 2011–20 / out-of-sample 2021–26 backtests on modelled option prices; IV scorecard verified against live quotes with an A/B gate; free volume-sweep, flow-tape and gamma-level stack.
+• Jev Markets — paper scalper for MNQ/MES with options-flow and 0DTE-gamma context, plus a mirrored invert arm as an A/B test.
+• Jev Majors & FOMO lane — paper perps desk over 26 coins priced on the Kalshi demo book with 1:1 fill parity, guarded and invert A/B lanes, and an on-chain buy-flow lane.
+• Jev Predict — paper desk on hourly BTC prediction-market contracts; GBM, stacked and pooled models tested offline and rejected; live trading gated on 80% win rate over 75+ paper bets with positive net.
+• Jev Agents — plain-English prediction-market rule agents with a deterministic parser, paper executor and phone-installable app.
+• Jev Shop, Shadow & AskJev — deal-finder with designer-store lane; Chronos-Bolt/FinBERT shadow forecasts with a written promotion rule; chat UI for Jev.
+
+Source: github.com/darup67 (trade-core, market-lab, kalshi-btc-agent, kalshi-commodity-agent, jev-hq, jev-options-iv, jev-agents, jev-shop, jev-markets-invert).
+Stack: Python 3.12 · Node.js 20 · SQLite · launchd · Tailscale · Cboe delayed chains · Gmail OAuth · Alpaca IEX · Robinhood Agentic MCP · Kalshi API · Redfin GIS-CSV · TradingView MCP · macOS Keychain`;
+  navigator.clipboard.writeText(text).then(()=>{
+    const btn=document.querySelector('.res-copy');
+    btn.textContent='✓ Copied!';setTimeout(()=>{btn.textContent='Copy plain text for resume';},2200);
+  }).catch(()=>{
+    const ta=document.createElement('textarea');ta.value=text;
+    ta.style.cssText='position:fixed;opacity:0';document.body.appendChild(ta);
+    ta.select();document.execCommand('copy');document.body.removeChild(ta);
+    const btn=document.querySelector('.res-copy');
+    btn.textContent='✓ Copied!';setTimeout(()=>{btn.textContent='Copy plain text for resume';},2200);
+  });
+}
+</script>
+
+<script>
+// ── Tab switching ──────────────────────────────────────────
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.pane').forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('pane-' + btn.dataset.tab).classList.add('active');
+    if (btn.dataset.tab === 'map') {
+      requestAnimationFrame(() => requestAnimationFrame(() => {
+        if (!window._mapInited) initMap();
+        else if (network) { network.redraw(); network.fit(); }
+      }));
+    }
+  });
+});
+
+// ── Ecosystem data ─────────────────────────────────────────
+const G = {
+  source:   { label:'Data Source',    dot:'#64748b', fill:'#f1f5f9', fillD:'#1e2533', border:'#94a3b8' },
+  infra:    { label:'Infrastructure', dot:'#4f46e5', fill:'#eef2ff', fillD:'#1e1b4b', border:'#818cf8' },
+  signal:   { label:'Signal Agent',   dot:'#7c3aed', fill:'#f5f3ff', fillD:'#2e1065', border:'#a78bfa' },
+  research: { label:'Research / Lab', dot:'#0d9488', fill:'#f0fdfa', fillD:'#042f2e', border:'#2dd4bf' },
+  ops:      { label:'Ops / Watchdog', dot:'#d97706', fill:'#fffbeb', fillD:'#1c1100', border:'#fbbf24' },
+  iface:    { label:'Dashboard / UI', dot:'#059669', fill:'#f0fdf4', fillD:'#052e16', border:'#4ade80' },
+  jev:      { label:'Jev Desks (paper)', dot:'#0284c7', fill:'#f0f9ff', fillD:'#082f49', border:'#38bdf8' },
+  channel:  { label:'Output Channel', dot:'#e11d48', fill:'#fff1f2', fillD:'#3f0000', border:'#fb7185' },
+};
+
+const NODES = [
+  // Data sources
+  {id:'alpaca',    label:'Alpaca IEX',      group:'source',   size:18, x:-560,y:-350,
+   path:'data.alpaca.markets/v2',
+   desc:'Equity/ETF 15m bars for RTH. Free IEX feed. Key kept in a secrets store.'},
+  {id:'yahoo',     label:'Yahoo Finance',   group:'source',   size:18, x:-300,y:-370,
+   path:'query1.finance.yahoo.com',
+   desc:'Extended-hours bars (pre/post) and stocks fallback. Used by paper-lab and sector research too.'},
+  {id:'cex',       label:'Coinbase / Binance\n/ Kraken',group:'source',size:16,x:0,y:-360,
+   path:'keyless public APIs',
+   desc:'Crypto 15m bar fallback chain: home exchange → Coinbase → Binance → Kraken → Bitstamp. All keyless.'},
+  {id:'kalshi_api',label:'Kalshi API',      group:'source',   size:16, x:280,y:-360,
+   path:'trading.kalshi.com',
+   desc:'Prediction-market quotes for the 15-minute BTC (KXBTC15M), gold (KXGOLD15M) and WTI (KXWTI15M) contracts, the 1-hour BTC ladder (KXBTCD), and 15m quote capture for research.'},
+  {id:'redfin',    label:'Redfin',          group:'source',   size:14, x:580,y:-250,
+   path:'redfin.com/gis-csv',
+   desc:'Property listings via bounding-box polygon + ZIP filter. Zillow blocked by PerimeterX.'},
+  {id:'rh_api',    label:'Robinhood\nConnector',group:'source',size:14,x:680,y:-80,
+   path:'Robinhood Agentic MCP',
+   desc:'Robinhood connector for read-only portfolio data; the agent cannot place trades.'},
+  {id:'gmail_li',  label:'Gmail +\nLinkedIn',group:'source',  size:14, x:680,y:100,
+   path:'Gmail MCP + Composio',
+   desc:'Job leads from Gmail search and LinkedIn notification emails. Feeds job-tracker artifact.'},
+
+  // Infrastructure
+  {id:'trade_core',label:'trade-core',      group:'infra',    size:40, x:0,y:-100,
+   path:'~/trade-core  ·  darup67/trade-core',
+   desc:'Central hub. bars.js: incremental SQLite 15m bar store (market.db), hybrid Alpaca RTH + Yahoo. ledger.js: signal ledger graded net of costs, regime-aware PROVEN gating (Wilson LB > baseline, ≥30 signals/≥10 days). grade.js runs hourly :05.'},
+  {id:'email_ui',  label:'Email UI',        group:'infra',    size:20, x:-180,y:330,
+   path:'~/flip-notifier/email-ui.js + email_ui.py',
+   desc:'Shared multipart email renderer used by all agents. Consistent subject/section format. SMTP via an app password kept in a secrets store.'},
+
+  // Signal agents
+  {id:'headless',  label:'Flip Watcher\n(headless)',group:'signal',size:28,x:-440,y:50,
+   path:'~/flip-notifier/headless-flip.js',
+   desc:'LIVE since 2026-09-28. 75 symbols, 15m bars, SuperTrend 3/10. STRONG flips on 15m + 🚀 early rallies on 30m (bull FVG + ≥2.5× volume) + FVG alerts on 1h futures. Evidence-gated: only PROVEN kinds email live.'},
+  {id:'crypto_scan',label:'Crypto\nScanner', group:'signal',  size:20, x:-200,y:60,
+   path:'~/flip-notifier/crypto-scan.js',
+   desc:'102 coins (RH/Coinbase/Wallet). STRONG crypto flips proven and emailed live. Bias board in morning brief.'},
+  {id:'market_iv', label:'Market IV\nAgent', group:'signal',  size:22, x:280,y:50,
+   path:'~/market-iv-agent  ·  darup67/market-iv-agent',
+   desc:'Healthcare + 10 S&P sector profiles. 09:45 and 09:53 scans + 16:30 close run. Finds 2–5 bull call spread candidates (ACT) per sector. Grades at expiry via trade-core.'},
+  {id:'event_desk',label:'Event Desk',       group:'signal',  size:24, x:80,y:150,
+   path:'~/market-lab/event-desk',
+   desc:'08:55 morning brief (watchlist + BUY/SELL grid + evidence). ~11:10 single Market digest email (ACT + bio + 10 sectors, consolidate:true). Reads market-iv handoff file.'},
+  {id:'coin_launch',label:'Coin Launch\nAgent',group:'signal',size:18,x:-310,y:160,
+   path:'~/coin-launch-agent  ·  listed.py',
+   desc:'Coinbase/RH-listed coins only. plus50 picks: +50% in 1h, ≥40% held-out gate, kill switch. Graded in trade-core. pump.fun paused.'},
+  {id:'kalshi_btc',label:'Kalshi BTC\nCaller',group:'signal', size:18, x:420,y:-70,
+   path:'~/kalshi-btc-agent',
+   desc:'Read-only 15m BTC cushion caller. Calls KXBTC15M when gap to strike is large vs volatility left. Accurate but priced in — break-even after fees. Chronos/AutoGluon tests (minutes 1, 3, 4, 5) and the volatility study found nothing that beats the market price. Banner + sound.'},
+
+  // Research
+  {id:'paper_lab', label:'Paper Lab',        group:'research', size:18, x:-180,y:270,
+   path:'~/market-lab/paper-lab',
+   desc:'Simulated-only rules for BTC/ETH + 4 micros (MNQ/MES/MGC/MCL). 4 rule types. No broker path ever. Rule changes bump version + paper_start.'},
+  {id:'market_lab',label:'Market Lab',       group:'research', size:18, x:20,y:270,
+   path:'~/market-lab  ·  darup67/market-lab',
+   desc:'Irreplaceable Kalshi 15m + CME futures capture. Research scripts. Hosts paper-lab, event-desk, sector-research, watchdog.'},
+  {id:'flux_lab',  label:'Flux Lab',         group:'research', size:16, x:500,y:60,
+   path:'~/flux-lab  ·  darup67/flux-lab',
+   desc:'FluxCharts-style SMC Pine indicator for TradingView. Occupies the chart Scanner slot since 2026-09-28.'},
+  {id:'sector_res',label:'Sector Breadth\nResearch',group:'research',size:16,x:200,y:270,
+   path:'~/market-lab/sector-research',
+   desc:'Weekly Sat 08:30 email. 11 sector ETFs + 16 industry groups + SPY. Green/red share, avg moves, p-value vs 50%, rank vs prior week. Pure in-memory.'},
+  {id:'zillow',    label:'Zillow / Redfin\nScanner',group:'research',size:16,x:560,y:180,
+   path:'~/zillow-agent',
+   desc:'Daily 07:30 Atlanta ZIP digest. 51 ZIPs, 7 markets. Redfin polygon (Zillow captcha-blocked). Adaptive quadtree for dense boxes.'},
+
+  // Ops
+  {id:'watchdog',  label:'Agent\nWatchdog',  group:'ops',      size:20, x:-490,y:230,
+   path:'~/market-lab/ops/watchdog.py  ·  every 15m',
+   desc:'Re-runs missed scans/emails, checks Gmail outbox, flip healthcheck --repair, Zillow. NYSE holiday list. --status flag.'},
+
+  // Interfaces
+  {id:'asset_dash',label:'Asset Agents\nDashboard',group:'iface',size:20,x:-520,y:370,
+   path:'private phone console',
+   desc:'Phone snapshot of all pinned sessions. Built by build-dashboard.py with RH_DATA injected. Weekdays 08:48 scheduled task.'},
+  {id:'job_tracker',label:'Job Tracker',     group:'iface',    size:16, x:680,y:230,
+   path:'private phone console',
+   desc:'Pipeline board Lead→Offer. LinkedIn inbox lane. db-backed. Daily 07:30 sync from Gmail + LinkedIn, sends daily digest.'},
+  {id:'portfolio', label:'Portfolio\nWeekly Review',group:'iface',size:14,x:540,y:330,
+   path:'Sunday 09:00 scheduled task',
+   desc:'Sunday read-only Robinhood email. baseline.json holds week-over-week figures + option spreads.'},
+
+  // Output channels
+  {id:'email_out', label:'Email\n→ email',group:'channel',size:22,x:-80,y:430,
+   path:'SMTP via Gmail OAuth',
+   desc:'All automated emails. Real-time: PROVEN flips/rallies/crypto + Kalshi banners. Scheduled: 08:55 brief, ~11:10 digest, 16:30 close, Sunday review, Sat breadth, paper P&L, daily job brief.'},
+  {id:'rh_orders', label:'Robinhood Orders\n(user-placed)',group:'channel',size:18,x:250,y:420,
+   path:' manual  ·   agent-read',
+   desc:'User executes tickets by hand. T… = stock/futures, O… = option spreads ( only for multi-leg). "Check ticket X" shows live quotes. Agent cannot place trades.'},
+  {id:'tv_chart',  label:'TradingView\nChart',group:'channel',  size:16, x:580,y:80,
+   path:'TradingView Desktop  ·  CDP port 9222',
+   desc:'Flux Lab Pine indicator on chart. MCP server (84 tools). Headless flip reads exchange data directly, not the chart.'},
+  // Added 2026-10-03: gold/WTI callers, volatility study, website
+  {id:'kalshi_1h',label:'Kalshi BTC\n1-Hour Caller',group:'signal',size:20,x:430,y:-215,
+   path:'~/kalshi-btc-1h-agent  ·  darup67/kalshi-btc-1h-agent',
+   desc:'Read-only cushion caller for the 1-hour BTC ladder (KXBTCD above/below), BTC only. The call is the strike nearest the hour\'s open. 1,531 hourly windows over 69 days: the market favourite is right 58% at minute 1, 68% at 15, 84% at 45 and ~88% at minutes 54-55; buying it at the ask loses at every minute (best -0.1c). Chronos-Bolt, Chronos-2 and AutoGluon never beat the market price. Higher volatility = less accurate, but only through the cushion. Gold and WTI stay out until they have enough data. Alerts off.'},
+  {id:'hyperliquid',label:'Hyperliquid\nGold & WTI perps',group:'source',size:16,x:640,y:-390,
+   path:'api.hyperliquid.xyz  ·  xyz:GOLD / xyz:CL',
+   desc:'Keyless real-time 24/7 gold and WTI perpetuals. The live price proxy for the Kalshi gold/WTI callers because Pyth (the settlement source) now needs an API key and CME futures on Yahoo are 10 minutes delayed. Tracks Pyth 15-minute changes with correlation 0.975 (gold) and 0.997 (WTI).'},
+  {id:'kalshi_comm',label:'Kalshi Gold &\nWTI Caller',group:'signal',size:20,x:520,y:-200,
+   path:'~/kalshi-commodity-agent  ·  darup67/kalshi-commodity-agent',
+   desc:'Read-only cushion caller for KXGOLD15M and KXWTI15M, same method as the BTC caller. Settles on one Pyth 1-minute candle (not a 60 s average); gap = proxy move since the window open. Backtest: accurate but priced in (gold about +1c, WTI about 0 after fees, unproven). Alerts off; logs every minute; weekly recalibration.'},
+  {id:'vol_lab',label:'Volatility vs\nAccuracy Study',group:'research',size:20,x:340,y:390,
+   path:'~/market-lab/research/vol_accuracy.py',
+   desc:'Does higher or lower volatility make the up/down call more often correct at minutes 1, 3, 4, 5 for BTC, gold and WTI? Trailing 1/3/4/5-minute-candle volatility plus in-window volatility vs. the Kalshi favourite. Result: no usable edge. Trailing volatility barely moves accuracy (WTI leans slightly positive); in-window volatility is just the cushion; high-volatility windows are priced slightly richer.'},
+  {id:'ml_minute',label:'Chronos / AutoGluon\nMinute Test',group:'research',size:18,x:130,y:420,
+   path:'~/market-lab/ml_test_minute.py',
+   desc:'Chronos-2, Chronos-Bolt and AutoGluon vs. the Kalshi market price and the cushion formula at minutes 1, 3, 4 and 5 of BTC windows (about 1,290 test windows). The market price is right 60% / 69% / 70% / 72% of the time; no model beat it at any minute.'},
+  {id:'github',label:'GitHub\n(public repos)',group:'source',size:14,x:-650,y:-120,
+   path:'github.com/darup67',
+   desc:'12 public agent and research repos plus the demand-forecast notebook. Private: portfolio-agent, job-tracker, trade-ops-dashboard.'},
+  {id:'site',label:'Personal\nWebsite',group:'iface',size:16,x:-650,y:110,
+   path:'darup67.github.io/dhruvpatel-site',
+   desc:'Static site on GitHub Pages: resume, experience, projects. A scheduled GitHub Action pulls activity from the public repos every 6 hours so project cards, the activity feed and the repo count stay current.'},
+  // Added 2026-10-16: Jev paper-trading desks
+  {"id": "typesafe", "label": "TypeSafe\nSystem One (Jev)", "group": "source", "size": 14, "x": 900, "y": -420, "path": "Jev language-model service", "desc": "The language-model service behind every Jev agent. Text judgements only, never order placement. Spend is capped by a daily budget file and a shared quantized cache."},
+  {"id": "cboe", "label": "Cboe delayed\noption chains", "group": "source", "size": 14, "x": 1180, "y": -300, "path": "cdn.cboe.com delayed JSON", "desc": "Free delayed option chains (no key). Feed the gamma-level history, 0DTE gamma, the 5-minute volume diffs of the flow tape, and the IV scorecard cross-checks."},
+  {"id": "kalshi_demo", "label": "Kalshi demo +\npublic data", "group": "source", "size": 14, "x": 760, "y": -300, "path": "Kalshi demo exchange · public market data", "desc": "Demo book that Jev Majors and Jev Predict mirror 1:1 (paper adopts demo fills). Public market-data API (no key) also feeds Jev Agents. Production is untouched."},
+  {"id": "jev_client", "label": "jev-client\n(shared core)", "group": "jev", "size": 34, "x": 900, "y": -100, "path": "~/jev-client", "desc": "Shared Jev client plus the control layer: roi.py scoreboard against a 50-70%/yr minimum benchmark (unlimited upside), token optimizer with audited cache reuse and spend governor, control.py pause/flatten with an audit log, dashauth password gate for phone dashboards."},
+  {"id": "jev_super", "label": "Supervisor\n+ Guard", "group": "jev", "size": 22, "x": 760, "y": -110, "path": "~/jev-client/supervisor.py · guard.py", "desc": "launchd KeepAlive supervisor, 30 s tick: restarts any Jev agent that dies, nightly backups. guard.py kills stray runaway processes (the \"yes\" incident) and alerts only on sustained CPU use or duplicates."},
+  {"id": "jev_hq", "label": "Jev HQ\n(control center)", "group": "jev", "size": 28, "x": 1100, "y": -120, "path": "~/jev-hq · darup67/jev-hq", "desc": "One page for every desk: KPI strip, ROI table, system health, options flow and gamma panel, git-sync status, control log, pause/resume/flatten/mute controls, and an Asset Agents tab. Served to the phone over Tailscale behind a password."},
+  {"id": "jev_markets", "label": "Jev Markets\n(MNQ/MES)", "group": "jev", "size": 24, "x": 1080, "y": 60, "path": "~/jev-markets", "desc": "Paper scalper on MNQ/MES with a terminal UI. Phantom signals on 15m/30m/1h, price-action entries, hold-losers rule, 1.5% risk. Reads options-flow and 0DTE-gamma context from the Options IV stack. Manual entries going forward."},
+  {"id": "jev_markets_inv", "label": "Markets Invert\n(arm B)", "group": "jev", "size": 18, "x": 1260, "y": 60, "path": "~/jev-markets-invert · darup67/jev-markets-invert", "desc": "A/B test: runs the same tick logic on mirrored opposite trades in its own $30k paper book, to show whether the signal side or the exit logic carries the result."},
+  {"id": "jev_majors", "label": "Jev Majors\n(perps)", "group": "jev", "size": 26, "x": 1100, "y": 240, "path": "~/jev-majors", "desc": "Paper perps desk over 26 Kalshi-perp coins, priced on the Kalshi demo book with 1:1 parity (paper adopts demo fills). Bank equals demo equity. Phantom wallet support. Close demo positions before any reset."},
+  {"id": "jev_majors_ab", "label": "Majors guarded\n+ invert lanes", "group": "jev", "size": 18, "x": 1280, "y": 240, "path": "~/jev-majors-guarded · ~/jev-majors-invert (private repos)", "desc": "A/B lanes beside the baseline: a guarded variant and an inverted variant, reset together so their books compare cleanly."},
+  {"id": "fomo", "label": "FOMO flow lane", "group": "jev", "size": 18, "x": 940, "y": 260, "path": "~/jev-majors · fomo_lane.py v8", "desc": "Sampled FOMO-app on-chain buys as a read-only signal feed; the wallets power the FOMO lane in Majors. Execution rules that blocked profit were removed and the bank restarted fresh."},
+  {"id": "jev_predict", "label": "Jev Predict\n(Kalshi 1h BTC)", "group": "jev", "size": 26, "x": 760, "y": 100, "path": "~/jev-predict", "desc": "Paper desk on the hourly BTC contracts, mirrored 1:1 on the Kalshi demo book. Quant models (GBM, stacker, pooled) were tested offline and failed, documented in research/RESULTS.md. Real money only through an 80% win-rate / 75-bet / net-positive paper gate, and only the user decides funding."},
+  {"id": "jev_options", "label": "Jev Options IV", "group": "jev", "size": 30, "x": 760, "y": 300, "path": "~/jev-options-iv · darup67/jev-options-iv", "desc": "Paper options desk over 111 stocks in 11 GICS sectors plus 46 ETFs. Lanes: Condor, Condor Max, Put Credit, Call Credit, Bull Call debit, Earnings. $10k bank each; rules were chosen profit-first from backtests with in-sample 2011-20 and out-of-sample 2021-26 on modelled option prices."},
+  {"id": "iv_card", "label": "IV Scorecard\n+ A/B gate", "group": "jev", "size": 20, "x": 560, "y": 300, "path": "~/jev-options-iv/ivcard.py", "desc": "Implied-vol scorecard from mid-price IV, verified against Robinhood quotes. Sell score plus a Jev shadow read (rich / risk / flow). A/B gate: B code vs frozen C Jev v1 (2026-10-15)."},
+  {"id": "flow_stack", "label": "Volume sweep ·\nflow tape · gamma", "group": "jev", "size": 20, "x": 560, "y": 140, "path": "volsweep.py · flowtape.py · gexhist.py", "desc": "Free replacement for paid flow tools: unusual-volume sweep, 5-minute Cboe volume diffs with side inference, and gamma levels / 0DTE regime history with alerts. Feeds the scorecard, Jev Agents triggers and Jev Markets context."},
+  {"id": "jev_agents", "label": "Jev Agents", "group": "jev", "size": 24, "x": 420, "y": 200, "path": "~/jev-agents · darup67/jev-agents", "desc": "Prediction-market rule agents in plain English. Deterministic planparse turns a sentence into a rule (odds, odds move, index move, price, gamma and flow triggers); paper executor; installable phone app. Three draft agents ship in the box."},
+  {"id": "jev_shop", "label": "Jev Shop", "group": "jev", "size": 18, "x": 420, "y": 380, "path": "~/jev-shop · darup67/jev-shop", "desc": "Deal finder UI around the Robinhood agentic card, with a designer lane over 23 stores. The card has no spending limit set, so nothing buys without the user."},
+  {"id": "jev_shadow", "label": "Jev Shadow", "group": "jev", "size": 18, "x": 420, "y": 40, "path": "~/jev-shadow · private repo", "desc": "Chronos-Bolt and FinBERT shadow forecasts scored against a baseline; a model is promoted only if it clears the written promotion rule."},
+  {"id": "ask_jev", "label": "AskJev", "group": "jev", "size": 14, "x": 600, "y": -60, "path": "~/ask-jev", "desc": "Chat-style UI for typed questions to Jev about any desk."},
+  {"id": "phone", "label": "Phone access\n(Tailscale)", "group": "iface", "size": 16, "x": 1280, "y": -200, "path": "Tailscale · password-gated", "desc": "Every dashboard is reachable from the phone over Tailscale behind a shared password gate; Jev HQ also serves the public-safe Asset Agents tab."},
+];
+
+const EDGES = [
+  // sources → trade-core
+  {f:'alpaca',    t:'trade_core', type:'data',  lbl:'RTH 15m bars'},
+  {f:'yahoo',     t:'trade_core', type:'data',  lbl:'ext-hours + fallback'},
+  {f:'cex',       t:'trade_core', type:'data',  lbl:'crypto 15m'},
+  // trade-core → agents
+  {f:'trade_core',t:'headless',   type:'data',  lbl:'bars + ledger gate'},
+  {f:'trade_core',t:'crypto_scan',type:'data',  lbl:'bars + ledger'},
+  {f:'trade_core',t:'paper_lab',  type:'data',  lbl:'bars (read-only)'},
+  {f:'trade_core',t:'market_iv',  type:'data',  lbl:'bars'},
+  {f:'trade_core',t:'event_desk', type:'data',  lbl:'evidence + tickets'},
+  {f:'trade_core',t:'coin_launch',type:'data',  lbl:'bars + ledger'},
+  {f:'trade_core',t:'market_lab', type:'data',  lbl:'bars (research)'},
+  // feedback loops
+  {f:'headless',   t:'trade_core',type:'feed',  lbl:'signal grades'},
+  {f:'market_iv',  t:'trade_core',type:'feed',  lbl:'spread grades'},
+  {f:'coin_launch',t:'trade_core',type:'feed',  lbl:'plus50 grades'},
+  {f:'crypto_scan',t:'trade_core',type:'feed',  lbl:'crypto grades'},
+  // cross-agent
+  {f:'market_iv', t:'event_desk', type:'data',  lbl:'IV scan handoff ~11:10'},
+  {f:'kalshi_api',t:'kalshi_btc', type:'data',  lbl:'KXBTC15M series'},
+  {f:'kalshi_api',t:'market_lab', type:'data',  lbl:'15m capture'},
+  {f:'redfin',    t:'zillow',     type:'data',  lbl:'listings CSV'},
+  {f:'rh_api',    t:'portfolio',  type:'data',  lbl:'weekly snapshot'},
+  {f:'rh_api',    t:'asset_dash', type:'data',  lbl:'positions + P&L'},
+  {f:'gmail_li',  t:'job_tracker',type:'data',  lbl:'job leads + messages'},
+  {f:'flux_lab',  t:'tv_chart',   type:'data',  lbl:'Pine indicator'},
+  // → email UI
+  {f:'headless',  t:'email_ui',   type:'email', lbl:'flips + 🚀 rallies'},
+  {f:'crypto_scan',t:'email_ui',  type:'email', lbl:'STRONG flips'},
+  {f:'event_desk',t:'email_ui',   type:'email', lbl:'briefs + digest'},
+  {f:'coin_launch',t:'email_ui',  type:'email', lbl:'plus50 picks'},
+  {f:'kalshi_btc',t:'email_ui',   type:'email', lbl:'BTC banners'},
+  {f:'zillow',    t:'email_ui',   type:'email', lbl:'ZIP digest'},
+  {f:'paper_lab', t:'email_ui',   type:'email', lbl:'weekly P&L'},
+  {f:'sector_res',t:'email_ui',   type:'email', lbl:'Sat breadth'},
+  {f:'portfolio', t:'email_ui',   type:'email', lbl:'Sun review'},
+  {f:'job_tracker',t:'email_ui',  type:'email', lbl:'daily job brief'},
+  {f:'email_ui',  t:'email_out',  type:'email', lbl:'SMTP send', w:2},
+  // → orders
+  {f:'headless',  t:'rh_orders',  type:'feed',  lbl:'T… tickets'},
+  {f:'event_desk',t:'rh_orders',  type:'feed',  lbl:'O… spreads'},
+  // watchdog
+  {f:'watchdog',t:'headless',    type:'mon',   lbl:'log freshness'},
+  {f:'watchdog',t:'email_ui',    type:'mon',   lbl:'retry sends'},
+  {f:'watchdog',t:'zillow',      type:'mon',   lbl:'health check'},
+  {f:'watchdog',t:'event_desk',  type:'mon',   lbl:'missed scans'},
+  {f:'watchdog',t:'asset_dash',  type:'mon',   lbl:'rebuild trigger'},
+  // → dashboard
+  {f:'headless',  t:'asset_dash', type:'dash',  lbl:'flip log + regime'},
+  {f:'paper_lab', t:'asset_dash', type:'dash',  lbl:'P&L tiles'},
+  {f:'event_desk',t:'asset_dash', type:'dash',  lbl:'IV scans'},
+  {f:'kalshi_btc',t:'asset_dash', type:'dash',  lbl:'Kalshi state'},
+  // Added 2026-10-03
+  {f:'hyperliquid',t:'kalshi_comm',type:'data',lbl:'live gold/WTI price proxy'},
+  {f:'kalshi_api', t:'kalshi_comm',type:'data',lbl:'KXGOLD15M / KXWTI15M'},
+  {f:'yahoo',      t:'kalshi_comm',type:'data',lbl:'CME futures 1m (backtest history)'},
+  {f:'watchdog',   t:'kalshi_comm',type:'mon', lbl:'log freshness + restart'},
+  {f:'market_lab', t:'vol_lab',    type:'data',lbl:'BTC windows + minute quotes'},
+  {f:'kalshi_comm',t:'vol_lab',    type:'data',lbl:'gold/WTI windows + candles'},
+  {f:'yahoo',      t:'vol_lab',    type:'data',lbl:'CME 1m for gold/WTI paths'},
+  {f:'vol_lab',    t:'kalshi_btc', type:'feed',lbl:'no volatility edge for the gate'},
+  {f:'vol_lab',    t:'kalshi_comm',type:'feed',lbl:'no volatility edge for the gate'},
+  {f:'market_lab', t:'ml_minute',  type:'data',lbl:'BTC windows + minute quotes'},
+  {f:'ml_minute',  t:'kalshi_btc', type:'feed',lbl:'no model beats the market price'},
+  {f:'kalshi_api', t:'kalshi_1h',  type:'data',lbl:'KXBTCD hourly ladder'},
+  {f:'kalshi_btc', t:'kalshi_1h',  type:'data',lbl:'shared cushion model + BTC proxy'},
+  {f:'watchdog',   t:'kalshi_1h',  type:'mon', lbl:'log freshness + restart'},
+  {f:'github',     t:'site',       type:'data',lbl:'activity sync every 6h'},
+  // Added 2026-10-16
+  {"f": "typesafe", "t": "jev_client", "type": "data", "lbl": "LLM judgements"},
+  {"f": "jev_client", "t": "jev_predict", "type": "data", "lbl": "shared Jev + ROI"},
+  {"f": "jev_client", "t": "jev_majors", "type": "data", "lbl": "shared Jev + ROI"},
+  {"f": "jev_client", "t": "jev_options", "type": "data", "lbl": "shared Jev + ROI"},
+  {"f": "jev_client", "t": "jev_markets", "type": "data", "lbl": "shared Jev + ROI"},
+  {"f": "jev_client", "t": "jev_agents", "type": "data", "lbl": "shared Jev"},
+  {"f": "jev_client", "t": "jev_shop", "type": "data", "lbl": "shared Jev"},
+  {"f": "jev_client", "t": "jev_shadow", "type": "data", "lbl": "shared Jev"},
+  {"f": "jev_client", "t": "ask_jev", "type": "data", "lbl": "shared Jev"},
+  {"f": "kalshi_demo", "t": "jev_predict", "type": "data", "lbl": "demo book mirror 1:1"},
+  {"f": "kalshi_demo", "t": "jev_majors", "type": "data", "lbl": "demo book mirror 1:1"},
+  {"f": "kalshi_demo", "t": "jev_agents", "type": "data", "lbl": "public odds"},
+  {"f": "kalshi_api", "t": "kalshi_demo", "type": "data", "lbl": "same exchange family"},
+  {"f": "cboe", "t": "flow_stack", "type": "data", "lbl": "delayed chains"},
+  {"f": "yahoo", "t": "jev_markets", "type": "data", "lbl": "index futures bars"},
+  {"f": "flow_stack", "t": "iv_card", "type": "feed", "lbl": "flow + gamma inputs"},
+  {"f": "flow_stack", "t": "jev_markets", "type": "feed", "lbl": "flow bias + 0DTE regime"},
+  {"f": "flow_stack", "t": "jev_agents", "type": "feed", "lbl": "gamma / flow triggers"},
+  {"f": "flow_stack", "t": "jev_hq", "type": "dash", "lbl": "flow + gamma panel"},
+  {"f": "iv_card", "t": "jev_options", "type": "feed", "lbl": "sell score + A/B gate"},
+  {"f": "rh_api", "t": "iv_card", "type": "data", "lbl": "live quote check"},
+  {"f": "jev_options", "t": "jev_hq", "type": "dash", "lbl": "lanes + ROI"},
+  {"f": "jev_options", "t": "rh_orders", "type": "feed", "lbl": "ACT list, hand-entered"},
+  {"f": "jev_markets", "t": "jev_markets_inv", "type": "feed", "lbl": "mirrored A/B arm"},
+  {"f": "jev_markets", "t": "jev_hq", "type": "dash", "lbl": "desk + ROI"},
+  {"f": "jev_markets_inv", "t": "jev_hq", "type": "dash", "lbl": "arm B"},
+  {"f": "jev_majors", "t": "jev_majors_ab", "type": "feed", "lbl": "A/B lanes"},
+  {"f": "fomo", "t": "jev_majors", "type": "feed", "lbl": "on-chain buys"},
+  {"f": "jev_majors", "t": "jev_hq", "type": "dash", "lbl": "desk + ROI"},
+  {"f": "jev_majors_ab", "t": "jev_hq", "type": "dash", "lbl": "guarded + invert"},
+  {"f": "jev_predict", "t": "jev_hq", "type": "dash", "lbl": "desk + ROI"},
+  {"f": "jev_agents", "t": "jev_hq", "type": "dash", "lbl": "agent runs"},
+  {"f": "jev_shadow", "t": "jev_predict", "type": "feed", "lbl": "shadow forecasts"},
+  {"f": "jev_shadow", "t": "jev_options", "type": "feed", "lbl": "shadow forecasts"},
+  {"f": "jev_super", "t": "jev_hq", "type": "mon", "lbl": "health + restarts"},
+  {"f": "jev_super", "t": "jev_markets", "type": "mon", "lbl": "30 s guard + restart"},
+  {"f": "jev_super", "t": "jev_markets_inv", "type": "mon", "lbl": "30 s guard + restart"},
+  {"f": "jev_super", "t": "jev_majors", "type": "mon", "lbl": "30 s guard + restart"},
+  {"f": "jev_super", "t": "jev_predict", "type": "mon", "lbl": "30 s guard + restart"},
+  {"f": "jev_super", "t": "jev_options", "type": "mon", "lbl": "30 s guard + restart"},
+  {"f": "jev_super", "t": "jev_agents", "type": "mon", "lbl": "30 s guard + restart"},
+  {"f": "jev_super", "t": "jev_shop", "type": "mon", "lbl": "30 s guard + restart"},
+  {"f": "jev_hq", "t": "asset_dash", "type": "dash", "lbl": "Asset Agents tab (no RH)"},
+  {"f": "jev_hq", "t": "phone", "type": "dash", "lbl": "Tailscale + password"},
+  {"f": "github", "t": "jev_hq", "type": "mon", "lbl": "git sync check"},
+  {"f": "jev_hq", "t": "github", "type": "feed", "lbl": "git push pending"},
+  {"f": "jev_hq", "t": "email_ui", "type": "email", "lbl": "system alerts"},
+  {"f": "jev_options", "t": "email_ui", "type": "email", "lbl": "daily options report"},
+  {"f": "jev_predict", "t": "email_ui", "type": "email", "lbl": "desk alerts"},
+];
+
+// Edge type styles
+const ESTYLE = {
+  data:  {color:'rgba(99,102,241,0.35)',  dashes:false},
+  feed:  {color:'rgba(168,85,247,0.4)',   dashes:[5,4]},
+  email: {color:'rgba(225,29,72,0.4)',    dashes:false},
+  mon:   {color:'rgba(217,119,6,0.4)',    dashes:[3,5]},
+  dash:  {color:'rgba(5,150,105,0.35)',   dashes:[4,4]},
+};
+
+function isDark(){
+  return document.documentElement.dataset.theme==='dark'||
+    (!document.documentElement.dataset.theme&&window.matchMedia('(prefers-color-scheme:dark)').matches);
+}
+
+let network=null, nodesDS=null, edgesDS=null;
+const hiddenGroups=new Set();
+
+function nodeStyle(g){
+  const dark=isDark(), def=G[g];
+  return {
+    color:{
+      background: dark ? def.fillD : def.fill,
+      border: def.border,
+      highlight:{background: dark ? def.fillD : def.fill, border:def.dot},
+      hover:{background: dark ? def.fillD : def.fill, border:def.dot},
+    },
+    font:{
+      color: dark ? '#e2e8f0' : '#1e293b',
+      face:'"Inter",-apple-system,sans-serif',
+      size:11,
+      multi:false,
+    },
+    borderWidth:2,
+    borderWidthSelected:3,
+    shadow:{enabled:true,size:10,x:0,y:3,color:dark?'rgba(0,0,0,.5)':'rgba(0,0,0,.1)'},
+  };
+}
+
+function initMap(){
+  window._mapInited=true;
+  const container=document.getElementById('network-container');
+  const tabH=document.querySelector('.tab-bar').offsetHeight||48;
+  const sw=document.getElementById('map-sidebar').offsetWidth||200;
+  container.style.width=(window.innerWidth-sw)+'px';
+  container.style.height=(window.innerHeight-tabH)+'px';
+  window.addEventListener('resize',()=>{
+    if(!network)return;
+    const sw2=document.getElementById('map-sidebar').offsetWidth||200;
+    const dw=document.getElementById('detail-panel').classList.contains('open')?256:0;
+    container.style.width=(window.innerWidth-sw2-dw)+'px';
+    container.style.height=(window.innerHeight-tabH)+'px';
+    network.redraw();
+  });
+
+  const nodes=NODES.map(n=>({
+    id:n.id,
+    label:n.label,
+    title:`<div style="max-width:200px;font-size:12px;padding:4px"><b>${n.label.replace('\n',' ')}</b><br><span style="opacity:.6;font-size:10px">${n.path}</span></div>`,
+    shape:'dot',
+    size:n.size||18,
+    x:n.x, y:n.y,
+    ...nodeStyle(n.group),
+  }));
+
+  const edges=EDGES.map((e,i)=>{
+    const s=ESTYLE[e.type]||ESTYLE.data;
+    return {
+      id:'e'+i,
+      from:e.f, to:e.t,
+      title:e.lbl,
+      dashes:s.dashes,
+      width:e.w||1,
+      color:{color:s.color,highlight:'#6366f1',hover:'#6366f1'},
+      arrows:{to:{enabled:true,scaleFactor:0.45,type:'arrow'}},
+      smooth:{type:'continuous',roundness:0.2},
+      font:{size:0}, // labels hidden — visible only in detail panel
+    };
+  });
+
+  nodesDS=new vis.DataSet(nodes);
+  edgesDS=new vis.DataSet(edges);
+
+  network=new vis.Network(container,{nodes:nodesDS,edges:edgesDS},{
+    physics:{
+      enabled:true,
+      stabilization:{iterations:400,fit:true},
+      barnesHut:{gravitationalConstant:-9000,springLength:170,springConstant:0.03,damping:0.14,centralGravity:0.05},
+    },
+    interaction:{hover:true,tooltipDelay:300,zoomView:true,dragNodes:true,dragView:true},
+    layout:{improvedLayout:false},
+  });
+
+  network.once('stabilizationIterationsDone',()=>{
+    network.setOptions({physics:{enabled:false}});
+    network.fit({animation:{duration:500,easingFunction:'easeInOutQuad'}});
+  });
+
+  network.on('click',p=>{
+    if(p.nodes.length){showDetail(p.nodes[0]);dimOthers(p.nodes[0]);}
+    else{closeDetail();clearDim();}
+  });
+
+  buildLegend();
+  document.getElementById('btn-fit').onclick=()=>network.fit({animation:true});
+  document.getElementById('btn-physics').onclick=()=>{
+    network.setOptions({physics:{enabled:true}});
+    setTimeout(()=>network.setOptions({physics:{enabled:false}}),3000);
+  };
+  document.getElementById('btn-reset').onclick=()=>{
+    hiddenGroups.clear();
+    document.querySelectorAll('.leg-row').forEach(r=>r.classList.remove('off'));
+    applyGroupFilter();
+    document.getElementById('map-search').value='';
+    clearDim();closeDetail();
+    network.fit({animation:true});
+  };
+  document.getElementById('map-search').addEventListener('input',function(){
+    const q=this.value.trim().toLowerCase();
+    if(!q){clearDim();return;}
+    const match=new Set(NODES.filter(n=>
+      n.label.toLowerCase().includes(q)||
+      n.desc.toLowerCase().includes(q)||
+      n.path.toLowerCase().includes(q)
+    ).map(n=>n.id));
+    nodesDS.update(NODES.map(n=>({id:n.id,opacity:match.has(n.id)?1:.1})));
+    edgesDS.update(EDGES.map((e,i)=>({id:'e'+i,color:{opacity:match.has(e.f)&&match.has(e.t)?1:.03}})));
+  });
+  document.getElementById('dp-close').onclick=()=>{closeDetail();clearDim();};
+}
+
+function buildLegend(){
+  const el=document.getElementById('legend');
+  const counts={};
+  NODES.forEach(n=>counts[n.group]=(counts[n.group]||0)+1);
+  Object.entries(G).forEach(([k,g])=>{
+    const row=document.createElement('div');
+    row.className='leg-row';
+    row.innerHTML=`<span class="leg-dot" style="background:${g.dot}"></span><span>${g.label}</span><span class="leg-count">${counts[k]||0}</span>`;
+    row.addEventListener('click',()=>{
+      if(hiddenGroups.has(k)){hiddenGroups.delete(k);row.classList.remove('off');}
+      else{hiddenGroups.add(k);row.classList.add('off');}
+      applyGroupFilter();
+    });
+    el.appendChild(row);
+  });
+}
+
+function applyGroupFilter(){
+  nodesDS.update(NODES.map(n=>({id:n.id,hidden:hiddenGroups.has(n.group)})));
+}
+
+function dimOthers(nodeId){
+  const connected=new Set([nodeId]);
+  EDGES.forEach((e,i)=>{if(e.f===nodeId||e.t===nodeId){connected.add(e.f);connected.add(e.t);}});
+  nodesDS.update(NODES.map(n=>({id:n.id,opacity:connected.has(n.id)?1:.12})));
+  edgesDS.update(EDGES.map((e,i)=>({id:'e'+i,color:{opacity:(e.f===nodeId||e.t===nodeId)?1:.04}})));
+}
+
+function clearDim(){
+  nodesDS.update(NODES.map(n=>({id:n.id,opacity:1})));
+  edgesDS.update(EDGES.map((e,i)=>({id:'e'+i,color:{opacity:1}})));
+}
+
+function showDetail(nodeId){
+  const n=NODES.find(x=>x.id===nodeId);
+  if(!n)return;
+  const g=G[n.group];
+  const panel=document.getElementById('detail-panel');
+  panel.classList.add('open');
+  // Resize canvas
+  const tabH=document.querySelector('.tab-bar').offsetHeight||48;
+  const sw=document.getElementById('map-sidebar').offsetWidth||200;
+  document.getElementById('network-container').style.width=(window.innerWidth-sw-256)+'px';
+  if(network)network.redraw();
+
+  const ins=EDGES.filter(e=>e.t===nodeId);
+  const outs=EDGES.filter(e=>e.f===nodeId);
+  const connHtml=(list,dir)=>list.map(e=>{
+    const other=dir==='IN'?e.f:e.t;
+    const oNode=NODES.find(x=>x.id===other);
+    return `<div class="dp-conn">
+      <span class="dp-dir ${dir.toLowerCase()}">${dir}</span>
+      <div><div class="dp-conn-name">${oNode?oNode.label.replace('\n',' '):other}</div>
+      <div class="dp-conn-lbl">${e.lbl}</div></div>
+    </div>`;
+  }).join('');
+
+  document.getElementById('dp-content').innerHTML=`
+    <div class="dp-badge" style="background:${isDark()?G[n.group].fillD:g.fill};color:${g.dot}">${g.label}</div>
+    <div class="dp-name">${n.label.replace('\n','<br>')}</div>
+    <div class="dp-path">${n.path}</div>
+    <div class="dp-desc">${n.desc}</div>
+    ${ins.length+outs.length>0?`<div class="dp-conn-title">Connections (${ins.length+outs.length})</div>${connHtml(ins,'IN')}${connHtml(outs,'OUT')}`:''}
+  `;
+}
+
+function closeDetail(){
+  const panel=document.getElementById('detail-panel');
+  panel.classList.remove('open');
+  const tabH=document.querySelector('.tab-bar').offsetHeight||48;
+  const sw=document.getElementById('map-sidebar').offsetWidth||200;
+  document.getElementById('network-container').style.width=(window.innerWidth-sw)+'px';
+  if(network)network.redraw();
+}
+window.addEventListener('load',()=>requestAnimationFrame(()=>initMap()));
+</script>
+
+</body></html>
