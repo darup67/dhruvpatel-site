@@ -1,15 +1,19 @@
 {
   "user": "darup67",
-  "generated_at": "2026-10-16T16:38:30.757Z",
+  "generated_at": "2026-10-16T19:17:41.068Z",
   "repos": [
     {
-      "name": "market-lab",
-      "description": "Durable capture of expiring market data - Kalshi 15m contracts and CME futures - and tests over it",
-      "url": "https://github.com/darup67/market-lab",
-      "language": "Python",
+      "name": "asset-agents",
+      "description": "Cross-agent dashboard over four pinned agent sessions",
+      "url": "https://github.com/darup67/asset-agents",
+      "language": "HTML",
       "stars": 1,
-      "pushed_at": "2026-10-16T16:30:08Z",
-      "last_commit": null
+      "pushed_at": "2026-10-16T19:13:28Z",
+      "last_commit": {
+        "message": "Console shell with Jev desks in map + resume; generator splices dashboard into it",
+        "date": "2026-10-16T19:13:27Z",
+        "url": "https://github.com/darup67/asset-agents/commit/03b7cf3c95b54ae3a498576c4dab40c94eeed0f7"
+      }
     },
     {
       "name": "jev-client",
@@ -17,24 +21,11 @@
       "url": "https://github.com/darup67/jev-client",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-16T02:53:42Z",
+      "pushed_at": "2026-10-16T19:07:34Z",
       "last_commit": {
-        "message": "Jev Markets invert A/B arm B support: env-configurable data/config/port, HQ desk card + ROI row, supervisor entries",
-        "date": "2026-10-16T02:53:40Z",
-        "url": "https://github.com/darup67/jev-client/commit/834f5569fd9a99cd0fe177a67d95c8377f941e17"
-      }
-    },
-    {
-      "name": "asset-agents",
-      "description": "Cross-agent dashboard over four pinned agent sessions",
-      "url": "https://github.com/darup67/asset-agents",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-10-16T02:34:57Z",
-      "last_commit": {
-        "message": "Jev HQ: Asset Agents tab (live console built from local state, Robinhood left out); build-dashboard.py supports ASSET_NO_RH/ASSET_OUT",
-        "date": "2026-10-16T02:34:56Z",
-        "url": "https://github.com/darup67/asset-agents/commit/1afb5528169ffaac12446a295326e3221154676b"
+        "message": "guard: runaway needs 15 min of sustained high CPU (was: any old process with a momentary spike)",
+        "date": "2026-10-16T19:07:32Z",
+        "url": "https://github.com/darup67/jev-client/commit/18a12636c877bdd353ef7f8c656c2ae5f1023ef2"
       }
     },
     {
@@ -43,11 +34,24 @@
       "url": "https://github.com/darup67/trade-core",
       "language": "JavaScript",
       "stars": 1,
-      "pushed_at": "2026-10-16T13:06:48Z",
+      "pushed_at": "2026-10-16T19:02:56Z",
       "last_commit": {
-        "message": "sync: 1 files (data refresh; jev-majors: Ethereum paper execution path in fomo_exec, FOMO lane v6 early-score floor 1.0, config)",
-        "date": "2026-10-15T17:26:11Z",
-        "url": "https://github.com/darup67/trade-core/commit/7bf2db1472f6a37cf9ba39fafad0e911266196ac"
+        "message": "sync: working tree updates",
+        "date": "2026-10-16T19:02:53Z",
+        "url": "https://github.com/darup67/trade-core/commit/32cadbac5bcb28a95f34ae6dce5b724dfa625251"
+      }
+    },
+    {
+      "name": "market-lab",
+      "description": "Durable capture of expiring market data - Kalshi 15m contracts and CME futures - and tests over it",
+      "url": "https://github.com/darup67/market-lab",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-10-16T19:02:13Z",
+      "last_commit": {
+        "message": "Jev Agents integration: HQ desk card, ROI row, supervisor + watchdog entries",
+        "date": "2026-10-16T18:13:20Z",
+        "url": "https://github.com/darup67/market-lab/commit/5c1938c2a47ef1643de035c8d1acd70255eacefa"
       }
     },
     {
@@ -56,11 +60,11 @@
       "url": "https://github.com/darup67/flip_watcher_v1",
       "language": "JavaScript",
       "stars": 1,
-      "pushed_at": "2026-10-15T17:26:08Z",
+      "pushed_at": "2026-10-16T17:42:32Z",
       "last_commit": {
-        "message": "sync: 1 files (data refresh; jev-majors: Ethereum paper execution path in fomo_exec, FOMO lane v6 early-score floor 1.0, config)",
-        "date": "2026-10-15T17:26:06Z",
-        "url": "https://github.com/darup67/flip_watcher_v1/commit/3bd2a56e181a2f2d479e853e917aca33d8eb4cbd"
+        "message": "sync: working tree data and code updates",
+        "date": "2026-10-16T17:42:30Z",
+        "url": "https://github.com/darup67/flip_watcher_v1/commit/719217d222e00a20347aa24c4a9aa6e8c966cfec"
       }
     },
     {
