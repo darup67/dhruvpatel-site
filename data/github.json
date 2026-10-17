@@ -1,6 +1,6 @@
 {
   "user": "darup67",
-  "generated_at": "2026-10-17T15:33:25.759Z",
+  "generated_at": "2026-10-17T20:36:02.150Z",
   "repos": [
     {
       "name": "market-lab",
@@ -8,7 +8,7 @@
       "url": "https://github.com/darup67/market-lab",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-17T15:02:14Z",
+      "pushed_at": "2026-10-17T20:02:13Z",
       "last_commit": null
     },
     {
@@ -43,7 +43,7 @@
       "url": "https://github.com/darup67/trade-core",
       "language": "JavaScript",
       "stars": 1,
-      "pushed_at": "2026-10-17T13:08:07Z",
+      "pushed_at": "2026-10-17T20:07:09Z",
       "last_commit": {
         "message": "sync: working tree updates",
         "date": "2026-10-16T19:02:53Z",
