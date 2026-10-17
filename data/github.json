@@ -1,6 +1,6 @@
 {
   "user": "darup67",
-  "generated_at": "2026-10-17T04:24:04.410Z",
+  "generated_at": "2026-10-17T10:42:30.779Z",
   "repos": [
     {
       "name": "jev-client",
@@ -34,7 +34,7 @@
       "url": "https://github.com/darup67/trade-core",
       "language": "JavaScript",
       "stars": 1,
-      "pushed_at": "2026-10-16T23:36:48Z",
+      "pushed_at": "2026-10-17T06:08:08Z",
       "last_commit": {
         "message": "sync: working tree updates",
         "date": "2026-10-16T19:02:53Z",
@@ -47,7 +47,7 @@
       "url": "https://github.com/darup67/market-lab",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-17T04:02:13Z",
+      "pushed_at": "2026-10-17T10:02:12Z",
       "last_commit": {
         "message": "Jev Agents integration: HQ desk card, ROI row, supervisor + watchdog entries",
         "date": "2026-10-16T18:13:20Z",
@@ -164,7 +164,7 @@
       "url": "https://github.com/darup67/coin-launch-agent",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-16T07:07:24Z",
+      "pushed_at": "2026-10-17T07:07:23Z",
       "last_commit": {
         "message": "Add LICENSE (Copyright (c) 2026 Dhruv)",
         "date": "2026-10-07T16:33:06Z",
