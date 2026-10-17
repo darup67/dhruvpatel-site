@@ -1,6 +1,6 @@
 {
   "user": "darup67",
-  "generated_at": "2026-10-16T21:07:06.326Z",
+  "generated_at": "2026-10-17T04:24:04.410Z",
   "repos": [
     {
       "name": "jev-client",
@@ -8,11 +8,11 @@
       "url": "https://github.com/darup67/jev-client",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-16T20:46:24Z",
+      "pushed_at": "2026-10-17T02:31:20Z",
       "last_commit": {
-        "message": "Supervise Jev Career dashboard",
-        "date": "2026-10-16T20:46:23Z",
-        "url": "https://github.com/darup67/jev-client/commit/d9b6f394be86ef7813629f01995cb2ae1b5ae3ff"
+        "message": "Supervise Jev Home dashboard",
+        "date": "2026-10-17T02:31:18Z",
+        "url": "https://github.com/darup67/jev-client/commit/df26e63abd14dc62b6b1521acc2ec6074466e40f"
       }
     },
     {
@@ -34,7 +34,7 @@
       "url": "https://github.com/darup67/trade-core",
       "language": "JavaScript",
       "stars": 1,
-      "pushed_at": "2026-10-16T19:23:02Z",
+      "pushed_at": "2026-10-16T23:36:48Z",
       "last_commit": {
         "message": "sync: working tree updates",
         "date": "2026-10-16T19:02:53Z",
@@ -47,7 +47,7 @@
       "url": "https://github.com/darup67/market-lab",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-16T21:02:12Z",
+      "pushed_at": "2026-10-17T04:02:13Z",
       "last_commit": {
         "message": "Jev Agents integration: HQ desk card, ROI row, supervisor + watchdog entries",
         "date": "2026-10-16T18:13:20Z",
