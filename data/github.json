@@ -1,6 +1,6 @@
 {
   "user": "darup67",
-  "generated_at": "2026-10-17T20:36:02.150Z",
+  "generated_at": "2026-10-18T04:31:46.167Z",
   "repos": [
     {
       "name": "market-lab",
@@ -8,7 +8,7 @@
       "url": "https://github.com/darup67/market-lab",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-17T20:02:13Z",
+      "pushed_at": "2026-10-18T04:02:11Z",
       "last_commit": null
     },
     {
@@ -17,11 +17,11 @@
       "url": "https://github.com/darup67/jev-client",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-17T02:31:20Z",
+      "pushed_at": "2026-10-17T22:06:33Z",
       "last_commit": {
-        "message": "Supervise Jev Home dashboard",
-        "date": "2026-10-17T02:31:18Z",
-        "url": "https://github.com/darup67/jev-client/commit/df26e63abd14dc62b6b1521acc2ec6074466e40f"
+        "message": "ROI: Markets swing lane row in the A/B lanes group",
+        "date": "2026-10-17T22:06:32Z",
+        "url": "https://github.com/darup67/jev-client/commit/e3fbb37c4e6bfadc61d1eba2796796d4f71fd11d"
       }
     },
     {
@@ -43,7 +43,7 @@
       "url": "https://github.com/darup67/trade-core",
       "language": "JavaScript",
       "stars": 1,
-      "pushed_at": "2026-10-17T20:07:09Z",
+      "pushed_at": "2026-10-18T03:07:26Z",
       "last_commit": {
         "message": "sync: working tree updates",
         "date": "2026-10-16T19:02:53Z",
