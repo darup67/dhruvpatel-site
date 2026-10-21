@@ -1,27 +1,44 @@
 {
   "user": "darup67",
-  "generated_at": "2026-10-21T17:11:21.455Z",
+  "generated_at": "2026-10-21T21:42:04.207Z",
   "repos": [
-    {
-      "name": "market-lab",
-      "description": "Durable capture of expiring market data - Kalshi 15m contracts and CME futures - and tests over it",
-      "url": "https://github.com/darup67/market-lab",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-10-21T17:02:12Z",
-      "last_commit": null
-    },
     {
       "name": "jev-client",
       "description": "Shared Typesafe judgement client used by zillow-agent and coin-launch-agent",
       "url": "https://github.com/darup67/jev-client",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-18T12:42:00Z",
+      "pushed_at": "2026-10-21T19:50:57Z",
       "last_commit": {
-        "message": "ROI: FOMO lane shows the fresh $1,000 bank before its first trade",
-        "date": "2026-10-18T12:41:59Z",
-        "url": "https://github.com/darup67/jev-client/commit/555a7991cb4bb0221cc7b83c9b59bb83db5ee01a"
+        "message": "jev: miss log",
+        "date": "2026-10-21T19:50:55Z",
+        "url": "https://github.com/darup67/jev-client/commit/aea1fd4c35432d60642e26f20a7350d6cc7279d5"
+      }
+    },
+    {
+      "name": "flip_watcher_v1",
+      "description": "Flip Watcher App - v1 - Buy/Sell Signals",
+      "url": "https://github.com/darup67/flip_watcher_v1",
+      "language": "JavaScript",
+      "stars": 1,
+      "pushed_at": "2026-10-21T19:24:30Z",
+      "last_commit": {
+        "message": "Brief theme section: Rebalance + 50d/200d columns, next rebalance date, rule evidence",
+        "date": "2026-10-21T19:24:27Z",
+        "url": "https://github.com/darup67/flip_watcher_v1/commit/c41d487fbcda3c1f87ab32b3b16e28b506a7af4e"
+      }
+    },
+    {
+      "name": "market-lab",
+      "description": "Durable capture of expiring market data - Kalshi 15m contracts and CME futures - and tests over it",
+      "url": "https://github.com/darup67/market-lab",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-10-21T21:02:13Z",
+      "last_commit": {
+        "message": "Theme tracker: rebalance action (tested monthly top-3 rotation) + 50/200-day reference levels",
+        "date": "2026-10-21T19:24:25Z",
+        "url": "https://github.com/darup67/market-lab/commit/d46ad56fc0b8353da97e281709423419463707a5"
       }
     },
     {
@@ -43,24 +60,11 @@
       "url": "https://github.com/darup67/trade-core",
       "language": "JavaScript",
       "stars": 1,
-      "pushed_at": "2026-10-21T17:07:15Z",
+      "pushed_at": "2026-10-21T19:21:31Z",
       "last_commit": {
         "message": "sync: working tree updates",
         "date": "2026-10-16T19:02:53Z",
         "url": "https://github.com/darup67/trade-core/commit/32cadbac5bcb28a95f34ae6dce5b724dfa625251"
-      }
-    },
-    {
-      "name": "flip_watcher_v1",
-      "description": "Flip Watcher App - v1 - Buy/Sell Signals",
-      "url": "https://github.com/darup67/flip_watcher_v1",
-      "language": "JavaScript",
-      "stars": 1,
-      "pushed_at": "2026-10-16T17:42:32Z",
-      "last_commit": {
-        "message": "sync: working tree data and code updates",
-        "date": "2026-10-16T17:42:30Z",
-        "url": "https://github.com/darup67/flip_watcher_v1/commit/719217d222e00a20347aa24c4a9aa6e8c966cfec"
       }
     },
     {
