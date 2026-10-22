@@ -1,7 +1,16 @@
 {
   "user": "darup67",
-  "generated_at": "2026-10-22T04:42:56.095Z",
+  "generated_at": "2026-10-22T11:50:33.660Z",
   "repos": [
+    {
+      "name": "market-lab",
+      "description": "Durable capture of expiring market data - Kalshi 15m contracts and CME futures - and tests over it",
+      "url": "https://github.com/darup67/market-lab",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-10-22T11:30:03Z",
+      "last_commit": null
+    },
     {
       "name": "jev-client",
       "description": "Shared Typesafe judgement client used by zillow-agent and coin-launch-agent",
@@ -42,19 +51,6 @@
       }
     },
     {
-      "name": "market-lab",
-      "description": "Durable capture of expiring market data - Kalshi 15m contracts and CME futures - and tests over it",
-      "url": "https://github.com/darup67/market-lab",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-10-22T04:30:08Z",
-      "last_commit": {
-        "message": "MNQ alert 3: 27,930 down (2022 warning: below the 200-day)",
-        "date": "2026-10-21T23:10:04Z",
-        "url": "https://github.com/darup67/market-lab/commit/ac00d8147ee5613c8cebffcf535edc2e48a8e3ca"
-      }
-    },
-    {
       "name": "asset-agents",
       "description": "Cross-agent dashboard over four pinned agent sessions",
       "url": "https://github.com/darup67/asset-agents",
@@ -73,7 +69,7 @@
       "url": "https://github.com/darup67/trade-core",
       "language": "JavaScript",
       "stars": 1,
-      "pushed_at": "2026-10-22T02:06:59Z",
+      "pushed_at": "2026-10-22T08:07:03Z",
       "last_commit": {
         "message": "sync: working tree updates",
         "date": "2026-10-16T19:02:53Z",
@@ -164,7 +160,7 @@
       "url": "https://github.com/darup67/coin-launch-agent",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-21T07:07:22Z",
+      "pushed_at": "2026-10-22T07:07:22Z",
       "last_commit": {
         "message": "Add LICENSE (Copyright (c) 2026 Dhruv)",
         "date": "2026-10-07T16:33:06Z",
