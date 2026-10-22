@@ -1,6 +1,6 @@
 {
   "user": "darup67",
-  "generated_at": "2026-10-21T21:42:04.207Z",
+  "generated_at": "2026-10-22T04:42:56.095Z",
   "repos": [
     {
       "name": "jev-client",
@@ -8,11 +8,11 @@
       "url": "https://github.com/darup67/jev-client",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-21T19:50:57Z",
+      "pushed_at": "2026-10-22T02:45:01Z",
       "last_commit": {
-        "message": "jev: miss log",
-        "date": "2026-10-21T19:50:55Z",
-        "url": "https://github.com/darup67/jev-client/commit/aea1fd4c35432d60642e26f20a7350d6cc7279d5"
+        "message": "roi: sparkline series per book",
+        "date": "2026-10-22T02:45:00Z",
+        "url": "https://github.com/darup67/jev-client/commit/7c94985b0424c7c56110bbd692415893df794523"
       }
     },
     {
@@ -21,11 +21,24 @@
       "url": "https://github.com/darup67/flip_watcher_v1",
       "language": "JavaScript",
       "stars": 1,
-      "pushed_at": "2026-10-21T19:24:30Z",
+      "pushed_at": "2026-10-22T02:33:34Z",
       "last_commit": {
-        "message": "Brief theme section: Rebalance + 50d/200d columns, next rebalance date, rule evidence",
-        "date": "2026-10-21T19:24:27Z",
-        "url": "https://github.com/darup67/flip_watcher_v1/commit/c41d487fbcda3c1f87ab32b3b16e28b506a7af4e"
+        "message": "Morning brief: overnight earnings -> MNQ section",
+        "date": "2026-10-22T02:33:33Z",
+        "url": "https://github.com/darup67/flip_watcher_v1/commit/71640fe024014c314b5670d567c8da86d081cbd5"
+      }
+    },
+    {
+      "name": "zillow_agent_v1",
+      "description": "Daily ZIP-level Georgia real-estate digest by email — Atlanta intown plus Gwinnett, Hall and Jackson counties. Zero-dependency Node.",
+      "url": "https://github.com/darup67/zillow_agent_v1",
+      "language": "JavaScript",
+      "stars": 1,
+      "pushed_at": "2026-10-22T02:15:17Z",
+      "last_commit": {
+        "message": "multi: unit count from 'each side' (duplex) and 'N ... units' phrasing, bedrooms excluded (found by a zero-shot pass over unknown-unit remarks; 3 listings recla",
+        "date": "2026-10-22T02:15:15Z",
+        "url": "https://github.com/darup67/zillow_agent_v1/commit/e684bb7f63771276f004db28915eba61afe43253"
       }
     },
     {
@@ -34,11 +47,11 @@
       "url": "https://github.com/darup67/market-lab",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-21T21:02:13Z",
+      "pushed_at": "2026-10-22T04:30:08Z",
       "last_commit": {
-        "message": "Theme tracker: rebalance action (tested monthly top-3 rotation) + 50/200-day reference levels",
-        "date": "2026-10-21T19:24:25Z",
-        "url": "https://github.com/darup67/market-lab/commit/d46ad56fc0b8353da97e281709423419463707a5"
+        "message": "MNQ alert 3: 27,930 down (2022 warning: below the 200-day)",
+        "date": "2026-10-21T23:10:04Z",
+        "url": "https://github.com/darup67/market-lab/commit/ac00d8147ee5613c8cebffcf535edc2e48a8e3ca"
       }
     },
     {
@@ -60,24 +73,11 @@
       "url": "https://github.com/darup67/trade-core",
       "language": "JavaScript",
       "stars": 1,
-      "pushed_at": "2026-10-21T19:21:31Z",
+      "pushed_at": "2026-10-22T02:06:59Z",
       "last_commit": {
         "message": "sync: working tree updates",
         "date": "2026-10-16T19:02:53Z",
         "url": "https://github.com/darup67/trade-core/commit/32cadbac5bcb28a95f34ae6dce5b724dfa625251"
-      }
-    },
-    {
-      "name": "zillow_agent_v1",
-      "description": "Daily ZIP-level Georgia real-estate digest by email — Atlanta intown plus Gwinnett, Hall and Jackson counties. Zero-dependency Node.",
-      "url": "https://github.com/darup67/zillow_agent_v1",
-      "language": "JavaScript",
-      "stars": 1,
-      "pushed_at": "2026-10-14T19:54:09Z",
-      "last_commit": {
-        "message": "Partial-fetch guard skips when filters/ZIPs changed on purpose (filterSig)",
-        "date": "2026-10-14T19:54:08Z",
-        "url": "https://github.com/darup67/zillow_agent_v1/commit/24e49f5004439fb97ee30ca61beb09452d087f3f"
       }
     },
     {
