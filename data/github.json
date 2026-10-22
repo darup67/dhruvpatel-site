@@ -1,18 +1,18 @@
 {
   "user": "darup67",
-  "generated_at": "2026-10-22T17:09:43.752Z",
+  "generated_at": "2026-10-22T21:34:46.198Z",
   "repos": [
     {
-      "name": "asset-agents",
-      "description": "Cross-agent dashboard over four pinned agent sessions",
-      "url": "https://github.com/darup67/asset-agents",
-      "language": "HTML",
+      "name": "jev-client",
+      "description": "Shared Typesafe judgement client used by zillow-agent and coin-launch-agent",
+      "url": "https://github.com/darup67/jev-client",
+      "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-22T16:26:47Z",
+      "pushed_at": "2026-10-22T20:19:31Z",
       "last_commit": {
-        "message": "map: lane A retired",
-        "date": "2026-10-22T16:59:14Z",
-        "url": "https://github.com/darup67/asset-agents/commit/5c073f831a6e8a5abbea5e86cff85dc8b9ada343"
+        "message": "Supervisor: Coin Desk health monitor",
+        "date": "2026-10-22T20:19:29Z",
+        "url": "https://github.com/darup67/jev-client/commit/66f7b957f2b26f0d2bb8050f09caef343deedf58"
       }
     },
     {
@@ -21,24 +21,11 @@
       "url": "https://github.com/darup67/market-lab",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-22T17:02:16Z",
+      "pushed_at": "2026-10-22T21:02:14Z",
       "last_commit": {
-        "message": "Retire Perps lane A: nightly report, watchdog, A/B report",
-        "date": "2026-10-22T16:59:11Z",
-        "url": "https://github.com/darup67/market-lab/commit/a3b407641dbbb33c50ed247d3f777df572678a8e"
-      }
-    },
-    {
-      "name": "jev-client",
-      "description": "Shared Typesafe judgement client used by zillow-agent and coin-launch-agent",
-      "url": "https://github.com/darup67/jev-client",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-10-22T16:59:06Z",
-      "last_commit": {
-        "message": "Retire Perps lane A (baseline): supervisor, backups, ROI",
-        "date": "2026-10-22T16:59:05Z",
-        "url": "https://github.com/darup67/jev-client/commit/e26f72593e4a8c73360b50099fd8533fff6ea8f3"
+        "message": "theme tracker snapshot",
+        "date": "2026-10-22T19:09:24Z",
+        "url": "https://github.com/darup67/market-lab/commit/d154f07940184431542ff500027643be83368f22"
       }
     },
     {
@@ -47,11 +34,24 @@
       "url": "https://github.com/darup67/flip_watcher_v1",
       "language": "JavaScript",
       "stars": 1,
-      "pushed_at": "2026-10-22T02:33:34Z",
+      "pushed_at": "2026-10-22T19:09:19Z",
       "last_commit": {
-        "message": "Morning brief: overnight earnings -> MNQ section",
-        "date": "2026-10-22T02:33:33Z",
-        "url": "https://github.com/darup67/flip_watcher_v1/commit/71640fe024014c314b5670d567c8da86d081cbd5"
+        "message": "crypto universe refresh",
+        "date": "2026-10-22T19:09:17Z",
+        "url": "https://github.com/darup67/flip_watcher_v1/commit/d6c028bcde6ad1a9401dad8a54c5345894864096"
+      }
+    },
+    {
+      "name": "asset-agents",
+      "description": "Cross-agent dashboard over four pinned agent sessions",
+      "url": "https://github.com/darup67/asset-agents",
+      "language": "HTML",
+      "stars": 1,
+      "pushed_at": "2026-10-22T16:59:15Z",
+      "last_commit": {
+        "message": "map: lane A retired",
+        "date": "2026-10-22T16:59:14Z",
+        "url": "https://github.com/darup67/asset-agents/commit/5c073f831a6e8a5abbea5e86cff85dc8b9ada343"
       }
     },
     {
@@ -73,7 +73,7 @@
       "url": "https://github.com/darup67/trade-core",
       "language": "JavaScript",
       "stars": 1,
-      "pushed_at": "2026-10-22T14:08:29Z",
+      "pushed_at": "2026-10-22T19:09:29Z",
       "last_commit": {
         "message": "sync: working tree updates",
         "date": "2026-10-16T19:02:53Z",
