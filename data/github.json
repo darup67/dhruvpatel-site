@@ -1,6 +1,6 @@
 {
   "user": "darup67",
-  "generated_at": "2026-10-22T21:34:46.198Z",
+  "generated_at": "2026-10-23T04:47:29.648Z",
   "repos": [
     {
       "name": "jev-client",
@@ -8,11 +8,11 @@
       "url": "https://github.com/darup67/jev-client",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-22T20:19:31Z",
+      "pushed_at": "2026-10-23T02:35:15Z",
       "last_commit": {
-        "message": "Supervisor: Coin Desk health monitor",
-        "date": "2026-10-22T20:19:29Z",
-        "url": "https://github.com/darup67/jev-client/commit/66f7b957f2b26f0d2bb8050f09caef343deedf58"
+        "message": "Supervisor: watch the coin desk trap-detector rebuild job",
+        "date": "2026-10-23T02:35:14Z",
+        "url": "https://github.com/darup67/jev-client/commit/28de64438e89a534f7f10f06668bcc39401f2037"
       }
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://github.com/darup67/market-lab",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-22T21:02:14Z",
+      "pushed_at": "2026-10-23T04:30:09Z",
       "last_commit": {
         "message": "theme tracker snapshot",
         "date": "2026-10-22T19:09:24Z",
@@ -73,7 +73,7 @@
       "url": "https://github.com/darup67/trade-core",
       "language": "JavaScript",
       "stars": 1,
-      "pushed_at": "2026-10-22T19:09:29Z",
+      "pushed_at": "2026-10-23T02:07:27Z",
       "last_commit": {
         "message": "sync: working tree updates",
         "date": "2026-10-16T19:02:53Z",
