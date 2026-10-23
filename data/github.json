@@ -1,6 +1,6 @@
 {
   "user": "darup67",
-  "generated_at": "2026-10-23T17:05:51.654Z",
+  "generated_at": "2026-10-23T21:23:40.529Z",
   "repos": [
     {
       "name": "market-lab",
@@ -8,8 +8,21 @@
       "url": "https://github.com/darup67/market-lab",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-23T17:02:13Z",
+      "pushed_at": "2026-10-23T21:02:13Z",
       "last_commit": null
+    },
+    {
+      "name": "zillow_agent_v1",
+      "description": "Daily ZIP-level Georgia real-estate digest by email — Atlanta intown plus Gwinnett, Hall and Jackson counties. Zero-dependency Node.",
+      "url": "https://github.com/darup67/zillow_agent_v1",
+      "language": "JavaScript",
+      "stars": 1,
+      "pushed_at": "2026-10-23T20:48:23Z",
+      "last_commit": {
+        "message": "Close DB connections per request (shared dashauth + dashboard), add fdsafe leak guard",
+        "date": "2026-10-23T20:48:22Z",
+        "url": "https://github.com/darup67/zillow_agent_v1/commit/302395a84c480fba1826c4b718efa2571641189a"
+      }
     },
     {
       "name": "jev-client",
@@ -17,11 +30,11 @@
       "url": "https://github.com/darup67/jev-client",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-23T02:35:15Z",
+      "pushed_at": "2026-10-23T20:48:10Z",
       "last_commit": {
-        "message": "Supervisor: watch the coin desk trap-detector rebuild job",
-        "date": "2026-10-23T02:35:14Z",
-        "url": "https://github.com/darup67/jev-client/commit/28de64438e89a534f7f10f06668bcc39401f2037"
+        "message": "fdguard (supervisor fd watch + auto-restart), fdsafe (per-request connection closing + self-exit), fdlint (unclosed connections), fdsmoke (leak smoke test)",
+        "date": "2026-10-23T20:38:48Z",
+        "url": "https://github.com/darup67/jev-client/commit/a6e2378c99962da52c7723efc75b3a320b22b8fc"
       }
     },
     {
@@ -48,19 +61,6 @@
         "message": "map: lane A retired",
         "date": "2026-10-22T16:59:14Z",
         "url": "https://github.com/darup67/asset-agents/commit/5c073f831a6e8a5abbea5e86cff85dc8b9ada343"
-      }
-    },
-    {
-      "name": "zillow_agent_v1",
-      "description": "Daily ZIP-level Georgia real-estate digest by email — Atlanta intown plus Gwinnett, Hall and Jackson counties. Zero-dependency Node.",
-      "url": "https://github.com/darup67/zillow_agent_v1",
-      "language": "JavaScript",
-      "stars": 1,
-      "pushed_at": "2026-10-22T02:15:17Z",
-      "last_commit": {
-        "message": "multi: unit count from 'each side' (duplex) and 'N ... units' phrasing, bedrooms excluded (found by a zero-shot pass over unknown-unit remarks; 3 listings recla",
-        "date": "2026-10-22T02:15:15Z",
-        "url": "https://github.com/darup67/zillow_agent_v1/commit/e684bb7f63771276f004db28915eba61afe43253"
       }
     },
     {
