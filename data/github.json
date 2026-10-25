@@ -1,6 +1,6 @@
 {
   "user": "darup67",
-  "generated_at": "2026-10-25T11:26:09.001Z",
+  "generated_at": "2026-10-25T16:16:51.868Z",
   "repos": [
     {
       "name": "market-lab",
@@ -8,8 +8,21 @@
       "url": "https://github.com/darup67/market-lab",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-25T11:02:12Z",
+      "pushed_at": "2026-10-25T16:02:12Z",
       "last_commit": null
+    },
+    {
+      "name": "jev-client",
+      "description": "Shared Typesafe judgement client used by zillow-agent and coin-launch-agent",
+      "url": "https://github.com/darup67/jev-client",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-10-25T15:31:44Z",
+      "last_commit": {
+        "message": "guard: batch-job runtime limits (lab/run.py 45 min) before a sustained-CPU alert",
+        "date": "2026-10-25T15:31:42Z",
+        "url": "https://github.com/darup67/jev-client/commit/e74b56d3b166095a3438c7bfb13f0afa50bea88e"
+      }
     },
     {
       "name": "trade-core",
@@ -17,7 +30,7 @@
       "url": "https://github.com/darup67/trade-core",
       "language": "JavaScript",
       "stars": 1,
-      "pushed_at": "2026-10-25T07:07:01Z",
+      "pushed_at": "2026-10-25T14:06:57Z",
       "last_commit": null
     },
     {
@@ -31,19 +44,6 @@
         "message": "Close DB connections per request (shared dashauth + dashboard), add fdsafe leak guard",
         "date": "2026-10-23T20:48:22Z",
         "url": "https://github.com/darup67/zillow_agent_v1/commit/302395a84c480fba1826c4b718efa2571641189a"
-      }
-    },
-    {
-      "name": "jev-client",
-      "description": "Shared Typesafe judgement client used by zillow-agent and coin-launch-agent",
-      "url": "https://github.com/darup67/jev-client",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-10-23T20:48:10Z",
-      "last_commit": {
-        "message": "fdguard (supervisor fd watch + auto-restart), fdsafe (per-request connection closing + self-exit), fdlint (unclosed connections), fdsmoke (leak smoke test)",
-        "date": "2026-10-23T20:38:48Z",
-        "url": "https://github.com/darup67/jev-client/commit/a6e2378c99962da52c7723efc75b3a320b22b8fc"
       }
     },
     {
