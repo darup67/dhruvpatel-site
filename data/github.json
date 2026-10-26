@@ -1,6 +1,6 @@
 {
   "user": "darup67",
-  "generated_at": "2026-10-25T20:49:51.467Z",
+  "generated_at": "2026-10-26T04:45:10.699Z",
   "repos": [
     {
       "name": "market-lab",
@@ -8,7 +8,16 @@
       "url": "https://github.com/darup67/market-lab",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-25T20:02:12Z",
+      "pushed_at": "2026-10-26T04:30:09Z",
+      "last_commit": null
+    },
+    {
+      "name": "trade-core",
+      "description": "Shared market-data store, signal ledger and cost/regime models for the trading tools",
+      "url": "https://github.com/darup67/trade-core",
+      "language": "JavaScript",
+      "stars": 1,
+      "pushed_at": "2026-10-26T03:06:54Z",
       "last_commit": null
     },
     {
@@ -23,15 +32,6 @@
         "date": "2026-10-25T15:31:42Z",
         "url": "https://github.com/darup67/jev-client/commit/e74b56d3b166095a3438c7bfb13f0afa50bea88e"
       }
-    },
-    {
-      "name": "trade-core",
-      "description": "Shared market-data store, signal ledger and cost/regime models for the trading tools",
-      "url": "https://github.com/darup67/trade-core",
-      "language": "JavaScript",
-      "stars": 1,
-      "pushed_at": "2026-10-25T14:06:57Z",
-      "last_commit": null
     },
     {
       "name": "zillow_agent_v1",
