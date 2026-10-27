@@ -1,6 +1,6 @@
 {
   "user": "darup67",
-  "generated_at": "2026-10-27T17:59:35.318Z",
+  "generated_at": "2026-10-27T22:12:45.954Z",
   "repos": [
     {
       "name": "market-lab",
@@ -8,16 +8,7 @@
       "url": "https://github.com/darup67/market-lab",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-27T17:30:05Z",
-      "last_commit": null
-    },
-    {
-      "name": "trade-core",
-      "description": "Shared market-data store, signal ledger and cost/regime models for the trading tools",
-      "url": "https://github.com/darup67/trade-core",
-      "language": "JavaScript",
-      "stars": 1,
-      "pushed_at": "2026-10-27T12:07:04Z",
+      "pushed_at": "2026-10-27T22:02:13Z",
       "last_commit": null
     },
     {
@@ -26,12 +17,21 @@
       "url": "https://github.com/darup67/jev-client",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-25T15:31:44Z",
+      "pushed_at": "2026-10-27T18:47:29Z",
       "last_commit": {
-        "message": "guard: batch-job runtime limits (lab/run.py 45 min) before a sustained-CPU alert",
-        "date": "2026-10-25T15:31:42Z",
-        "url": "https://github.com/darup67/jev-client/commit/e74b56d3b166095a3438c7bfb13f0afa50bea88e"
+        "message": "Jev UI redesign rollout: generic theme + switcher injected at the original addresses (jevui.inject / dashkit), bag write-off rule",
+        "date": "2026-10-27T18:47:26Z",
+        "url": "https://github.com/darup67/jev-client/commit/07052eaba5cb7610069c9a91c94ea4b3626eed4a"
       }
+    },
+    {
+      "name": "trade-core",
+      "description": "Shared market-data store, signal ledger and cost/regime models for the trading tools",
+      "url": "https://github.com/darup67/trade-core",
+      "language": "JavaScript",
+      "stars": 1,
+      "pushed_at": "2026-10-27T18:07:33Z",
+      "last_commit": null
     },
     {
       "name": "zillow_agent_v1",
