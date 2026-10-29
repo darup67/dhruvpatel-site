@@ -1,6 +1,6 @@
 {
   "user": "darup67",
-  "generated_at": "2026-10-29T12:58:52.494Z",
+  "generated_at": "2026-10-29T22:44:29.999Z",
   "repos": [
     {
       "name": "market-lab",
@@ -8,7 +8,7 @@
       "url": "https://github.com/darup67/market-lab",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-29T12:51:49Z",
+      "pushed_at": "2026-10-29T22:30:11Z",
       "last_commit": null
     },
     {
@@ -17,7 +17,7 @@
       "url": "https://github.com/darup67/trade-core",
       "language": "JavaScript",
       "stars": 1,
-      "pushed_at": "2026-10-29T10:07:44Z",
+      "pushed_at": "2026-10-29T22:08:31Z",
       "last_commit": null
     },
     {
@@ -26,11 +26,11 @@
       "url": "https://github.com/darup67/jev-client",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-27T18:47:29Z",
+      "pushed_at": "2026-10-29T18:55:50Z",
       "last_commit": {
-        "message": "Jev UI redesign rollout: generic theme + switcher injected at the original addresses (jevui.inject / dashkit), bag write-off rule",
-        "date": "2026-10-27T18:47:26Z",
-        "url": "https://github.com/darup67/jev-client/commit/07052eaba5cb7610069c9a91c94ea4b3626eed4a"
+        "message": "Supervisor: error-log monitor (errmon.py) with report emails, rapid fixes (restart on fd exhaustion / repeating tracebacks) and a code-fix escalation",
+        "date": "2026-10-29T18:55:49Z",
+        "url": "https://github.com/darup67/jev-client/commit/41382ab3c14f2a1bf1069d8b5aec281461b85797"
       }
     },
     {
