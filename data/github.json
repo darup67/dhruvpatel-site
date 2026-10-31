@@ -1,14 +1,23 @@
 {
   "user": "darup67",
-  "generated_at": "2026-10-31T05:38:46.624Z",
+  "generated_at": "2026-10-31T12:26:30.276Z",
   "repos": [
+    {
+      "name": "trade-core",
+      "description": "Shared market-data store, signal ledger and cost/regime models for the trading tools",
+      "url": "https://github.com/darup67/trade-core",
+      "language": "JavaScript",
+      "stars": 1,
+      "pushed_at": "2026-10-31T07:08:55Z",
+      "last_commit": null
+    },
     {
       "name": "market-lab",
       "description": "Durable capture of expiring market data - Kalshi 15m contracts and CME futures - and tests over it",
       "url": "https://github.com/darup67/market-lab",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-31T05:02:13Z",
+      "pushed_at": "2026-10-31T12:02:14Z",
       "last_commit": {
         "message": "Retire the inverse arm (B): remove Pairs pane, inverse mentions in HQ/supervisor/emails, pair mode off",
         "date": "2026-10-31T02:11:44Z",
@@ -27,15 +36,6 @@
         "date": "2026-10-31T02:11:40Z",
         "url": "https://github.com/darup67/jev-client/commit/5ef6ddefabe922b6f69fb45aa67f29ac792a4b96"
       }
-    },
-    {
-      "name": "trade-core",
-      "description": "Shared market-data store, signal ledger and cost/regime models for the trading tools",
-      "url": "https://github.com/darup67/trade-core",
-      "language": "JavaScript",
-      "stars": 1,
-      "pushed_at": "2026-10-31T01:08:06Z",
-      "last_commit": null
     },
     {
       "name": "zillow_agent_v1",
@@ -160,7 +160,7 @@
       "url": "https://github.com/darup67/coin-launch-agent",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-30T07:07:24Z",
+      "pushed_at": "2026-10-31T07:07:23Z",
       "last_commit": {
         "message": "Add LICENSE (Copyright (c) 2026 Dhruv)",
         "date": "2026-10-07T16:33:06Z",
