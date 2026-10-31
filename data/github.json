@@ -1,6 +1,6 @@
 {
   "user": "darup67",
-  "generated_at": "2026-10-30T22:18:19.252Z",
+  "generated_at": "2026-10-31T05:38:46.624Z",
   "repos": [
     {
       "name": "market-lab",
@@ -8,17 +8,12 @@
       "url": "https://github.com/darup67/market-lab",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-30T22:02:13Z",
-      "last_commit": null
-    },
-    {
-      "name": "trade-core",
-      "description": "Shared market-data store, signal ledger and cost/regime models for the trading tools",
-      "url": "https://github.com/darup67/trade-core",
-      "language": "JavaScript",
-      "stars": 1,
-      "pushed_at": "2026-10-30T18:08:21Z",
-      "last_commit": null
+      "pushed_at": "2026-10-31T05:02:13Z",
+      "last_commit": {
+        "message": "Retire the inverse arm (B): remove Pairs pane, inverse mentions in HQ/supervisor/emails, pair mode off",
+        "date": "2026-10-31T02:11:44Z",
+        "url": "https://github.com/darup67/market-lab/commit/709862241ee0140d8fec02dc7a8385f9e47edb93"
+      }
     },
     {
       "name": "jev-client",
@@ -26,12 +21,21 @@
       "url": "https://github.com/darup67/jev-client",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-29T18:55:50Z",
+      "pushed_at": "2026-10-31T02:11:42Z",
       "last_commit": {
-        "message": "Supervisor: error-log monitor (errmon.py) with report emails, rapid fixes (restart on fd exhaustion / repeating tracebacks) and a code-fix escalation",
-        "date": "2026-10-29T18:55:49Z",
-        "url": "https://github.com/darup67/jev-client/commit/41382ab3c14f2a1bf1069d8b5aec281461b85797"
+        "message": "Retire the inverse arm (B): remove Pairs pane, inverse mentions in HQ/supervisor/emails, pair mode off",
+        "date": "2026-10-31T02:11:40Z",
+        "url": "https://github.com/darup67/jev-client/commit/5ef6ddefabe922b6f69fb45aa67f29ac792a4b96"
       }
+    },
+    {
+      "name": "trade-core",
+      "description": "Shared market-data store, signal ledger and cost/regime models for the trading tools",
+      "url": "https://github.com/darup67/trade-core",
+      "language": "JavaScript",
+      "stars": 1,
+      "pushed_at": "2026-10-31T01:08:06Z",
+      "last_commit": null
     },
     {
       "name": "zillow_agent_v1",
