@@ -1,23 +1,23 @@
 {
   "user": "darup67",
-  "generated_at": "2026-11-01T13:22:04.235Z",
+  "generated_at": "2026-11-01T22:00:51.203Z",
   "repos": [
-    {
-      "name": "market-lab",
-      "description": "Durable capture of expiring market data - Kalshi 15m contracts and CME futures - and tests over it",
-      "url": "https://github.com/darup67/market-lab",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-11-01T13:02:16Z",
-      "last_commit": null
-    },
     {
       "name": "trade-core",
       "description": "Shared market-data store, signal ledger and cost/regime models for the trading tools",
       "url": "https://github.com/darup67/trade-core",
       "language": "JavaScript",
       "stars": 1,
-      "pushed_at": "2026-11-01T09:08:45Z",
+      "pushed_at": "2026-11-01T21:08:48Z",
+      "last_commit": null
+    },
+    {
+      "name": "market-lab",
+      "description": "Durable capture of expiring market data - Kalshi 15m contracts and CME futures - and tests over it",
+      "url": "https://github.com/darup67/market-lab",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-11-01T21:02:14Z",
       "last_commit": null
     },
     {
