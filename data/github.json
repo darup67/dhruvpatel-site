@@ -1,23 +1,23 @@
 {
   "user": "darup67",
-  "generated_at": "2026-11-01T22:00:51.203Z",
+  "generated_at": "2026-11-02T05:59:35.624Z",
   "repos": [
-    {
-      "name": "trade-core",
-      "description": "Shared market-data store, signal ledger and cost/regime models for the trading tools",
-      "url": "https://github.com/darup67/trade-core",
-      "language": "JavaScript",
-      "stars": 1,
-      "pushed_at": "2026-11-01T21:08:48Z",
-      "last_commit": null
-    },
     {
       "name": "market-lab",
       "description": "Durable capture of expiring market data - Kalshi 15m contracts and CME futures - and tests over it",
       "url": "https://github.com/darup67/market-lab",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-11-01T21:02:14Z",
+      "pushed_at": "2026-11-02T05:30:09Z",
+      "last_commit": null
+    },
+    {
+      "name": "trade-core",
+      "description": "Shared market-data store, signal ledger and cost/regime models for the trading tools",
+      "url": "https://github.com/darup67/trade-core",
+      "language": "JavaScript",
+      "stars": 1,
+      "pushed_at": "2026-11-02T04:07:55Z",
       "last_commit": null
     },
     {
@@ -26,11 +26,11 @@
       "url": "https://github.com/darup67/jev-client",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-10-31T02:11:42Z",
+      "pushed_at": "2026-11-02T01:05:57Z",
       "last_commit": {
-        "message": "Retire the inverse arm (B): remove Pairs pane, inverse mentions in HQ/supervisor/emails, pair mode off",
-        "date": "2026-10-31T02:11:40Z",
-        "url": "https://github.com/darup67/jev-client/commit/5ef6ddefabe922b6f69fb45aa67f29ac792a4b96"
+        "message": "Supervisor: watch the Jev Markets shadow prop daemon",
+        "date": "2026-11-02T01:05:55Z",
+        "url": "https://github.com/darup67/jev-client/commit/5bdb8824603e6f450db0c67bb31972b4c9bd5092"
       }
     },
     {
