@@ -1,23 +1,23 @@
 {
   "user": "darup67",
-  "generated_at": "2026-11-03T14:11:22.656Z",
+  "generated_at": "2026-11-03T23:22:17.613Z",
   "repos": [
-    {
-      "name": "market-lab",
-      "description": "Durable capture of expiring market data - Kalshi 15m contracts and CME futures - and tests over it",
-      "url": "https://github.com/darup67/market-lab",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-11-03T14:02:15Z",
-      "last_commit": null
-    },
     {
       "name": "trade-core",
       "description": "Shared market-data store, signal ledger and cost/regime models for the trading tools",
       "url": "https://github.com/darup67/trade-core",
       "language": "JavaScript",
       "stars": 1,
-      "pushed_at": "2026-11-03T10:08:39Z",
+      "pushed_at": "2026-11-03T23:10:50Z",
+      "last_commit": null
+    },
+    {
+      "name": "market-lab",
+      "description": "Durable capture of expiring market data - Kalshi 15m contracts and CME futures - and tests over it",
+      "url": "https://github.com/darup67/market-lab",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-11-03T23:02:17Z",
       "last_commit": null
     },
     {
@@ -26,11 +26,11 @@
       "url": "https://github.com/darup67/jev-client",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-11-02T01:05:57Z",
+      "pushed_at": "2026-11-03T20:50:26Z",
       "last_commit": {
-        "message": "Supervisor: watch the Jev Markets shadow prop daemon",
-        "date": "2026-11-02T01:05:55Z",
-        "url": "https://github.com/darup67/jev-client/commit/5bdb8824603e6f450db0c67bb31972b4c9bd5092"
+        "message": "Supervise Jev Markets long/short lanes",
+        "date": "2026-11-03T20:50:18Z",
+        "url": "https://github.com/darup67/jev-client/commit/fdf85a66c16ef24be0c5110273adae5243e9a376"
       }
     },
     {
