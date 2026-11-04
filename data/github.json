@@ -1,23 +1,23 @@
 {
   "user": "darup67",
-  "generated_at": "2026-11-04T06:19:11.930Z",
+  "generated_at": "2026-11-04T19:44:08.216Z",
   "repos": [
-    {
-      "name": "trade-core",
-      "description": "Shared market-data store, signal ledger and cost/regime models for the trading tools",
-      "url": "https://github.com/darup67/trade-core",
-      "language": "JavaScript",
-      "stars": 1,
-      "pushed_at": "2026-11-04T06:08:54Z",
-      "last_commit": null
-    },
     {
       "name": "market-lab",
       "description": "Durable capture of expiring market data - Kalshi 15m contracts and CME futures - and tests over it",
       "url": "https://github.com/darup67/market-lab",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-11-04T06:02:13Z",
+      "pushed_at": "2026-11-04T19:30:10Z",
+      "last_commit": null
+    },
+    {
+      "name": "trade-core",
+      "description": "Shared market-data store, signal ledger and cost/regime models for the trading tools",
+      "url": "https://github.com/darup67/trade-core",
+      "language": "JavaScript",
+      "stars": 1,
+      "pushed_at": "2026-11-04T19:08:14Z",
       "last_commit": null
     },
     {
@@ -26,11 +26,11 @@
       "url": "https://github.com/darup67/jev-client",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-11-03T20:50:26Z",
+      "pushed_at": "2026-11-04T18:24:15Z",
       "last_commit": {
-        "message": "Supervise Jev Markets long/short lanes",
-        "date": "2026-11-03T20:50:18Z",
-        "url": "https://github.com/darup67/jev-client/commit/fdf85a66c16ef24be0c5110273adae5243e9a376"
+        "message": "Supervisor: register newsjudge job",
+        "date": "2026-11-04T18:24:14Z",
+        "url": "https://github.com/darup67/jev-client/commit/f09bfbde2f2b3d29d85e352f308dcd0f06482a1e"
       }
     },
     {
@@ -156,7 +156,7 @@
       "url": "https://github.com/darup67/coin-launch-agent",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-11-03T08:07:25Z",
+      "pushed_at": "2026-11-04T08:07:23Z",
       "last_commit": {
         "message": "Add LICENSE (Copyright (c) 2026 Dhruv)",
         "date": "2026-10-07T16:33:06Z",
