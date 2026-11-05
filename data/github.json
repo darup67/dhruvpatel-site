@@ -1,6 +1,6 @@
 {
   "user": "darup67",
-  "generated_at": "2026-11-05T06:44:16.370Z",
+  "generated_at": "2026-11-05T19:56:04.209Z",
   "repos": [
     {
       "name": "market-lab",
@@ -8,16 +8,7 @@
       "url": "https://github.com/darup67/market-lab",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-11-05T06:30:10Z",
-      "last_commit": null
-    },
-    {
-      "name": "trade-core",
-      "description": "Shared market-data store, signal ledger and cost/regime models for the trading tools",
-      "url": "https://github.com/darup67/trade-core",
-      "language": "JavaScript",
-      "stars": 1,
-      "pushed_at": "2026-11-05T01:08:36Z",
+      "pushed_at": "2026-11-05T19:30:09Z",
       "last_commit": null
     },
     {
@@ -26,12 +17,21 @@
       "url": "https://github.com/darup67/jev-client",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-11-04T19:46:44Z",
+      "pushed_at": "2026-11-05T17:37:29Z",
       "last_commit": {
-        "message": "Supervisor: register patmem job",
-        "date": "2026-11-04T19:46:43Z",
-        "url": "https://github.com/darup67/jev-client/commit/de27fe60d69e4494d79228364013e48cf05c4de1"
+        "message": "Pause Jev callers: event-desk, options-iv-card, paper-lab, jev-shop, jev-career",
+        "date": "2026-11-05T17:37:26Z",
+        "url": "https://github.com/darup67/jev-client/commit/924c76d9dd71bddb3000cf1537f0a24f16eb6b46"
       }
+    },
+    {
+      "name": "trade-core",
+      "description": "Shared market-data store, signal ledger and cost/regime models for the trading tools",
+      "url": "https://github.com/darup67/trade-core",
+      "language": "JavaScript",
+      "stars": 1,
+      "pushed_at": "2026-11-05T15:09:33Z",
+      "last_commit": null
     },
     {
       "name": "zillow_agent_v1",
@@ -156,7 +156,7 @@
       "url": "https://github.com/darup67/coin-launch-agent",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-11-04T08:07:23Z",
+      "pushed_at": "2026-11-05T08:07:23Z",
       "last_commit": {
         "message": "Add LICENSE (Copyright (c) 2026 Dhruv)",
         "date": "2026-10-07T16:33:06Z",
