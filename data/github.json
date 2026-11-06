@@ -1,36 +1,14 @@
 {
   "user": "darup67",
-  "generated_at": "2026-11-05T19:56:04.209Z",
+  "generated_at": "2026-11-06T06:41:52.661Z",
   "repos": [
-    {
-      "name": "market-lab",
-      "description": "Durable capture of expiring market data - Kalshi 15m contracts and CME futures - and tests over it",
-      "url": "https://github.com/darup67/market-lab",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-11-05T19:30:09Z",
-      "last_commit": null
-    },
-    {
-      "name": "jev-client",
-      "description": "Shared Typesafe judgement client used by zillow-agent and coin-launch-agent",
-      "url": "https://github.com/darup67/jev-client",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-11-05T17:37:29Z",
-      "last_commit": {
-        "message": "Pause Jev callers: event-desk, options-iv-card, paper-lab, jev-shop, jev-career",
-        "date": "2026-11-05T17:37:26Z",
-        "url": "https://github.com/darup67/jev-client/commit/924c76d9dd71bddb3000cf1537f0a24f16eb6b46"
-      }
-    },
     {
       "name": "trade-core",
       "description": "Shared market-data store, signal ledger and cost/regime models for the trading tools",
       "url": "https://github.com/darup67/trade-core",
       "language": "JavaScript",
       "stars": 1,
-      "pushed_at": "2026-11-05T15:09:33Z",
+      "pushed_at": "2026-11-06T04:08:58Z",
       "last_commit": null
     },
     {
@@ -39,11 +17,37 @@
       "url": "https://github.com/darup67/zillow_agent_v1",
       "language": "JavaScript",
       "stars": 1,
-      "pushed_at": "2026-10-23T20:48:23Z",
+      "pushed_at": "2026-11-05T23:31:19Z",
       "last_commit": {
-        "message": "Close DB connections per request (shared dashauth + dashboard), add fdsafe leak guard",
-        "date": "2026-10-23T20:48:22Z",
-        "url": "https://github.com/darup67/zillow_agent_v1/commit/302395a84c480fba1826c4b718efa2571641189a"
+        "message": "Zillow digest title without rental cash-flow wording",
+        "date": "2026-11-05T23:31:18Z",
+        "url": "https://github.com/darup67/zillow_agent_v1/commit/3325ed411568094db1a6bc42543a147667cfd3be"
+      }
+    },
+    {
+      "name": "jev-client",
+      "description": "Shared Typesafe judgement client used by zillow-agent and coin-launch-agent",
+      "url": "https://github.com/darup67/jev-client",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-11-05T23:30:41Z",
+      "last_commit": {
+        "message": "Mobile layout polish, compact dashboard switcher; Zillow without STR, rentals, duplex/triplex",
+        "date": "2026-11-05T23:30:39Z",
+        "url": "https://github.com/darup67/jev-client/commit/c1b618244449eef7f6e7723145d005b9d52d78cd"
+      }
+    },
+    {
+      "name": "market-lab",
+      "description": "Durable capture of expiring market data - Kalshi 15m contracts and CME futures - and tests over it",
+      "url": "https://github.com/darup67/market-lab",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-11-06T06:30:09Z",
+      "last_commit": {
+        "message": "Watchdog alerts limited to Jev Markets, Options IV, supervisor, budget, outbox, platform",
+        "date": "2026-11-05T23:24:24Z",
+        "url": "https://github.com/darup67/market-lab/commit/26d1b791feeaba8fb836ae63cdebdd5f9e1c8f23"
       }
     },
     {
