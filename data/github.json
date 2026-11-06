@@ -1,14 +1,32 @@
 {
   "user": "darup67",
-  "generated_at": "2026-11-06T06:41:52.661Z",
+  "generated_at": "2026-11-06T19:23:37.472Z",
   "repos": [
+    {
+      "name": "market-lab",
+      "description": "Durable capture of expiring market data - Kalshi 15m contracts and CME futures - and tests over it",
+      "url": "https://github.com/darup67/market-lab",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-11-06T19:00:09Z",
+      "last_commit": null
+    },
     {
       "name": "trade-core",
       "description": "Shared market-data store, signal ledger and cost/regime models for the trading tools",
       "url": "https://github.com/darup67/trade-core",
       "language": "JavaScript",
       "stars": 1,
-      "pushed_at": "2026-11-06T04:08:58Z",
+      "pushed_at": "2026-11-06T17:08:42Z",
+      "last_commit": null
+    },
+    {
+      "name": "coin-launch-agent",
+      "description": "Read-only watcher: new/graduated Solana+Base coins reaching a market-cap threshold within 4h, plus Coinbase listings",
+      "url": "https://github.com/darup67/coin-launch-agent",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-11-06T08:07:18Z",
       "last_commit": null
     },
     {
@@ -35,19 +53,6 @@
         "message": "Mobile layout polish, compact dashboard switcher; Zillow without STR, rentals, duplex/triplex",
         "date": "2026-11-05T23:30:39Z",
         "url": "https://github.com/darup67/jev-client/commit/c1b618244449eef7f6e7723145d005b9d52d78cd"
-      }
-    },
-    {
-      "name": "market-lab",
-      "description": "Durable capture of expiring market data - Kalshi 15m contracts and CME futures - and tests over it",
-      "url": "https://github.com/darup67/market-lab",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-11-06T06:30:09Z",
-      "last_commit": {
-        "message": "Watchdog alerts limited to Jev Markets, Options IV, supervisor, budget, outbox, platform",
-        "date": "2026-11-05T23:24:24Z",
-        "url": "https://github.com/darup67/market-lab/commit/26d1b791feeaba8fb836ae63cdebdd5f9e1c8f23"
       }
     },
     {
@@ -152,19 +157,6 @@
         "message": "Add LICENSE (Copyright (c) 2026 Dhruv)",
         "date": "2026-10-07T16:33:07Z",
         "url": "https://github.com/darup67/ml-side/commit/67be942c9e1430e3314cecb54a8ebab7e7d286ee"
-      }
-    },
-    {
-      "name": "coin-launch-agent",
-      "description": "Read-only watcher: new/graduated Solana+Base coins reaching a market-cap threshold within 4h, plus Coinbase listings",
-      "url": "https://github.com/darup67/coin-launch-agent",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-11-05T08:07:23Z",
-      "last_commit": {
-        "message": "Add LICENSE (Copyright (c) 2026 Dhruv)",
-        "date": "2026-10-07T16:33:06Z",
-        "url": "https://github.com/darup67/coin-launch-agent/commit/4c6db76abdadbeed3ddde2a7b360c502a414a89f"
       }
     },
     {
