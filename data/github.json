@@ -1,24 +1,28 @@
 {
   "user": "darup67",
-  "generated_at": "2026-11-07T12:58:56.274Z",
+  "generated_at": "2026-11-07T21:48:53.130Z",
   "repos": [
-    {
-      "name": "coin-launch-agent",
-      "description": "Read-only watcher: new/graduated Solana+Base coins reaching a market-cap threshold within 4h, plus Coinbase listings",
-      "url": "https://github.com/darup67/coin-launch-agent",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-11-07T08:07:19Z",
-      "last_commit": null
-    },
     {
       "name": "trade-core",
       "description": "Shared market-data store, signal ledger and cost/regime models for the trading tools",
       "url": "https://github.com/darup67/trade-core",
       "language": "JavaScript",
       "stars": 1,
-      "pushed_at": "2026-11-07T06:08:15Z",
+      "pushed_at": "2026-11-07T19:08:19Z",
       "last_commit": null
+    },
+    {
+      "name": "jev-client",
+      "description": "Shared Typesafe judgement client used by zillow-agent and coin-launch-agent",
+      "url": "https://github.com/darup67/jev-client",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-11-07T18:52:02Z",
+      "last_commit": {
+        "message": "Jev cache-miss log",
+        "date": "2026-11-07T18:51:59Z",
+        "url": "https://github.com/darup67/jev-client/commit/93ccf235ab799327b27009287e3a9f2db7625d64"
+      }
     },
     {
       "name": "market-lab",
@@ -26,7 +30,20 @@
       "url": "https://github.com/darup67/market-lab",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-11-06T22:00:10Z",
+      "pushed_at": "2026-11-07T16:36:33Z",
+      "last_commit": {
+        "message": "Watchdog honours SUPERVISOR_OFF; MNQ alert 3 triggered state; theme tracker data",
+        "date": "2026-11-07T16:36:32Z",
+        "url": "https://github.com/darup67/market-lab/commit/92fa1794e33f3f279766ba0e7e5c1aab4ba3e834"
+      }
+    },
+    {
+      "name": "coin-launch-agent",
+      "description": "Read-only watcher: new/graduated Solana+Base coins reaching a market-cap threshold within 4h, plus Coinbase listings",
+      "url": "https://github.com/darup67/coin-launch-agent",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-11-07T08:07:19Z",
       "last_commit": null
     },
     {
@@ -40,19 +57,6 @@
         "message": "Zillow digest title without rental cash-flow wording",
         "date": "2026-11-05T23:31:18Z",
         "url": "https://github.com/darup67/zillow_agent_v1/commit/3325ed411568094db1a6bc42543a147667cfd3be"
-      }
-    },
-    {
-      "name": "jev-client",
-      "description": "Shared Typesafe judgement client used by zillow-agent and coin-launch-agent",
-      "url": "https://github.com/darup67/jev-client",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-11-05T23:30:41Z",
-      "last_commit": {
-        "message": "Mobile layout polish, compact dashboard switcher; Zillow without STR, rentals, duplex/triplex",
-        "date": "2026-11-05T23:30:39Z",
-        "url": "https://github.com/darup67/jev-client/commit/c1b618244449eef7f6e7723145d005b9d52d78cd"
       }
     },
     {
