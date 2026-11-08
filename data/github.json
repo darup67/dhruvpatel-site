@@ -1,6 +1,6 @@
 {
   "user": "darup67",
-  "generated_at": "2026-11-08T13:22:33.603Z",
+  "generated_at": "2026-11-08T22:03:19.124Z",
   "repos": [
     {
       "name": "trade-core",
@@ -8,7 +8,7 @@
       "url": "https://github.com/darup67/trade-core",
       "language": "JavaScript",
       "stars": 1,
-      "pushed_at": "2026-11-08T09:08:07Z",
+      "pushed_at": "2026-11-08T15:09:03Z",
       "last_commit": null
     },
     {
@@ -39,7 +39,7 @@
       "url": "https://github.com/darup67/market-lab",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-11-07T16:36:33Z",
+      "pushed_at": "2026-11-08T13:51:10Z",
       "last_commit": {
         "message": "Watchdog honours SUPERVISOR_OFF; MNQ alert 3 triggered state; theme tracker data",
         "date": "2026-11-07T16:36:32Z",
