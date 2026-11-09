@@ -1,14 +1,23 @@
 {
   "user": "darup67",
-  "generated_at": "2026-11-09T06:24:48.523Z",
+  "generated_at": "2026-11-09T22:20:21.156Z",
   "repos": [
+    {
+      "name": "market-lab",
+      "description": "Durable capture of expiring market data - Kalshi 15m contracts and CME futures - and tests over it",
+      "url": "https://github.com/darup67/market-lab",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-11-09T22:00:10Z",
+      "last_commit": null
+    },
     {
       "name": "trade-core",
       "description": "Shared market-data store, signal ledger and cost/regime models for the trading tools",
       "url": "https://github.com/darup67/trade-core",
       "language": "JavaScript",
       "stars": 1,
-      "pushed_at": "2026-11-09T04:08:27Z",
+      "pushed_at": "2026-11-09T17:08:59Z",
       "last_commit": null
     },
     {
@@ -17,7 +26,7 @@
       "url": "https://github.com/darup67/coin-launch-agent",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-11-08T08:07:17Z",
+      "pushed_at": "2026-11-09T08:07:18Z",
       "last_commit": null
     },
     {
@@ -31,19 +40,6 @@
         "message": "Jev cache-miss log",
         "date": "2026-11-07T18:51:59Z",
         "url": "https://github.com/darup67/jev-client/commit/93ccf235ab799327b27009287e3a9f2db7625d64"
-      }
-    },
-    {
-      "name": "market-lab",
-      "description": "Durable capture of expiring market data - Kalshi 15m contracts and CME futures - and tests over it",
-      "url": "https://github.com/darup67/market-lab",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-11-09T06:00:09Z",
-      "last_commit": {
-        "message": "Watchdog honours SUPERVISOR_OFF; MNQ alert 3 triggered state; theme tracker data",
-        "date": "2026-11-07T16:36:32Z",
-        "url": "https://github.com/darup67/market-lab/commit/92fa1794e33f3f279766ba0e7e5c1aab4ba3e834"
       }
     },
     {
