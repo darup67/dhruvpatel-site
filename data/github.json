@@ -1,6 +1,6 @@
 {
   "user": "darup67",
-  "generated_at": "2026-11-10T07:15:49.786Z",
+  "generated_at": "2026-11-10T19:42:59.620Z",
   "repos": [
     {
       "name": "market-lab",
@@ -8,25 +8,7 @@
       "url": "https://github.com/darup67/market-lab",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-11-10T07:00:09Z",
-      "last_commit": null
-    },
-    {
-      "name": "trade-core",
-      "description": "Shared market-data store, signal ledger and cost/regime models for the trading tools",
-      "url": "https://github.com/darup67/trade-core",
-      "language": "JavaScript",
-      "stars": 1,
-      "pushed_at": "2026-11-10T06:08:14Z",
-      "last_commit": null
-    },
-    {
-      "name": "coin-launch-agent",
-      "description": "Read-only watcher: new/graduated Solana+Base coins reaching a market-cap threshold within 4h, plus Coinbase listings",
-      "url": "https://github.com/darup67/coin-launch-agent",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-11-09T08:07:18Z",
+      "pushed_at": "2026-11-10T19:30:09Z",
       "last_commit": null
     },
     {
@@ -35,12 +17,30 @@
       "url": "https://github.com/darup67/jev-client",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-11-07T18:52:02Z",
+      "pushed_at": "2026-11-10T16:49:46Z",
       "last_commit": {
-        "message": "Jev cache-miss log",
-        "date": "2026-11-07T18:51:59Z",
-        "url": "https://github.com/darup67/jev-client/commit/93ccf235ab799327b27009287e3a9f2db7625d64"
+        "message": "Switch Jev pin to jev-1.14.0; cache never serves another model's answer",
+        "date": "2026-11-10T16:49:44Z",
+        "url": "https://github.com/darup67/jev-client/commit/6190c484fc424a77dc0c6f9695f39fdae426b89a"
       }
+    },
+    {
+      "name": "trade-core",
+      "description": "Shared market-data store, signal ledger and cost/regime models for the trading tools",
+      "url": "https://github.com/darup67/trade-core",
+      "language": "JavaScript",
+      "stars": 1,
+      "pushed_at": "2026-11-10T13:08:30Z",
+      "last_commit": null
+    },
+    {
+      "name": "coin-launch-agent",
+      "description": "Read-only watcher: new/graduated Solana+Base coins reaching a market-cap threshold within 4h, plus Coinbase listings",
+      "url": "https://github.com/darup67/coin-launch-agent",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-11-10T08:07:18Z",
+      "last_commit": null
     },
     {
       "name": "zillow_agent_v1",
