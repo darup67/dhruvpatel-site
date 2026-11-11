@@ -1,6 +1,6 @@
 {
   "user": "darup67",
-  "generated_at": "2026-11-11T06:15:09.871Z",
+  "generated_at": "2026-11-11T14:26:59.857Z",
   "repos": [
     {
       "name": "market-lab",
@@ -8,7 +8,7 @@
       "url": "https://github.com/darup67/market-lab",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-11-11T06:00:13Z",
+      "pushed_at": "2026-11-11T14:00:10Z",
       "last_commit": null
     },
     {
@@ -17,7 +17,16 @@
       "url": "https://github.com/darup67/trade-core",
       "language": "JavaScript",
       "stars": 1,
-      "pushed_at": "2026-11-11T03:09:44Z",
+      "pushed_at": "2026-11-11T10:09:18Z",
+      "last_commit": null
+    },
+    {
+      "name": "coin-launch-agent",
+      "description": "Read-only watcher: new/graduated Solana+Base coins reaching a market-cap threshold within 4h, plus Coinbase listings",
+      "url": "https://github.com/darup67/coin-launch-agent",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-11-11T08:07:15Z",
       "last_commit": null
     },
     {
@@ -32,15 +41,6 @@
         "date": "2026-11-10T16:49:44Z",
         "url": "https://github.com/darup67/jev-client/commit/6190c484fc424a77dc0c6f9695f39fdae426b89a"
       }
-    },
-    {
-      "name": "coin-launch-agent",
-      "description": "Read-only watcher: new/graduated Solana+Base coins reaching a market-cap threshold within 4h, plus Coinbase listings",
-      "url": "https://github.com/darup67/coin-launch-agent",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-11-10T08:07:18Z",
-      "last_commit": null
     },
     {
       "name": "zillow_agent_v1",
