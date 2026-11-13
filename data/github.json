@@ -1,6 +1,6 @@
 {
   "user": "darup67",
-  "generated_at": "2026-11-13T06:43:01.475Z",
+  "generated_at": "2026-11-13T19:40:27.266Z",
   "repos": [
     {
       "name": "market-lab",
@@ -8,8 +8,21 @@
       "url": "https://github.com/darup67/market-lab",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-11-13T06:30:05Z",
+      "pushed_at": "2026-11-13T19:30:10Z",
       "last_commit": null
+    },
+    {
+      "name": "zillow_agent_v1",
+      "description": "Daily ZIP-level Georgia real-estate digest by email — Atlanta intown plus Gwinnett, Hall and Jackson counties. Zero-dependency Node.",
+      "url": "https://github.com/darup67/zillow_agent_v1",
+      "language": "JavaScript",
+      "stars": 1,
+      "pushed_at": "2026-11-13T18:35:12Z",
+      "last_commit": {
+        "message": "Zillow dashboard: serve the heatmap app icon (used by Jev One)",
+        "date": "2026-11-13T18:35:06Z",
+        "url": "https://github.com/darup67/zillow_agent_v1/commit/e3341ddce0d5d172c611cf5404c8802c59735d4a"
+      }
     },
     {
       "name": "trade-core",
@@ -17,7 +30,7 @@
       "url": "https://github.com/darup67/trade-core",
       "language": "JavaScript",
       "stars": 1,
-      "pushed_at": "2026-11-13T02:07:49Z",
+      "pushed_at": "2026-11-13T16:09:08Z",
       "last_commit": null
     },
     {
@@ -26,7 +39,7 @@
       "url": "https://github.com/darup67/coin-launch-agent",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-11-12T08:07:18Z",
+      "pushed_at": "2026-11-13T08:07:16Z",
       "last_commit": null
     },
     {
@@ -40,19 +53,6 @@
         "message": "Switch Jev pin to jev-1.14.0; cache never serves another model's answer",
         "date": "2026-11-10T16:49:44Z",
         "url": "https://github.com/darup67/jev-client/commit/6190c484fc424a77dc0c6f9695f39fdae426b89a"
-      }
-    },
-    {
-      "name": "zillow_agent_v1",
-      "description": "Daily ZIP-level Georgia real-estate digest by email — Atlanta intown plus Gwinnett, Hall and Jackson counties. Zero-dependency Node.",
-      "url": "https://github.com/darup67/zillow_agent_v1",
-      "language": "JavaScript",
-      "stars": 1,
-      "pushed_at": "2026-11-05T23:31:19Z",
-      "last_commit": {
-        "message": "Zillow digest title without rental cash-flow wording",
-        "date": "2026-11-05T23:31:18Z",
-        "url": "https://github.com/darup67/zillow_agent_v1/commit/3325ed411568094db1a6bc42543a147667cfd3be"
       }
     },
     {
