@@ -1,23 +1,23 @@
 {
   "user": "darup67",
-  "generated_at": "2026-11-18T07:26:29.761Z",
+  "generated_at": "2026-11-18T20:29:43.702Z",
   "repos": [
-    {
-      "name": "market-lab",
-      "description": "Durable capture of expiring market data - Kalshi 15m contracts and CME futures - and tests over it",
-      "url": "https://github.com/darup67/market-lab",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-11-18T07:02:08Z",
-      "last_commit": null
-    },
     {
       "name": "trade-core",
       "description": "Shared market-data store, signal ledger and cost/regime models for the trading tools",
       "url": "https://github.com/darup67/trade-core",
       "language": "JavaScript",
       "stars": 1,
-      "pushed_at": "2026-11-18T01:07:45Z",
+      "pushed_at": "2026-11-18T20:07:53Z",
+      "last_commit": null
+    },
+    {
+      "name": "market-lab",
+      "description": "Durable capture of expiring market data - Kalshi 15m contracts and CME futures - and tests over it",
+      "url": "https://github.com/darup67/market-lab",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-11-18T20:02:10Z",
       "last_commit": null
     },
     {
@@ -26,7 +26,7 @@
       "url": "https://github.com/darup67/coin-launch-agent",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-11-17T08:07:19Z",
+      "pushed_at": "2026-11-18T08:07:18Z",
       "last_commit": null
     },
     {
