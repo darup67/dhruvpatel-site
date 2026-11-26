@@ -1,14 +1,23 @@
 {
   "user": "darup67",
-  "generated_at": "2026-11-25T21:40:41.713Z",
+  "generated_at": "2026-11-26T08:14:45.522Z",
   "repos": [
+    {
+      "name": "coin-launch-agent",
+      "description": "Read-only watcher: new/graduated Solana+Base coins reaching a market-cap threshold within 4h, plus Coinbase listings",
+      "url": "https://github.com/darup67/coin-launch-agent",
+      "language": "Python",
+      "stars": 1,
+      "pushed_at": "2026-11-26T08:08:16Z",
+      "last_commit": null
+    },
     {
       "name": "market-lab",
       "description": "Durable capture of expiring market data - Kalshi 15m contracts and CME futures - and tests over it",
       "url": "https://github.com/darup67/market-lab",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-11-25T21:30:08Z",
+      "pushed_at": "2026-11-26T08:02:10Z",
       "last_commit": null
     },
     {
@@ -17,16 +26,7 @@
       "url": "https://github.com/darup67/trade-core",
       "language": "JavaScript",
       "stars": 1,
-      "pushed_at": "2026-11-25T17:54:38Z",
-      "last_commit": null
-    },
-    {
-      "name": "coin-launch-agent",
-      "description": "Read-only watcher: new/graduated Solana+Base coins reaching a market-cap threshold within 4h, plus Coinbase listings",
-      "url": "https://github.com/darup67/coin-launch-agent",
-      "language": "Python",
-      "stars": 1,
-      "pushed_at": "2026-11-25T08:08:18Z",
+      "pushed_at": "2026-11-26T07:06:58Z",
       "last_commit": null
     },
     {
