@@ -1,14 +1,14 @@
 {
   "user": "darup67",
-  "generated_at": "2026-11-26T08:14:45.522Z",
+  "generated_at": "2026-11-26T21:30:05.345Z",
   "repos": [
     {
-      "name": "coin-launch-agent",
-      "description": "Read-only watcher: new/graduated Solana+Base coins reaching a market-cap threshold within 4h, plus Coinbase listings",
-      "url": "https://github.com/darup67/coin-launch-agent",
-      "language": "Python",
+      "name": "trade-core",
+      "description": "Shared market-data store, signal ledger and cost/regime models for the trading tools",
+      "url": "https://github.com/darup67/trade-core",
+      "language": "JavaScript",
       "stars": 1,
-      "pushed_at": "2026-11-26T08:08:16Z",
+      "pushed_at": "2026-11-26T21:06:59Z",
       "last_commit": null
     },
     {
@@ -17,16 +17,16 @@
       "url": "https://github.com/darup67/market-lab",
       "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-11-26T08:02:10Z",
+      "pushed_at": "2026-11-26T21:02:11Z",
       "last_commit": null
     },
     {
-      "name": "trade-core",
-      "description": "Shared market-data store, signal ledger and cost/regime models for the trading tools",
-      "url": "https://github.com/darup67/trade-core",
-      "language": "JavaScript",
+      "name": "coin-launch-agent",
+      "description": "Read-only watcher: new/graduated Solana+Base coins reaching a market-cap threshold within 4h, plus Coinbase listings",
+      "url": "https://github.com/darup67/coin-launch-agent",
+      "language": "Python",
       "stars": 1,
-      "pushed_at": "2026-11-26T07:06:58Z",
+      "pushed_at": "2026-11-26T08:08:16Z",
       "last_commit": null
     },
     {
